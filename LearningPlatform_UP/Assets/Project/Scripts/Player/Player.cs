@@ -1,7 +1,11 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour, IInteractor
 {
+    public event Action<IInteractable> InteractableAdded;
+    public event Action<IInteractable> InteractableRemoved;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         IInteractable interactable = collision.GetComponent<IInteractable>();
@@ -24,18 +28,17 @@ public class Player : MonoBehaviour, IInteractor
     public void Interact(IInteractable interactable)
     {
         interactable.OnInteract(this);
-        Debug.Log("player interact with " + (interactable as MonoBehaviour).name);
     }
 
     public void OnInteractableEnterRange(IInteractable interactable)
     {
         interactable.OnInteractorEnterRange(this);
-        Debug.Log("player entered " + (interactable as MonoBehaviour).name);
+        InteractableAdded?.Invoke(interactable);
     }
 
     public void OnInteractableExitRange(IInteractable interactable)
     {
         interactable.OnInteractorExitRange(this);
-        Debug.Log("player exit " + (interactable as MonoBehaviour).name);
+        InteractableRemoved?.Invoke(interactable);
     }
 }

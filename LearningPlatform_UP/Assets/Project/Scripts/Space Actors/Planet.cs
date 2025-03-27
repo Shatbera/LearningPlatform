@@ -4,16 +4,16 @@ public class Planet : MonoBehaviour, IInteractable
 {
     public void OnInteract(IInteractor interactor)
     {
-        Debug.Log(name + ": brbr");
+        PopupsController.Instance.OpenPopup(IPopupsController.PopupTag.ObjectInfo);
     }
 
     public void OnInteractorEnterRange(IInteractor interactor)
     {
-        Debug.Log("hi im " + name);
+        
     }
 
     public void OnInteractorExitRange(IInteractor interactor)
     {
-        Debug.Log(name+": bye");
+        
     }
 }
