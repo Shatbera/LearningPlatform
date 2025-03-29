@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20846c97605f15478e42422e3469206, type: 3}
+  m_Name: ObjectInfo-Mars
+  m_EditorClassIdentifier: 
+  Facts:
+  - text: "Mars is called the \"Red Planet\" \u2013 It gets its red color from iron
+      in the soil, which has rusted over time!"
+  - text: "Mars has the tallest volcano in the solar system! \u2013 Olympus Mons
+      is about three times taller than Mount Everest!"
+  - text: "A day on Mars is almost like Earth\u2019s! \u2013 One day on Mars is 24
+      hours and 37 minutes, just a little longer than a day on Earth."
+  - text: "Mars has huge dust storms! \u2013 These storms can cover the entire planet
+      and last for months!"
+  - text: "There might have been water on Mars! \u2013 Scientists believe that long
+      ago, Mars had rivers, lakes, and even oceans!"

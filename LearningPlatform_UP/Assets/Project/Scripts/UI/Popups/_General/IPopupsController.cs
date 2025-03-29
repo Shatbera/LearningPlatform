@@ -1,3 +1,5 @@
+using System;
+
 public interface IPopupsController
 {
     public enum PopupTag
@@ -5,7 +7,7 @@ public interface IPopupsController
         None,
         ObjectInfo,
     }
-    public void OpenPopup(PopupTag tag);
+    public void OpenPopup(PopupTag tag, Action<Popup> onComplete = null);
 
     public void ClosePopup(PopupTag tag);
 }

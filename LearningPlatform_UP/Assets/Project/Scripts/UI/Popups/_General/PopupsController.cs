@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,11 +28,12 @@ public class PopupsController : Singleton<IPopupsController>, IPopupsController
         }
     }
 
-    public void OpenPopup(IPopupsController.PopupTag tag)
+    public void OpenPopup(IPopupsController.PopupTag tag, Action<Popup> onComplete = null)
     {
         if(popupsDict.ContainsKey(tag))
         {
             popupsDict[tag].Open();
+            onComplete?.Invoke(popupsDict[tag]);
         }
     }
 
