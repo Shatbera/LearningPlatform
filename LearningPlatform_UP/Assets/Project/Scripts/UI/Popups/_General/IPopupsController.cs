@@ -8,6 +8,5 @@ public interface IPopupsController
         ObjectInfo,
     }
     public void OpenPopup(PopupTag tag, Action<Popup> onComplete = null);
-
     public void ClosePopup(PopupTag tag);
 }

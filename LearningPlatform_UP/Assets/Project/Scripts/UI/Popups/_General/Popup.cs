@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class Popup : MonoBehaviour
 {
     [field: SerializeField] public IPopupsController.PopupTag PopupTag;
+    [field: SerializeField] public bool CloseWithTint;
     [SerializeField] private bool showCloseBtn = true;
 
     [SerializeField] private Animator animator;
@@ -17,16 +18,19 @@ public class Popup : MonoBehaviour
     }
     public void Open()
     {
-        animator.SetBool("Open", true);
-        gameObject.SetActive(showCloseBtn);
+        PopupsController.Instance.OpenPopup(this);
     }
 
     public void Close()
     {
-        animator.SetBool("Open", false);
-        closeBtn.gameObject.SetActive(false);
+        PopupsController.Instance.ClosePopup(this);
     }
 
+    public void SetVisible(PopupsController controller, bool visible)
+    {
+        animator.SetBool("Open", visible);
+        gameObject.SetActive(visible && showCloseBtn);
+    }
     public void OnPopupOpenFinished()
     {
         closeBtn.gameObject.SetActive(true);

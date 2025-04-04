@@ -1,7 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ObjectInfo", menuName = "ScriptableObjects/ObjectInfo")]
-public class ObjectInfoSO : ScriptableObject
+public abstract class ObjectInfoSO : ScriptableObject
 {
     [System.Serializable]
     public struct Fact
@@ -10,5 +9,6 @@ public class ObjectInfoSO : ScriptableObject
         public string text;
     }
 
+    public string ObjectName;
     public Fact[] Facts;
 }
