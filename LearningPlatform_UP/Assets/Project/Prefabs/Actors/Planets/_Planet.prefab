@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b0edf8afc5e9974e94cba7de1b0929f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planetData: {fileID: 0}
+  _renderer: {fileID: 5556567304008436822}
 --- !u!58 &6968800177486407280
 CircleCollider2D:
   m_ObjectHideFlags: 0

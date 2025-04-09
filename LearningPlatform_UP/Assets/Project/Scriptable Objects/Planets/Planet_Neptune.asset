@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d9d1946410d5845ac16874ebaebab2, type: 3}
+  m_Name: Planet_Neptune
+  m_EditorClassIdentifier: 
+  ObjectName: Neptune
+  Facts:
+  - text: "Neptune is the farthest planet from the Sun \u2014 it\u2019s the 8th planet
+      in our solar system!"
+  - text: "It\u2019s super windy \u2014 Neptune has the strongest winds in the whole
+      solar system, blowing faster than 1,200 mph (2,000 km/h)!"
+  - text: "It\u2019s a gas giant \u2014 made mostly of gases like hydrogen and helium,
+      with a deep blue color."
+  - text: "It has a giant storm called the Great Dark Spot, kind of like Jupiter\u2019s
+      storm but darker and smaller"
+  - text: "Neptune has 14 moons \u2014 the biggest one is Triton, which spins the
+      opposite way of Neptune\u2019s rotation!"
+  BackgroundSprite: {fileID: 21300000, guid: e83594484b7f0db4c93e8add46f64fb6, type: 3}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d9d1946410d5845ac16874ebaebab2, type: 3}
+  m_Name: Planet_Venus
+  m_EditorClassIdentifier: 
+  ObjectName: Venus
+  Facts:
+  - text: "Venus is the brightest planet \u2014 It shines so bright in the sky that
+      you can often see it just after sunset or before sunrise. That\u2019s why it\u2019s
+      called the \u201CEvening Star\u201D or \u201CMorning Star\u201D!"
+  - text: "It\u2019s the hottest planet \u2014 Even though Mercury is closer to the
+      Sun, Venus is hotter, with surface temperatures over 460\xB0C (860\xB0F) \u2014
+      hot enough to melt lead!"
+  - text: "It spins backward \u2014 Venus rotates in the opposite direction of most
+      other planets, and it spins very slowly. A day on Venus is longer than its
+      year!"
+  - text: "It has thick, toxic clouds \u2014 Venus is covered with thick clouds of
+      carbon dioxide and sulfuric acid, trapping heat like a super-powered greenhou"
+  - text: "It\u2019s Earth\u2019s \u201Ctwin\u201D \u2014 Venus is almost the same
+      size and made of similar rock as Earth, which is why people call it Earth\u2019s
+      \u201Csister planet\u201D \u2014 but it\u2019s way too hot to live on!"
+  BackgroundSprite: {fileID: 21300000, guid: e83594484b7f0db4c93e8add46f64fb6, type: 3}

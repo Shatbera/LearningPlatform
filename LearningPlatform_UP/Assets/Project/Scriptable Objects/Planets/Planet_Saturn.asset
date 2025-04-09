@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d9d1946410d5845ac16874ebaebab2, type: 3}
+  m_Name: Planet_Saturn
+  m_EditorClassIdentifier: 
+  ObjectName: Saturn
+  Facts:
+  - text: "Saturn has beautiful rings \u2014 It\u2019s famous for its big, bright
+      rings made of ice, rocks, and dust!"
+  - text: "It\u2019s a gas giant \u2014 Just like Jupiter, Saturn is mostly made
+      of gases and doesn\u2019t have a solid surface to stand on."
+  - text: "Saturn has lots of moons \u2014 It has over 80 moons, and the biggest
+      one is Titan, which is even larger than Mercury!"
+  - text: "It\u2019s super fast at spinning \u2014 A day on Saturn is only about
+      10.5 hours long because it spins so quickly!"
+  - text: "It\u2019s lighter than water \u2014 If there were a big enough bathtub,
+      Saturn would float in it because it\u2019s so light for its size!"
+  BackgroundSprite: {fileID: 21300000, guid: b288aa2954d8df24892f3bee55d19977, type: 3}

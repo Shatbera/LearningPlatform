@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planet_Mercury Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5433792065405079805, guid: d753ff2600a51ea4590155fef01e6836, type: 3}
+      propertyPath: planetData
+      value: 
+      objectReference: {fileID: 11400000, guid: 60fe51b77eef6a44ab82b9874520430a, type: 2}
     - target: {fileID: 5556567304008436822, guid: d753ff2600a51ea4590155fef01e6836, type: 3}
       propertyPath: m_Sprite
       value: 

@@ -17,12 +17,12 @@ public class ExplorationAreaController : MonoBehaviour
 
     private void OnEnable()
     {
-        Planet.Interacted += LoadArea;
+        //Planet.Interacted += LoadArea;
     }
 
     private void OnDisable()
     {
-        Planet.Interacted -= LoadArea;
+        //Planet.Interacted -= LoadArea;
     }
     public void LoadArea(ExplorableObjectSO objectData)
     {

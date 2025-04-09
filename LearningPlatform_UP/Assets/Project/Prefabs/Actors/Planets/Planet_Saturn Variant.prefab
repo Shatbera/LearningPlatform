@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planet_Saturn Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5433792065405079805, guid: d753ff2600a51ea4590155fef01e6836, type: 3}
+      propertyPath: planetData
+      value: 
+      objectReference: {fileID: 11400000, guid: 9a601c19c539ebe4a88d86c6c7c93c8c, type: 2}
     - target: {fileID: 5556567304008436822, guid: d753ff2600a51ea4590155fef01e6836, type: 3}
       propertyPath: m_Size.x
       value: 13.599999
