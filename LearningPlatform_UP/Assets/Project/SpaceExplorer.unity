@@ -180,6 +180,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 104465616}
     m_Modifications:
+    - target: {fileID: 6127168476086059092, guid: 0c46ec3e5ab1d7b469fdce8751e18da9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8345347835803793324, guid: 24023f6dc17aae1489410f5721cd2e6e, type: 2}
     - target: {fileID: 7371122256129150394, guid: 0c46ec3e5ab1d7b469fdce8751e18da9, type: 3}
       propertyPath: m_Name
       value: ObjectInfoPopup
@@ -753,6 +757,7 @@ GameObject:
   - component: {fileID: 419432032}
   - component: {fileID: 419432033}
   - component: {fileID: 419432034}
+  - component: {fileID: 419432035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -897,7 +902,7 @@ MonoBehaviour:
   WorldUpOverride: {fileID: 0}
   ChannelMask: -1
   UpdateMethod: 0
-  BlendUpdateMethod: 1
+  BlendUpdateMethod: 0
   LensModeOverride:
     Enabled: 0
     DefaultMode: 2
@@ -937,12 +942,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ed6b04041edef95439564dceeee9dc72, type: 3}
-  m_Resource: {fileID: 8300000, guid: ed6b04041edef95439564dceeee9dc72, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 5ba413e420fafb843bf9264ab527240a, type: 3}
+  m_Resource: {fileID: 8300000, guid: 5ba413e420fafb843bf9264ab527240a, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1024,6 +1029,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &419432035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419432027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 890dea328519acc41beee92dc9e743ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundtracks:
+  - clip: {fileID: 8300000, guid: 5ba413e420fafb843bf9264ab527240a, type: 3}
+    volume: 0.5
+  - clip: {fileID: 8300000, guid: c1799e52f7c63b343b37dee521cedaae, type: 3}
+    volume: 0.5
+  fadeDuration: 7
+  delayBetweenTracks: 5
 --- !u!4 &421821077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6044362496833525440, guid: 49ceaf65a8e25224bbf3f7871cd861a0, type: 3}
@@ -1892,6 +1916,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6264096618232761273, guid: cf955357b9762f14f89ce99dd055487c, type: 3}
   m_PrefabInstance: {fileID: 3902384288144774296}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1410299379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1410299380}
+  - component: {fileID: 1410299381}
+  - component: {fileID: 1410299382}
+  m_Layer: 0
+  m_Name: StarsSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1410299380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410299379}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1410299381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410299379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3a0a4ddd619b54e9d082f262bbef77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _starsPool:
+    parent: {fileID: 1410299380}
+    prefab: {fileID: 268130216998602053, guid: e191eeb4fe30f704db86b41f328f2e4e, type: 3}
+    defaultCapacity: 10
+  minSpawnInterval: 1
+  maxSpawnInterval: 5
+--- !u!114 &1410299382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410299379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0041ae1cbc4b40541be069d2e4abcc99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 419432030}
+  parallaxFactor: 0.8
 --- !u!1 &1564573126
 GameObject:
   m_ObjectHideFlags: 0
@@ -3214,6 +3303,7 @@ SceneRoots:
   - {fileID: 1810720882}
   - {fileID: 471566404}
   - {fileID: 352812253}
+  - {fileID: 1410299380}
   - {fileID: 1296188004}
   - {fileID: 938423185}
   - {fileID: 1957528409}
