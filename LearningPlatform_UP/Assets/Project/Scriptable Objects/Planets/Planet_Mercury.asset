@@ -24,4 +24,4 @@ MonoBehaviour:
       any."
   - text: "Mercury\u2019s surface looks like the Moon \u2014 it\u2019s full of craters
       from space rocks hitting it!"
-  BackgroundSprite: {fileID: 21300000, guid: e83594484b7f0db4c93e8add46f64fb6, type: 3}
+  BackgroundSprite: {fileID: 21300000, guid: c17ae6062b0056d44ba539dcd1873ec6, type: 3}

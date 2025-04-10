@@ -16,7 +16,7 @@ public class CameraBackgroundFitter : MonoBehaviour
 #if UNITY_EDITOR
     private void Update()
     {
-        //AdjustCameraSize();
+        AdjustCameraSize();
     }
 
 #endif

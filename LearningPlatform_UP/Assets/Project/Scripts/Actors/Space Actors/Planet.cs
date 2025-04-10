@@ -13,10 +13,10 @@ public class Planet : MonoBehaviour, IInteractable, IHighlightableObject
     public void OnInteract(IInteractor interactor)
     {
         Interacted?.Invoke(planetData);
-        PopupsController.Instance.OpenPopup(IPopupsController.PopupTag.ObjectInfo, onComplete: p =>
+        /*PopupsController.Instance.OpenPopup(IPopupsController.PopupTag.ObjectInfo, onComplete: p =>
         {
             p.GetComponent<ObjectInfoPopup>().Setup(planetData);
-        });
+        });*/
     }
 
 

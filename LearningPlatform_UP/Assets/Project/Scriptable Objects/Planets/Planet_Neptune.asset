@@ -24,4 +24,4 @@ MonoBehaviour:
       storm but darker and smaller"
   - text: "Neptune has 14 moons \u2014 the biggest one is Triton, which spins the
       opposite way of Neptune\u2019s rotation!"
-  BackgroundSprite: {fileID: 21300000, guid: e83594484b7f0db4c93e8add46f64fb6, type: 3}
+  BackgroundSprite: {fileID: 21300000, guid: 99c4084993f9b7f41b6b56a22308540e, type: 3}

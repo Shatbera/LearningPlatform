@@ -25,4 +25,4 @@ MonoBehaviour:
   - text: "Jupiter has super strong gravity, much stronger than Earth\u2019s \u2014
       it's the reason Jupiter can hold on to so many moons and even pull in space
       rocks that could hit Earth."
-  BackgroundSprite: {fileID: 21300000, guid: e83594484b7f0db4c93e8add46f64fb6, type: 3}
+  BackgroundSprite: {fileID: 21300000, guid: e844e803d945956498c6a9c0ff6382b0, type: 3}

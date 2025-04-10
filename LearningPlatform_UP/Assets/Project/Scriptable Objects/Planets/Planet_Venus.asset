@@ -28,4 +28,4 @@ MonoBehaviour:
   - text: "It\u2019s Earth\u2019s \u201Ctwin\u201D \u2014 Venus is almost the same
       size and made of similar rock as Earth, which is why people call it Earth\u2019s
       \u201Csister planet\u201D \u2014 but it\u2019s way too hot to live on!"
-  BackgroundSprite: {fileID: 21300000, guid: e83594484b7f0db4c93e8add46f64fb6, type: 3}
+  BackgroundSprite: {fileID: 21300000, guid: 633ec09fc5d599a49b7a9116e7bab925, type: 3}

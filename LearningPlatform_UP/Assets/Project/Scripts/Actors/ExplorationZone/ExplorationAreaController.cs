@@ -17,12 +17,12 @@ public class ExplorationAreaController : MonoBehaviour
 
     private void OnEnable()
     {
-        //Planet.Interacted += LoadArea;
+        Planet.Interacted += LoadArea;
     }
 
     private void OnDisable()
     {
-        //Planet.Interacted -= LoadArea;
+        Planet.Interacted -= LoadArea;
     }
     public void LoadArea(ExplorableObjectSO objectData)
     {
@@ -30,10 +30,10 @@ public class ExplorationAreaController : MonoBehaviour
         _background.sprite = _objectData.BackgroundSprite;
         SetVisible(true);
 
-        PopupsController.Instance.OpenPopup(IPopupsController.PopupTag.ObjectInfo, popup =>
+       /* PopupsController.Instance.OpenPopup(IPopupsController.PopupTag.ObjectInfo, popup =>
         {
             popup.GetComponent<ObjectInfoPopup>().Setup(_objectData);
-        });
+        });*/
 
         transform.position = new Vector2(Camera.main.transform.position.x, Camera.main.transform.position.y);        
     }

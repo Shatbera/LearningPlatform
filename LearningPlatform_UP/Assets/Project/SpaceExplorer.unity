@@ -464,7 +464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &239092509
 Transform:
   m_ObjectHideFlags: 0
@@ -808,7 +808,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.311588
+  orthographic size: 6.200858
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1114,7 +1114,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e83594484b7f0db4c93e8add46f64fb6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc918d6f93d617840b4d86200242a264, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1135,8 +1135,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 239092509}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1334,7 +1334,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c3030fea51f25aa4db49f1f25395ce1b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 81c28a0f1dad2c9408aaca1edb122e5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1963,7 +1963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _starsPool:
     parent: {fileID: 1410299380}
-    prefab: {fileID: 9188720149550430980, guid: 0a05602d456217e4da4ef2b8ee207a5e, type: 3}
+    prefab: {fileID: 268130216998602053, guid: e191eeb4fe30f704db86b41f328f2e4e, type: 3}
     defaultCapacity: 10
   minSpawnInterval: 1
   maxSpawnInterval: 5
@@ -2157,7 +2157,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 6.311588
+    OrthographicSize: 6.200858
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -2347,7 +2347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1833314443
 Transform:
   m_ObjectHideFlags: 0
@@ -2590,8 +2590,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Priority:
-    Enabled: 0
-    m_Value: 0
+    Enabled: 1
+    m_Value: 2
   OutputChannel: 1
   StandbyUpdate: 2
   m_StreamingVersion: 20241001
@@ -2602,7 +2602,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 6.311588
+    OrthographicSize: 6.200858
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -2633,9 +2633,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 27625605}
     m_Modifications:
+    - target: {fileID: 1764499796517549865, guid: cd349096b6db219449fc4319ac8635ed, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7dfd4208819b6c9429bb6122ed1e74a2, type: 3}
     - target: {fileID: 2041804416991496115, guid: cd349096b6db219449fc4319ac8635ed, type: 3}
       propertyPath: m_Name
       value: Planet_Mars
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770505422540079557, guid: cd349096b6db219449fc4319ac8635ed, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770505422540079557, guid: cd349096b6db219449fc4319ac8635ed, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770505422540079557, guid: cd349096b6db219449fc4319ac8635ed, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6672914158832651737, guid: cd349096b6db219449fc4319ac8635ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2978,6 +2994,22 @@ PrefabInstance:
     - target: {fileID: 1850055252309736895, guid: 26962c6205d063248828e7e6fe962168, type: 3}
       propertyPath: m_Name
       value: Planet_Uranus
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127253772063411493, guid: 26962c6205d063248828e7e6fe962168, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 85ad7f72ff419e847b3f2b2e181ab1fa, type: 3}
+    - target: {fileID: 3578887858912623561, guid: 26962c6205d063248828e7e6fe962168, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3578887858912623561, guid: 26962c6205d063248828e7e6fe962168, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3578887858912623561, guid: 26962c6205d063248828e7e6fe962168, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6441186699081643989, guid: 26962c6205d063248828e7e6fe962168, type: 3}
       propertyPath: m_LocalPosition.x
