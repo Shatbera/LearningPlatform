@@ -7,7 +7,7 @@ public class FlickeringStar : MonoBehaviour
     private const float MAX_SCALE = 0.66f;
 
     private ComponentPool<FlickeringStar> _pool;
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         float randScale = Random.Range(MIN_SCALE, MAX_SCALE);
         _renderer.transform.localScale = Vector3.one * randScale;

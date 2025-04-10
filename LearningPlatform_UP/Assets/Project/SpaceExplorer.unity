@@ -1963,7 +1963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _starsPool:
     parent: {fileID: 1410299380}
-    prefab: {fileID: 268130216998602053, guid: e191eeb4fe30f704db86b41f328f2e4e, type: 3}
+    prefab: {fileID: 9188720149550430980, guid: 0a05602d456217e4da4ef2b8ee207a5e, type: 3}
     defaultCapacity: 10
   minSpawnInterval: 1
   maxSpawnInterval: 5
