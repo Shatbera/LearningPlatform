@@ -5,12 +5,33 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Project/Mini Games/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Project/SpaceExplorer.unity
+    path: Assets/Project/Scenes/_SpaceExplorer.unity
     guid: 4a591d010002fc4459d428f45038ef1b
+  - enabled: 1
+    path: Assets/Project/Scenes/EarthScene.unity
+    guid: ef30d39aab2bd2948a627de421c53cd5
+  - enabled: 1
+    path: Assets/Project/Scenes/JupiterScene.unity
+    guid: bbb449c893325ec46a60a97423428707
+  - enabled: 1
+    path: Assets/Project/Scenes/MarsScene.unity
+    guid: 7659be31e95442b4391e70ba8623d2e5
+  - enabled: 1
+    path: Assets/Project/Scenes/MercuryScene.unity
+    guid: 5a03897a8408d114dbdd5c639870989a
+  - enabled: 1
+    path: Assets/Project/Scenes/NeptuneScene.unity
+    guid: be36202943268454f8cfa117056ba7f7
+  - enabled: 1
+    path: Assets/Project/Scenes/SaturnScene.unity
+    guid: d752463fccaecb54d93fdbd4aeafe6b9
+  - enabled: 1
+    path: Assets/Project/Scenes/UranusScene.unity
+    guid: 18d77775b77cc0340ba79bd3acac6179
+  - enabled: 1
+    path: Assets/Project/Scenes/VenusScene.unity
+    guid: 8579ab0c70327994f8d3d8e4f31911ae
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -1,16 +1,17 @@
 using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ExplorationAreaController : MonoBehaviour
 {
-    [SerializeField] private GameObject _container;
-    [SerializeField] private SpriteRenderer _background;
+    [SerializeField] private CinemachineCamera _objectCamera;
+
+    [SerializeField] private GameObject[] _mainSceneObjects;
     [SerializeField] private Button _exitButton;
 
-    [SerializeField] private CinemachineCamera _areaCamera;
-    [SerializeField] private CinemachineCamera _objectCamera;
+    [SerializeField] private Camera _mainCamera;
 
     [SerializeField] private ScreenFade _screenFade;
 
@@ -20,12 +21,11 @@ public class ExplorationAreaController : MonoBehaviour
     private const float FADE_DURATION = 0.3f;
     private const float FADE_DELAY = 0.1f;
 
-    protected void Awake()
+    private string _loadedAreaSceneName;
+    private void Awake()
     {
         _exitButton.onClick.AddListener(Exit);
-        SetVisible(false);
     }
-
     private void OnEnable()
     {
         Planet.Interacted += LoadArea;
@@ -43,9 +43,7 @@ public class ExplorationAreaController : MonoBehaviour
     private IEnumerator LoadAreaCoroutine(ExplorableObjectSO objectData)
     {
         _objectData = objectData;
-        _background.sprite = _objectData.BackgroundSprite;
         transform.position = new Vector2(Camera.main.transform.position.x, Camera.main.transform.position.y);
-        _areaCamera.enabled = false;
 
 
         float startOrtho = _objectCamera.Lens.OrthographicSize;
@@ -63,9 +61,9 @@ public class ExplorationAreaController : MonoBehaviour
             yield return null;
         }
 
-        SetVisible(true);
-        _areaCamera.enabled = true;
         _objectCamera.Lens.OrthographicSize = startOrtho;
+
+        SwitchScene(true, objectData.SceneName);
 
         yield return new WaitForSeconds(FADE_DELAY);
         _screenFade.Fade(false, FADE_DURATION);
@@ -75,24 +73,36 @@ public class ExplorationAreaController : MonoBehaviour
             window.GetComponent<ObjectInfoPopup>().Setup(_objectData);
         });
     }
-    private void Exit()
+
+    public void SwitchScene(bool exploration, string sceneName = null)
     {
-        StartCoroutine(FadeCoroutine());
+        _exitButton.gameObject.SetActive(exploration);
+        foreach(var obj in _mainSceneObjects)
+        {
+            obj.SetActive(!exploration);
+        }
+        if (exploration)
+        {
+            SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+            _loadedAreaSceneName = sceneName;
+        }
+        else
+        {
+            SceneManager.UnloadSceneAsync(_loadedAreaSceneName);
+        }
+        //_mainCamera.enabled = !exploration;
+    }
+    public void Exit()
+    {
+        StartCoroutine(ExitCoroutine());
     }
 
-    private IEnumerator FadeCoroutine()
+    private IEnumerator ExitCoroutine()
     {
         _screenFade.Fade(true, FADE_DURATION);
         yield return new WaitForSeconds(FADE_DURATION);
-        SetVisible(false);
-        _areaCamera.enabled = false;
+        SwitchScene(false);
         yield return new WaitForSeconds(FADE_DELAY);
         _screenFade.Fade(false, FADE_DURATION);
-    }
-
-    private void SetVisible(bool visible)
-    {
-        _exitButton.gameObject.SetActive(visible);
-        _container.SetActive(visible);
     }
 }

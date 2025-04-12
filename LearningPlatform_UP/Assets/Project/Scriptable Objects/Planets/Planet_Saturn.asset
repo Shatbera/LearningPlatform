@@ -24,4 +24,4 @@ MonoBehaviour:
       10.5 hours long because it spins so quickly!"
   - text: "It\u2019s lighter than water \u2014 If there were a big enough bathtub,
       Saturn would float in it because it\u2019s so light for its size!"
-  BackgroundSprite: {fileID: 21300000, guid: 0fd8e0879cabe4a459e254a278af8a36, type: 3}
+  SceneName: SaturnScene
