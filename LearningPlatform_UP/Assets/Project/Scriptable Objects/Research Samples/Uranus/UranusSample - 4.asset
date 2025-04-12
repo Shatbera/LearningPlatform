@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
+  m_Name: UranusSample - 4
+  m_EditorClassIdentifier: 
+  ID: 
+  Sprite: {fileID: -511752779, guid: 16d7624d15e567f40ad0b7d6113f3e4d, type: 3}
+  SampleName: Ammonia Ice Flake
+  SampleInfo: "A fragile layer of frozen ammonia and water ice, this sample came
+    from the lower cloud layers of Uranus. It shows how cold and complex the planet\u2019s
+    atmosphere really is!"

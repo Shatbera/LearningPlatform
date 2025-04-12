@@ -28,8 +28,12 @@ public class Popup : MonoBehaviour
 
     public void SetVisible(PopupsController controller, bool visible)
     {
+        if (visible)
+        {
+            gameObject.SetActive(true);
+        }
         animator.SetBool("Open", visible);
-        gameObject.SetActive(visible && showCloseBtn);
+        closeBtn.gameObject.SetActive(visible && showCloseBtn);
     }
     public void OnPopupOpenFinished()
     {

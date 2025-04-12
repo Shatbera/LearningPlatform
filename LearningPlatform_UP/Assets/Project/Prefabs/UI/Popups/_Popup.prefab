@@ -76,6 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopupTag: 0
+  CloseWithTint: 0
   showCloseBtn: 1
   animator: {fileID: 906740991615413139}
   closeBtn: {fileID: 1473012394878470963}
@@ -108,7 +109,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 18a2c5b1400f20b46b368598577e3ee7, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -116,7 +117,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 1.25
 --- !u!1 &8887119079280422842
 GameObject:
   m_ObjectHideFlags: 0

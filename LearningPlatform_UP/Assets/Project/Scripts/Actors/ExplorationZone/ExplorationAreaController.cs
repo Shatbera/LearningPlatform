@@ -70,6 +70,10 @@ public class ExplorationAreaController : MonoBehaviour
         yield return new WaitForSeconds(FADE_DELAY);
         _screenFade.Fade(false, FADE_DURATION);
 
+        PopupsController.Instance.OpenPopup(IPopupsController.PopupTag.ObjectInfo, onComplete: window =>
+        {
+            window.GetComponent<ObjectInfoPopup>().Setup(_objectData);
+        });
     }
     private void Exit()
     {

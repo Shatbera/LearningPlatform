@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
+  m_Name: EarthSample - 5
+  m_EditorClassIdentifier: 
+  ID: 
+  Sprite: {fileID: 475412131, guid: 877fbc0a54e5d3a4ca1094ec88dd042a, type: 3}
+  SampleName: Basalt Magma Shard
+  SampleInfo: "This shard of cooled lava comes from a volcano. It tells the story
+    of Earth\u2019s inner heat and shifting plates, shaping the land we walk on."
