@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: JupiterSample - 4
   m_EditorClassIdentifier: 
   ID: 
-  Sprite: {fileID: -1622608018, guid: bc68ec66ab696b64195ce1c010c82701, type: 3}
+  Sprite: {fileID: -1916084278, guid: 8aef4938fbe0d6e4994885d3614b1b59, type: 3}
   SampleName: Upper Cloud Ice Crystal
   SampleInfo: "This frozen flake formed from ammonia in Jupiter\u2019s upper atmosphere,
     where it\u2019s cold enough for chemical snow to fall from the sky!"

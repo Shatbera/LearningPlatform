@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MarsSample - 5
   m_EditorClassIdentifier: 
   ID: 
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 1517095059, guid: 2197f8b8cbc419a41b0ed919d992fd2c, type: 3}
   SampleName: Stormborne Dust Layer
   SampleInfo: This fine dust came from a storm that stretched across the whole planet!
     Martian storms are huge, and they can block out sunlight for days.

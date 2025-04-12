@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MarsSample - 4
   m_EditorClassIdentifier: 
   ID: 
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 1951719943, guid: 2197f8b8cbc419a41b0ed919d992fd2c, type: 3}
   SampleName: Solar Radiation Tracer
   SampleInfo: "This sample tracks powerful rays from space. Without a magnetic field
     like Earth\u2019s, Mars gets hit by solar radiation all the time\u2014future

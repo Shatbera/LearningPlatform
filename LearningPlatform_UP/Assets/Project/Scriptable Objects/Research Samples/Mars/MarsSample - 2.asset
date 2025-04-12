@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MarsSample - 2
   m_EditorClassIdentifier: 
   ID: 
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 358659415, guid: 2197f8b8cbc419a41b0ed919d992fd2c, type: 3}
   SampleName: Frozen Water Shard
   SampleInfo: "This icy chip came from Mars\u2019 south pole. Scientists think frozen
     water hides deep underground, and long ago, there may have been rivers and lakes

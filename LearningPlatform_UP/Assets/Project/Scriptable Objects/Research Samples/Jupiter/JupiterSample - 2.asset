@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: JupiterSample - 2
   m_EditorClassIdentifier: 
   ID: 
-  Sprite: {fileID: -1196380971, guid: bc68ec66ab696b64195ce1c010c82701, type: 3}
+  Sprite: {fileID: -467735779, guid: 8aef4938fbe0d6e4994885d3614b1b59, type: 3}
   SampleName: Storm Core Fragment
   SampleInfo: "This swirling bit came from the Great Red Spot\u2014a massive storm
     bigger than Earth that\u2019s been spinning on Jupiter for over 300 years!"

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: JupiterSample - 1
   m_EditorClassIdentifier: 
   ID: 
-  Sprite: {fileID: 1846793297, guid: bc68ec66ab696b64195ce1c010c82701, type: 3}
+  Sprite: {fileID: 1343672740, guid: 8aef4938fbe0d6e4994885d3614b1b59, type: 3}
   SampleName: Striped Atmosphere Extract
   SampleInfo: "Jupiter\u2019s colorful stripes are made of fast-moving ammonia clouds
     swirling in opposite directions. This sample came from one of those windy bands

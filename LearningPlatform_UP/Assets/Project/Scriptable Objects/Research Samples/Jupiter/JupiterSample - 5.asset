@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: JupiterSample - 5
   m_EditorClassIdentifier: 
   ID: 
-  Sprite: {fileID: 1184409171, guid: bc68ec66ab696b64195ce1c010c82701, type: 3}
+  Sprite: {fileID: 357409921, guid: 8aef4938fbe0d6e4994885d3614b1b59, type: 3}
   SampleName: Jupiter Magnetosphere Scanner
   SampleInfo: "This detector recorded Jupiter\u2019s massive magnetic field\u2014it\u2019s
     stronger than any planet\u2019s and stretches millions of kilometers into space!"

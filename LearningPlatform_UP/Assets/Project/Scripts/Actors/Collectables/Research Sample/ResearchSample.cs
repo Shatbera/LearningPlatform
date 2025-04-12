@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class ResearchSample : ClickableObject, ICollectableItem
@@ -13,19 +12,13 @@ public class ResearchSample : ClickableObject, ICollectableItem
 
     [SerializeField] private ResearchSampleSO _sampleSO;
     [SerializeField] private AnimationType _animation;
-
-    private const float MAX_ANIMATION_START_DELAY = 2f;
     public CollectableItemSO ItemSO => _sampleSO;
 
     [SerializeField] private SpriteRenderer _renderer;
     [SerializeField] private Animator _animator;
     private void Start()
     {
-        StartCoroutine(SetAnimationCoroutine());
-    }
-    private IEnumerator SetAnimationCoroutine()
-    {
-        yield return new WaitForSeconds(Random.Range(0, MAX_ANIMATION_START_DELAY));
+        _animator.SetFloat("Offset", Random.Range(0f, 1f));
         _animator.SetInteger("Animation", (int)_animation);
     }
     public override void OnClick()
