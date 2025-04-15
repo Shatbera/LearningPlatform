@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ExplorationAreaController : MonoBehaviour
+public class ExplorationAreaController : Singleton<ExplorationAreaController>
 {
     [SerializeField] private CinemachineCamera _objectCamera;
 
@@ -15,63 +15,58 @@ public class ExplorationAreaController : MonoBehaviour
 
     [SerializeField] private ScreenFade _screenFade;
 
-    private ExplorableObjectSO _objectData;
 
     private const float ZOOM_DURATION = 0.75f;
     private const float FADE_DURATION = 0.3f;
     private const float FADE_DELAY = 0.1f;
 
     private string _loadedAreaSceneName;
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         _exitButton.onClick.AddListener(Exit);
     }
-    private void OnEnable()
+
+    public void LoadArea(string sceneName, bool zoomCamera, System.Action onComplete = null)
     {
-        Planet.Interacted += LoadArea;
+        StartCoroutine(LoadAreaCoroutine(sceneName, zoomCamera, onComplete));
     }
 
-    private void OnDisable()
+    private IEnumerator LoadAreaCoroutine(string sceneName, bool zoomCamera, System.Action onComlete)
     {
-        Planet.Interacted -= LoadArea;
-    }
-    public void LoadArea(ExplorableObjectSO objectData)
-    {
-        StartCoroutine(LoadAreaCoroutine(objectData));
-    }
-
-    private IEnumerator LoadAreaCoroutine(ExplorableObjectSO objectData)
-    {
-        _objectData = objectData;
         transform.position = new Vector2(Camera.main.transform.position.x, Camera.main.transform.position.y);
 
 
-        float startOrtho = _objectCamera.Lens.OrthographicSize;
-        bool fading = false;
-
-        for (float t = 0; t < ZOOM_DURATION; t += Time.deltaTime)
+        if (zoomCamera)
         {
-            float progress = t / ZOOM_DURATION;
-            _objectCamera.Lens.OrthographicSize = Mathf.Lerp(startOrtho, 0.1f, progress);
-            if(ZOOM_DURATION - t <= FADE_DURATION && !fading)
+            float startOrtho = _objectCamera.Lens.OrthographicSize;
+            bool fading = false;
+
+            for (float t = 0; t < ZOOM_DURATION; t += Time.deltaTime)
             {
-                _screenFade.Fade(true, FADE_DURATION);
-                fading = true;
+                float progress = t / ZOOM_DURATION;
+                _objectCamera.Lens.OrthographicSize = Mathf.Lerp(startOrtho, 0.1f, progress);
+                if (ZOOM_DURATION - t <= FADE_DURATION && !fading)
+                {
+                    _screenFade.Fade(true, FADE_DURATION);
+                    fading = true;
+                }
+                yield return null;
             }
-            yield return null;
+
+            _objectCamera.Lens.OrthographicSize = startOrtho;
+        }
+        else
+        {
+            _screenFade.Fade(true, FADE_DURATION);
         }
 
-        _objectCamera.Lens.OrthographicSize = startOrtho;
-
-        SwitchScene(true, objectData.SceneName);
+        SwitchScene(true, sceneName); 
 
         yield return new WaitForSeconds(FADE_DELAY);
         _screenFade.Fade(false, FADE_DURATION);
 
-        PopupsController.Instance.OpenPopup(IPopupsController.PopupTag.ObjectInfo, onComplete: window =>
-        {
-            window.GetComponent<ObjectInfoPopup>().Setup(_objectData);
-        });
+        onComlete?.Invoke();
     }
 
     public void SwitchScene(bool exploration, string sceneName = null)

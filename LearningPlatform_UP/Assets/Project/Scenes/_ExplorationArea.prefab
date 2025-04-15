@@ -147,7 +147,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.6485858
+  orthographic size: 3.5433476
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 123030902510007306}
   - component: {fileID: 8851921261468021032}
   m_Layer: 6
-  m_Name: PlanetBackground
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

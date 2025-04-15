@@ -19,10 +19,13 @@ public class ObjectsHighlightController : MonoBehaviour
         IHighlightableObject.Highlighted -= HighlightObject;
     }
 
-    private void HighlightObject(IHighlightableObject obj, bool highlight)
+    private void HighlightObject(IHighlightableObject obj, bool highlight, bool zoomCamera)
     {
         HighlightWithLabel(obj, highlight);
-        HighlightWithCamera(obj, highlight);
+        if (zoomCamera)
+        {
+            HighlightWithCamera(obj, highlight);
+        }
     }
 
     private void HighlightWithLabel(IHighlightableObject obj, bool highlight)
