@@ -1,7 +1,9 @@
 using UnityEngine;
+using Zenject;
 
-public class ResearchSample : ClickableObject, ICollectableItem
+public class ResearchSample : ClickableObject
 {
+    [SerializeField] private ResearchSampleSystemServiceSO _researchSamplesSystem;
     private enum AnimationType
     {
         None,
@@ -16,7 +18,6 @@ public class ResearchSample : ClickableObject, ICollectableItem
 
     [SerializeField] private SpriteRenderer _renderer;
     [SerializeField] private Animator _animator;
-    [SerializeField] private ItemCollectEventChannel _collectEventChannel;
     private void Start()
     {
         _animator.SetFloat("Offset", Random.Range(0f, 1f));
@@ -24,13 +25,12 @@ public class ResearchSample : ClickableObject, ICollectableItem
     }
     public override void OnClick()
     {
-        _collectEventChannel.Raise(new ItemCollectEventData { Item = this, Amount = 1} );
+        if(_researchSamplesSystem.Service.AddItem(_sampleSO.Id, 1))
+        {
+            Destroy(gameObject);
+        }
     }
 
-    public void OnPickup()
-    {
-        Destroy(gameObject);
-    }
 
     private void OnValidate()
     {

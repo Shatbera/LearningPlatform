@@ -1707,27 +1707,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1296188004}
-  - component: {fileID: 1296188003}
+  - component: {fileID: 1296188005}
   m_Layer: 0
-  m_Name: CollectableItemsManager
+  m_Name: CollectableSystemsInstaller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1296188003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296188002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da1c02ad92e4f6c4f94369b0c9406270, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _collectEventChannel: {fileID: 11400000, guid: d89ed1531e067264f9e18746eacef2dc, type: 2}
 --- !u!4 &1296188004
 Transform:
   m_ObjectHideFlags: 0
@@ -1743,6 +1730,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1296188005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296188002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06305d7a3ae4cc24f9fec50e3a372ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _researchSamples: {fileID: 11400000, guid: ee06f0ff9c3bbc04ba004b062b677b51, type: 2}
+  _researchSystemService: {fileID: 11400000, guid: 1a6d070425cea284e83b6ee588553618, type: 2}
 --- !u!4 &1368639085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6672914158832651737, guid: cd349096b6db219449fc4319ac8635ed, type: 3}

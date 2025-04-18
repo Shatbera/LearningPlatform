@@ -79,11 +79,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16ad8c2640ea2e46b392d8b3782040c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _researchSamplesSystem: {fileID: 11400000, guid: 1a6d070425cea284e83b6ee588553618, type: 2}
   _sampleSO: {fileID: 11400000, guid: 0dcd760c39f4eb8419aef6e25c3e343a, type: 2}
   _animation: 0
   _renderer: {fileID: 3168463540549699814}
   _animator: {fileID: 2097131580380108843}
-  _collectEventChannel: {fileID: 11400000, guid: d89ed1531e067264f9e18746eacef2dc, type: 2}
 --- !u!58 &-4802318792498276676
 CircleCollider2D:
   m_ObjectHideFlags: 0
