@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _renderer: {fileID: 5556567304008436822}
   _zoomCameraOnHighlight: 1
+  _highlighterServiceRef: {fileID: 11400000, guid: 4e2a08b8f8223b84c8e1ad9264db87d4, type: 2}
   planetData: {fileID: 0}
 --- !u!58 &6968800177486407280
 CircleCollider2D:

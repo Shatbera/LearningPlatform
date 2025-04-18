@@ -8,10 +8,4 @@ public class SpaceLab : SpaceObject
     {
         ExplorationAreaController.Instance.LoadArea(SCENE_NAME, true);
     }
-
-    public override void OnHighlight(bool highlight)
-    {
-        
-    }
-
 }

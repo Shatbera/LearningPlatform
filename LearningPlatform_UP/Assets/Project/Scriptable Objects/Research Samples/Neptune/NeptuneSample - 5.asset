@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
   m_Name: NeptuneSample - 5
   m_EditorClassIdentifier: 
-  ID: 
+  ID: NeptuneSample_5
   Sprite: {fileID: -222672039, guid: 80768c8f16287074487c1779327f56be, type: 3}
   SampleName: Diamond Dust Sample
   SampleInfo: "Neptune\u2019s deep interior may turn carbon into falling diamonds.

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
   m_Name: VenusSample - 6
   m_EditorClassIdentifier: 
-  ID: 
+  ID: VenusSample_6
   Sprite: {fileID: -136578910, guid: ee52a1449833e284e99999706c426a8f, type: 3}
   SampleName: Unusual Chemical Trace
   SampleInfo: "This tiny bubble holds a strange chemical compound found in Venus\u2019s

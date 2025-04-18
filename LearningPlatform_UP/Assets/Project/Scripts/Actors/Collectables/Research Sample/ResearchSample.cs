@@ -1,9 +1,8 @@
 using UnityEngine;
-using Zenject;
 
 public class ResearchSample : ClickableObject
 {
-    [SerializeField] private ResearchSampleSystemServiceSO _researchSamplesSystem;
+    [SerializeField] private ResearchSampleSystemServiceRefSO _researchSamplesSystem;
     private enum AnimationType
     {
         None,

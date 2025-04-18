@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
   m_Name: JupiterSample - 3
   m_EditorClassIdentifier: 
-  ID: 
+  ID: JupiterSample_3
   Sprite: {fileID: 75074255, guid: 8aef4938fbe0d6e4994885d3614b1b59, type: 3}
   SampleName: Jovian Thunderbolt Charge
   SampleInfo: "This charged vial holds a spark from one of Jupiter\u2019s powerful

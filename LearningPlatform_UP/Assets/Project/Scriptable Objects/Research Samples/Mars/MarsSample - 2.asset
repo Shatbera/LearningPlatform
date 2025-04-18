@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
   m_Name: MarsSample - 2
   m_EditorClassIdentifier: 
-  ID: 
+  ID: MarsSample_2
   Sprite: {fileID: 358659415, guid: 2197f8b8cbc419a41b0ed919d992fd2c, type: 3}
   SampleName: Frozen Water Shard
   SampleInfo: "This icy chip came from Mars\u2019 south pole. Scientists think frozen

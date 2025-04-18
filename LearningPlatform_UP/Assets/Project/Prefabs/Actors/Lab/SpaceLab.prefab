@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _renderer: {fileID: 7428914856262250974}
   _zoomCameraOnHighlight: 0
+  _highlighterServiceRef: {fileID: 11400000, guid: 5a390a72b81bd124098b8f7d38272721, type: 2}
 --- !u!58 &567909582000323353
 CircleCollider2D:
   m_ObjectHideFlags: 0

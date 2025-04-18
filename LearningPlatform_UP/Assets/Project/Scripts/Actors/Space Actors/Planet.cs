@@ -23,9 +23,4 @@ public class Planet : SpaceObject
             });
         });
     }
-
-    public override void OnHighlight(bool highlight)
-    {
-
-    }
 }

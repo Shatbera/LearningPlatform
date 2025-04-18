@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
   m_Name: MarsSample - 3
   m_EditorClassIdentifier: 
-  ID: 
+  ID: MarsSample_3
   Sprite: {fileID: 678411385, guid: 2197f8b8cbc419a41b0ed919d992fd2c, type: 3}
   SampleName: Thin Air Bubble
   SampleInfo: "This tiny air bubble shows just how thin the Martian air is. There\u2019s

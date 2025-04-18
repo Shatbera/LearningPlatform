@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
   m_Name: UranusSample - 2
   m_EditorClassIdentifier: 
-  ID: 
+  ID: UranusSample_2
   Sprite: {fileID: -2056264664, guid: 16d7624d15e567f40ad0b7d6113f3e4d, type: 3}
   SampleName: Ionized Gas Orb
   SampleInfo: "This glowing sphere is full of charged particles from Uranus\u2019s

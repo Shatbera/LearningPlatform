@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
   m_Name: EarthSample - 6
   m_EditorClassIdentifier: 
-  ID: 
+  ID: EarthSample_6
   Sprite: {fileID: -1746573544, guid: 877fbc0a54e5d3a4ca1094ec88dd042a, type: 3}
   SampleName: Microplastic Fiber Cluster
   SampleInfo: This sample contains tiny plastic fibers left by human activity. These

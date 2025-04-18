@@ -1,14 +1,9 @@
 using UnityEngine;
-public class CollectableSystemsInstaller : MonoBehaviour
+public class CollectableSystemsInstaller : ServiceInstaller
 {
     [SerializeField] private ItemsContainerBaseSO<ResearchSampleSO> _researchSamples;
-    [SerializeField] private ResearchSampleSystemServiceSO _researchSystemService;
-
-    private void Awake()
-    {
-        InstallServices();
-    }
-    public void InstallServices()
+    [SerializeField] private ResearchSampleSystemServiceRefSO _researchSystemService;
+    public override void Install()
     {
         _researchSystemService.InstallService(new CollectableItemSystem<ResearchSampleSO>(_researchSamples.Items));
     }

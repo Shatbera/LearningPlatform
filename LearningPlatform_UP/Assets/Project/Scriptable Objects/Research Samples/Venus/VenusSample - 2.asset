@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
   m_Name: VenusSample - 2
   m_EditorClassIdentifier: 
-  ID: 
+  ID: VenusSample_2
   Sprite: {fileID: 177979780, guid: ee52a1449833e284e99999706c426a8f, type: 3}
   SampleName: Baked Basalt Slab
   SampleInfo: "This scorched rock was taken from Venus\u2019s surface, where temperatures

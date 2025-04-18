@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
   m_Name: JupiterSample - 6
   m_EditorClassIdentifier: 
-  ID: 
+  ID: JupiterSample_6
   Sprite: {fileID: 315950147, guid: 8aef4938fbe0d6e4994885d3614b1b59, type: 3}
   SampleName: Hypothetical Core Pressure Cell
   SampleInfo: This sample simulates the crushing pressure deep inside Jupiter, where

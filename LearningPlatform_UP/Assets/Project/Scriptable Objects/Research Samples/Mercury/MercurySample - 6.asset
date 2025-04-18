@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
   m_Name: MercurySample - 6
   m_EditorClassIdentifier: 
-  ID: 
+  ID: MercurySample_6
   Sprite: {fileID: -318446251, guid: b1af26bef6a237043a65d4f6bb193023, type: 3}
   SampleName: Spin-Orbit Beacon
   SampleInfo: "Mercury rotates three times for every two orbits around the Sun \u2014

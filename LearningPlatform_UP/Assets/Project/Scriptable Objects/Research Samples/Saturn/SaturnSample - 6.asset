@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
   m_Name: SaturnSample - 6
   m_EditorClassIdentifier: 
-  ID: 
+  ID: SaturnSample_6
   Sprite: {fileID: 1377878350, guid: b0fd13a85e9a391459a7226e6c71c0d3, type: 3}
   SampleName: Saturn Magnetosphere Reader
   SampleInfo: "This device recorded Saturn\u2019s powerful and mysterious magnetic

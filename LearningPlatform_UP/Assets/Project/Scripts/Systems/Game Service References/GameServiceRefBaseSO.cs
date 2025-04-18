@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class GameServiceBaseSO<TService> : ScriptableObject
+public abstract class GameServiceRefBaseSO<TService> : ScriptableObject
 {
     public TService Service { get; private set; }
 
