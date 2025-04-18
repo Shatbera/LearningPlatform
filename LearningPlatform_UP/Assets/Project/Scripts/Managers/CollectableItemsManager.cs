@@ -11,23 +11,23 @@ public class CollectableItemContainer
 public class CollectableItemsManager : MonoBehaviour
 {
     private readonly Dictionary<string, CollectableItemContainer> _itemsDict = new();
-
+    [SerializeField] private ItemCollectEventChannel _collectEventChannel;
     private void OnEnable()
     {
-        ICollectableItem.PickupRequested += RequestItemPickup;
+        _collectEventChannel.RegisterListener(RequestItemPickup);
     }
 
 
     private void OnDisable()
     {
-        ICollectableItem.PickupRequested -= RequestItemPickup;
+        _collectEventChannel.UnregisterListener(RequestItemPickup);
     }
 
-    private void RequestItemPickup(ICollectableItem item, int amount)
+    private void RequestItemPickup(ItemCollectEventData eventData)
     {
-        if(AddItem(item.ItemSO, amount))
+        if(AddItem(eventData.Item.ItemSO, eventData.Amount))
         {
-            item.OnPickup();
+            eventData.Item.OnPickup();
         }
     }
 

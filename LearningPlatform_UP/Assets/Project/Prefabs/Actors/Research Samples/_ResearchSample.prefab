@@ -83,6 +83,7 @@ MonoBehaviour:
   _animation: 0
   _renderer: {fileID: 3168463540549699814}
   _animator: {fileID: 2097131580380108843}
+  _collectEventChannel: {fileID: 11400000, guid: d89ed1531e067264f9e18746eacef2dc, type: 2}
 --- !u!58 &-4802318792498276676
 CircleCollider2D:
   m_ObjectHideFlags: 0

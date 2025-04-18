@@ -16,6 +16,7 @@ public class ResearchSample : ClickableObject, ICollectableItem
 
     [SerializeField] private SpriteRenderer _renderer;
     [SerializeField] private Animator _animator;
+    [SerializeField] private ItemCollectEventChannel _collectEventChannel;
     private void Start()
     {
         _animator.SetFloat("Offset", Random.Range(0f, 1f));
@@ -23,7 +24,7 @@ public class ResearchSample : ClickableObject, ICollectableItem
     }
     public override void OnClick()
     {
-        ICollectableItem.RequestPickup(this, 1);
+        _collectEventChannel.Raise(new ItemCollectEventData { Item = this, Amount = 1} );
     }
 
     public void OnPickup()

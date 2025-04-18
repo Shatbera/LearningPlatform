@@ -1727,6 +1727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da1c02ad92e4f6c4f94369b0c9406270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _collectEventChannel: {fileID: 11400000, guid: d89ed1531e067264f9e18746eacef2dc, type: 2}
 --- !u!4 &1296188004
 Transform:
   m_ObjectHideFlags: 0

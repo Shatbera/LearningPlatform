@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ResearchSample", menuName = "ScriptableObjects/ResearchSample")]
+[CreateAssetMenu(fileName = "ResearchSample", menuName = "Scriptable Objects/ResearchSample")]
 public class ResearchSampleSO : CollectableItemSO
 {
     public Sprite Sprite;

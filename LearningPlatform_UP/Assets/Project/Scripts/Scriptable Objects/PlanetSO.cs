@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Planet", menuName = "ScriptableObjects/Planet")]
+[CreateAssetMenu(fileName = "Planet", menuName = "Scriptable Objects/Planet")]
 public class PlanetSO : ExplorableObjectSO
 {
     
