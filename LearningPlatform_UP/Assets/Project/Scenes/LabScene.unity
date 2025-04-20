@@ -546,9 +546,13 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3516220692964240696, guid: 0195dcedb585a36448c81d6196118519, type: 3}
+      propertyPath: _researchSamplesRef
+      value: 
+      objectReference: {fileID: 11400000, guid: 1a6d070425cea284e83b6ee588553618, type: 2}
     - target: {fileID: 4385432719153672083, guid: 0195dcedb585a36448c81d6196118519, type: 3}
       propertyPath: m_Name
-      value: LabeSamplesPanel
+      value: LabSamplesPanel
       objectReference: {fileID: 0}
     - target: {fileID: 4594805508823815575, guid: 0195dcedb585a36448c81d6196118519, type: 3}
       propertyPath: m_AnchorMax.y

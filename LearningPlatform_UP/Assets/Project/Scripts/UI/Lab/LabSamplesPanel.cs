@@ -1,16 +1,21 @@
+using System.Linq;
 using UnityEngine;
 
 public class LabSamplesPanel : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private ResearchSampleSystemServiceRefSO _researchSamplesRef;
+    [SerializeField] private ComponentPool<LabSampleItem> _sampleItemPanelsPool;
+    private void Start()
     {
-        
+        Initialize();
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Initialize()
     {
-        
+        CollectableItemEntry<ResearchSampleSO>[] collectedSamples = _researchSamplesRef.Service.GetAll().Where(x => x.Amount > 0).ToArray();
+        for(int i = 0; i < collectedSamples.Length; i++)
+        {
+            var itemPanel = _sampleItemPanelsPool.Get();
+            itemPanel.Setup(collectedSamples[i]);
+        }
     }
 }
