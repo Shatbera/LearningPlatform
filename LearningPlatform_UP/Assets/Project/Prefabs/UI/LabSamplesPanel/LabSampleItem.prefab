@@ -162,3 +162,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _iconImg: {fileID: 5362608726117663055}
   _dragContainer: {fileID: 1583069109004347085}
+  _researchPadRef: {fileID: 11400000, guid: 4a70609ab646b1749b3dd11231ec9b7c, type: 2}

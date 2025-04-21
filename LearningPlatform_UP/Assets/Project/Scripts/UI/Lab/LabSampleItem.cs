@@ -7,6 +7,8 @@ public class LabSampleItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     [SerializeField] private Image _iconImg;
     [SerializeField] private RectTransform _dragContainer;
 
+    [SerializeField] private ResearchPadRefSO _researchPadRef;
+
     private CollectableItemEntry<ResearchSampleSO> _sampleEntry;
     private Canvas _canvas;
 
@@ -29,6 +31,7 @@ public class LabSampleItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public void OnBeginDrag(PointerEventData eventData)
     {
         _dragContainer.SetParent(_canvas.transform);
+        _researchPadRef.Service.TryShowSamplePreview(_sampleEntry.Item);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -38,6 +41,12 @@ public class LabSampleItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        _researchPadRef.Service.TryHideSamplePreview(_sampleEntry.Item);
+        if (_researchPadRef.Service.TryPlaceSample(_sampleEntry.Item))
+        {
+            _sampleEntry.ChangeAmount(-1);
+            SetVisible(false);
+        }
         _dragContainer.SetParent(transform);
         _dragContainer.localPosition = Vector2.zero;
     }
