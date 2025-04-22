@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 671f92bb0b57c9b4ebe3c159cd4ed6a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InstallOnAwake: 1
 --- !u!4 &140861179 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2294442132389020855, guid: 8f94167c0d6a4fe43ba96eecb045feec, type: 3}
@@ -265,7 +266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6343964282086293975, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
       propertyPath: orthographic size
-      value: 4.101137
+      value: 3.5433476
       objectReference: {fileID: 0}
     - target: {fileID: 6856763481057709302, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
       propertyPath: m_Name
@@ -277,7 +278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7627627000543933934, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.34030014
+      value: -0.52660185
       objectReference: {fileID: 0}
     - target: {fileID: 8851921261468021032, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
       propertyPath: m_Sprite

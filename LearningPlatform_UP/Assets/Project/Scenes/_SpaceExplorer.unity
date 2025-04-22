@@ -1120,6 +1120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 671f92bb0b57c9b4ebe3c159cd4ed6a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InstallOnAwake: 0
 --- !u!224 &649521501 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6311342187592264031, guid: 8fa23ed3b4476a54b87ee704c3326c2a, type: 3}
