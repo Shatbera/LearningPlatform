@@ -11,7 +11,7 @@ public class LabSamplesPanel : MonoBehaviour
     }
     private void Initialize()
     {
-        CollectableItemEntry<ResearchSampleSO>[] collectedSamples = _researchSamplesRef.Service.GetAll().Where(x => x.Amount > 0).ToArray();
+        CollectableItemEntry<ResearchSampleSO, ResearchSampleItemState>[] collectedSamples = _researchSamplesRef.Service.GetAll().Where(x => x.State.Amount > 0).ToArray();
         for(int i = 0; i < collectedSamples.Length; i++)
         {
             var itemPanel = _sampleItemPanelsPool.Get();

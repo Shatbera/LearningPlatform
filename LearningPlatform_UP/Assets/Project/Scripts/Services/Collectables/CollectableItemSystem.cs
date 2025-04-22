@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
-public class CollectableItemSystem<TItem> : ICollectableItemSystem<TItem>
-    where TItem : ICollectableItem
+public class CollectableItemSystem<TItem, TState> : ICollectableItemSystem<TItem, TState>
+    where TItem : ICollectableItem where TState : ResearchSampleItemState
 {
-    private readonly Dictionary<string, CollectableItemEntry<TItem>> _items = new();
+    private readonly Dictionary<string, CollectableItemEntry<TItem, TState>> _items = new();
 
-    public CollectableItemSystem(IEnumerable<TItem> items)
+    public CollectableItemSystem(IEnumerable<(TItem, TState)> items)
     {
-        foreach (var item in items)
+        foreach ((TItem, TState) item in items)
         {
-            _items[item.Id] = new CollectableItemEntry<TItem>(item);
+            _items[item.Item1.Id] = new CollectableItemEntry<TItem, TState>(item.Item1, item.Item2);
         }
     }
 
@@ -18,7 +18,7 @@ public class CollectableItemSystem<TItem> : ICollectableItemSystem<TItem>
         if (!_items.TryGetValue(itemId, out var entry))
             return false;
 
-        entry.ChangeAmount(amount);
+        entry.State.ChangeAmount(amount);
         Debug.Log($"added {amount} {entry.Item.DisplayName}");
         return true;
     }
@@ -28,19 +28,19 @@ public class CollectableItemSystem<TItem> : ICollectableItemSystem<TItem>
         if (!_items.TryGetValue(itemId, out var entry))
             return false;
 
-        if (entry.Amount < amount)
+        if (entry.State.Amount < amount)
             return false;
 
-        entry.ChangeAmount(-amount);
+        entry.State.ChangeAmount(-amount);
         return true;
     }
 
-    public CollectableItemEntry<TItem> GetItem(string itemId)
+    public CollectableItemEntry<TItem, TState> GetItem(string itemId)
     {
         return _items.TryGetValue(itemId, out var entry) ? entry : null;
     }
 
-    public IEnumerable<CollectableItemEntry<TItem>> GetAll()
+    public IEnumerable<CollectableItemEntry<TItem, TState>> GetAll()
     {
         return _items.Values;
     }

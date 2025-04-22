@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 public class CollectableSystemsInstaller : ServiceInstaller
 {
@@ -5,6 +6,7 @@ public class CollectableSystemsInstaller : ServiceInstaller
     [SerializeField] private ResearchSampleSystemServiceRefSO _researchSystemService;
     public override void Install()
     {
-        _researchSystemService.InstallService(new CollectableItemSystem<ResearchSampleSO>(_researchSamples.Items));
+        System.Collections.Generic.IEnumerable<(ResearchSampleSO item, ResearchSampleItemState)> itemStates = _researchSamples.Items.Select(item => (item, new ResearchSampleItemState()));
+        _researchSystemService.InstallService(new CollectableItemSystem<ResearchSampleSO, ResearchSampleItemState>(itemStates));
     }
 }

@@ -9,7 +9,7 @@ public class LabSampleItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     [SerializeField] private ResearchPadRefSO _researchPadRef;
 
-    private CollectableItemEntry<ResearchSampleSO> _sampleEntry;
+    private CollectableItemEntry<ResearchSampleSO, ResearchSampleItemState> _sampleEntry;
     private Canvas _canvas;
 
     private void Awake()
@@ -17,7 +17,7 @@ public class LabSampleItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         _canvas = GetComponentInParent<Canvas>();
     }
 
-    public void Setup(CollectableItemEntry<ResearchSampleSO> entry)
+    public void Setup(CollectableItemEntry<ResearchSampleSO, ResearchSampleItemState> entry)
     {
         _sampleEntry = entry;
         _iconImg.sprite = entry.Item.Icon;

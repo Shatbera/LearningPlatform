@@ -22,3 +22,9 @@ public class ResearchSampleSO : CollectableItemSO
         AssetDatabase.SaveAssets();
     }*/
 }
+
+[System.Serializable]
+public class ResearchSampleItemState : CollectableItemState
+{
+
+}
