@@ -20,10 +20,12 @@ public interface ICollectableItem
 [System.Serializable]
 public abstract class CollectableItemState
 {
+    public string Id;
     public int Amount;
     public event Action<int> AmountChanged;
-    public CollectableItemState(int initialAmount = 0)
+    public CollectableItemState(string id, int initialAmount = 0)
     {
+        Id = id;
         Amount = initialAmount;
     }
     public void ChangeAmount(int delta)
