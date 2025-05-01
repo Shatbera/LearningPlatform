@@ -80,6 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _researchSamplesSystem: {fileID: 11400000, guid: 1a6d070425cea284e83b6ee588553618, type: 2}
+  _itemPickupAnimatorRef: {fileID: 11400000, guid: 52250a1c5a133a648bf1a70632fd6c08, type: 2}
   _sampleSO: {fileID: 11400000, guid: 0dcd760c39f4eb8419aef6e25c3e343a, type: 2}
   _animation: 0
   _renderer: {fileID: 3168463540549699814}

@@ -18,4 +18,12 @@ public class ServicesBootstrap : MonoBehaviour
             service.Install();
         }
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            ScreenCapture.CaptureScreenshot("screenshot.png");
+        }
+    }
 }

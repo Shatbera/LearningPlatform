@@ -85,7 +85,7 @@ public class ExplorationAreaController : Singleton<ExplorationAreaController>
         {
             SceneManager.UnloadSceneAsync(_loadedAreaSceneName);
         }
-        //_mainCamera.enabled = !exploration;
+        _mainCamera.enabled = !exploration;
     }
     public void Exit()
     {

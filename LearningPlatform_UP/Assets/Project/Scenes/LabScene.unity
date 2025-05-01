@@ -265,20 +265,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6343964282086293975, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
+      propertyPath: field of view
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343964282086293975, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
+      propertyPath: far clip plane
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343964282086293975, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343964282086293975, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
       propertyPath: orthographic size
-      value: 3.5433476
+      value: 4.3199997
       objectReference: {fileID: 0}
     - target: {fileID: 6856763481057709302, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
       propertyPath: m_Name
       value: _ExplorationArea
       objectReference: {fileID: 0}
-    - target: {fileID: 6861050460732268262, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
-      propertyPath: visibleAnchor
-      value: 0.667
-      objectReference: {fileID: 0}
     - target: {fileID: 7627627000543933934, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.52660185
+      value: -0.26720005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627627000543933934, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 8851921261468021032, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
       propertyPath: m_Sprite

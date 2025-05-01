@@ -26,6 +26,7 @@ public class ResearchSampleSO : CollectableItemSO
 [System.Serializable]
 public class ResearchSampleItemState : CollectableItemState
 {
+    public bool IsResearched;
     public ResearchSampleItemState(string id, int initialAmount = 0) : base(id, initialAmount)
     {
     }

@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class ResearchSample : ClickableObject
+public class ResearchSample : ClickableObject, IPickableItem
 {
     [SerializeField] private ResearchSampleSystemServiceRefSO _researchSamplesSystem;
+    [SerializeField] private ItemPickupAnimatorRefSO _itemPickupAnimatorRef;
     private enum AnimationType
     {
         None,
@@ -15,6 +16,8 @@ public class ResearchSample : ClickableObject
     [SerializeField] private AnimationType _animation;
     public CollectableItemSO ItemSO => _sampleSO;
 
+    public SpriteRenderer Renderer => _renderer;
+
     [SerializeField] private SpriteRenderer _renderer;
     [SerializeField] private Animator _animator;
     private void Start()
@@ -26,6 +29,7 @@ public class ResearchSample : ClickableObject
     {
         if(_researchSamplesSystem.Service.AddItem(_sampleSO.Id, 1))
         {
+            _itemPickupAnimatorRef.Service.AnimatePickup(this);
             Destroy(gameObject);
         }
     }
