@@ -7,7 +7,7 @@ public class PopupsController : Singleton<PopupsController>, IPopupsController
     [SerializeField] private PopupTintController tintController;
 
     private List<Popup> popupsList = new();
-    private Dictionary<IPopupsController.PopupTag, Popup> popupsDict = new();
+    private Dictionary<PopupTag, Popup> popupsDict = new();
 
     private Stack<Popup> openPopups = new();
 
@@ -26,7 +26,7 @@ public class PopupsController : Singleton<PopupsController>, IPopupsController
             if (popup != null)
             {
                 popupsList.Add(popup);
-                if (popup.PopupTag != IPopupsController.PopupTag.None)
+                if (popup.PopupTag != PopupTag.None)
                 {
                     popupsDict.Add(popup.PopupTag, popup);
                 }
@@ -44,7 +44,7 @@ public class PopupsController : Singleton<PopupsController>, IPopupsController
             tintController.ShowTint();
         }
     }
-    public void OpenPopup(IPopupsController.PopupTag tag, Action<Popup> onComplete = null)
+    public void OpenPopup(PopupTag tag, Action<Popup> onComplete = null)
     {
         if(popupsDict.ContainsKey(tag))
         {   
@@ -67,7 +67,7 @@ public class PopupsController : Singleton<PopupsController>, IPopupsController
         }
     }
 
-    public void ClosePopup(IPopupsController.PopupTag tag)
+    public void ClosePopup(PopupTag tag)
     {
         if (popupsDict.ContainsKey(tag))
         {

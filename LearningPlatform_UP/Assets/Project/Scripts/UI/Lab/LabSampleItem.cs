@@ -44,7 +44,7 @@ public class LabSampleItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         _researchPadRef.Service.TryHideSamplePreview(_sampleEntry.Item);
         if (_researchPadRef.Service.TryPlaceSample(_sampleEntry.Item))
         {
-            _sampleEntry.State.IsResearched = true;
+            _sampleEntry.State.IsUnlocked = true;
             SetVisible(false);
         }
         _dragContainer.SetParent(transform);

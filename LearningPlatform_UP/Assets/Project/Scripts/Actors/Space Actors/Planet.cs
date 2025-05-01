@@ -17,7 +17,7 @@ public class Planet : SpaceObject
         });*/
         ExplorationAreaController.Instance.LoadArea(planetData.SceneName, true, () =>
         {
-            PopupsController.Instance.OpenPopup(IPopupsController.PopupTag.ObjectInfo, onComplete: window =>
+            PopupsController.Instance.OpenPopup(PopupTag.ObjectInfo, onComplete: window =>
             {
                 window.GetComponent<ObjectInfoPopup>().Setup(planetData);
             });

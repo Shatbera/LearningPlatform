@@ -1,15 +1,18 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Popup : MonoBehaviour
 {
-    [field: SerializeField] public IPopupsController.PopupTag PopupTag;
+    [field: SerializeField] public PopupTag PopupTag;
     [field: SerializeField] public bool CloseWithTint;
     [SerializeField] private bool showCloseBtn = true;
 
     [SerializeField] private Animator animator;
     [SerializeField] private Button closeBtn;
 
+    public event Action Opened;
+    public event Action Closed;
     private void Start()
     {
         gameObject.SetActive(false);
@@ -34,6 +37,14 @@ public class Popup : MonoBehaviour
         }
         animator.SetBool("Open", visible);
         closeBtn.gameObject.SetActive(visible && showCloseBtn);
+        if (visible)
+        {
+            Opened?.Invoke();
+        }
+        else
+        {
+            Closed?.Invoke();
+        }
     }
     public void OnPopupOpenFinished()
     {
