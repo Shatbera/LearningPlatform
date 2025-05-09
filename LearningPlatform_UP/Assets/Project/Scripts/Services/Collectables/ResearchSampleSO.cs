@@ -1,5 +1,5 @@
 using UnityEngine;
-//using UnityEditor;
+using UnityEditor;
 [CreateAssetMenu(fileName = "ResearchSample", menuName = "Scriptable Objects/ResearchSample")]
 public class ResearchSampleSO : CollectableItemSO
 {
@@ -15,12 +15,12 @@ public class ResearchSampleSO : CollectableItemSO
 
     public override Sprite Icon => Sprite;
 
-  /*  private void OnValidate()
+    private void OnValidate()
     {
-        ID = name.Replace(" - ", "_");
+        /*ID = name.Replace(" - ", "_");
         EditorUtility.SetDirty(this);
-        AssetDatabase.SaveAssets();
-    }*/
+        AssetDatabase.SaveAssets();*/
+    }
 }
 
 [System.Serializable]

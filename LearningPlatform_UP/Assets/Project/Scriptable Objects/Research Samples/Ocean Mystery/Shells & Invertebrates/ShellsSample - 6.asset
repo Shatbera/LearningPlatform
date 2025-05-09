@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
+  m_Name: ShellsSample - 6
+  m_EditorClassIdentifier: 
+  ID: ShellsSample_6
+  Sprite: {fileID: -753271932, guid: 0821a25314f5f5748a98515685673dd1, type: 3}
+  SampleName: Snail Shell
+  SampleInfo: Ocean snails carry their homes on their backs. As they move, they leave
+    winding trails through the sand, and some even drill into other shells to eat
+    what's inside

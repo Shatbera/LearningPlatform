@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
+  m_Name: PlantSample - 6
+  m_EditorClassIdentifier: 
+  ID: PlantSample_6
+  Sprite: {fileID: 1434268780, guid: 3b1c5e4d0ab8e5041b57e84556217f52, type: 3}
+  SampleName: Sargassum Leaf
+  SampleInfo: "Sargassum floats on the ocean surface in golden-brown mats. Tiny fish,
+    shrimp, and even baby turtles use it as a floating home. Some boats even get
+    stuck in it because there\u2019s so much!"

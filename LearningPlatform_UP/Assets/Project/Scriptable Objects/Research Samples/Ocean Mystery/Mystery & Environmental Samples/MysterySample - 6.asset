@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
+  m_Name: MysterySample - 6
+  m_EditorClassIdentifier: 
+  ID: MysterySample_6
+  Sprite: {fileID: -1164392579, guid: af1b2da9efe693245a43c847c32fe7ea, type: 3}
+  SampleName: Ocean Map Scrap
+  SampleInfo: This torn piece of map might lead to something mysterious. Explorers
+    and scientists use underwater maps to discover new trenches, ridges, and even
+    ancient ruins hidden below.

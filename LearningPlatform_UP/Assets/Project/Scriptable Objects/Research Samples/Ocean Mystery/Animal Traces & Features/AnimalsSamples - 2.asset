@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
+  m_Name: AnimalsSamples - 2
+  m_EditorClassIdentifier: 
+  ID: AnimalsSamples_2
+  Sprite: {fileID: -306968357, guid: 4b5ac6fc7575ccb46af023839362b93d, type: 3}
+  SampleName: Jellyfish Tentacle
+  SampleInfo: "Jellyfish don\u2019t have a brain or bones, but they\u2019ve survived
+    for over 500 million years. Some jellyfish have stingers powerful enough to scare
+    away predators \u2014 or even stop a fish in its tracks!"

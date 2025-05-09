@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
+  m_Name: MineralSample - 4
+  m_EditorClassIdentifier: 
+  ID: MineralSample_4
+  Sprite: {fileID: -648908050, guid: 42eafcf9a6ed1494b94d5c4a2f09e79b, type: 3}
+  SampleName: Pumice Rock
+  SampleInfo: Pumice is a type of volcanic rock full of tiny holes, which makes it
+    so light it can float on water!

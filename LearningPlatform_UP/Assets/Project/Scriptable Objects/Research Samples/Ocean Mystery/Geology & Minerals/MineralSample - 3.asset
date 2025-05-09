@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133fe384428f0774fbe69ccf48e7b94a, type: 3}
+  m_Name: MineralSample - 3
+  m_EditorClassIdentifier: 
+  ID: MineralSample_3
+  Sprite: {fileID: -300764289, guid: 42eafcf9a6ed1494b94d5c4a2f09e79b, type: 3}
+  SampleName: Salt Crystal
+  SampleInfo: "Ocean salt forms naturally when seawater evaporates under the sun.
+    It\u2019s the same kind of salt that flavors your food \u2014 but it starts in
+    the sea!"
