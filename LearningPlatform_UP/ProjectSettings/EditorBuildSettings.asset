@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Project/Scenes/_SpaceExplorer.unity
+    path: Assets/Project/Scenes/SpaceExplorer.unity
     guid: 4a591d010002fc4459d428f45038ef1b
   - enabled: 1
     path: Assets/Project/Scenes/LabScene.unity

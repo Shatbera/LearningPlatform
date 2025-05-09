@@ -1,5 +1,8 @@
 using UnityEngine;
 
+#if UNITY_EDITOR
+[ExecuteAlways]
+#endif
 public class BackgroundScroll : MonoBehaviour
 {
     [SerializeField] private float parralax = 2f;
