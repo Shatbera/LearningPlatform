@@ -1,6 +1,6 @@
 using UnityEngine;
 using System;
-public class Planet : SpaceObject
+public class Planet : WorldObject
 {
     [SerializeField] private PlanetSO planetData;
 

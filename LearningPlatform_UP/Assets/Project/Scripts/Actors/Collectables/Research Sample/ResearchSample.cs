@@ -42,4 +42,5 @@ public class ResearchSample : ClickableObject, IPickableItem
             _renderer.sprite = _sampleSO.Sprite;
         }
     }
+
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class SpaceObject : MonoBehaviour, IInteractable, IHighlightableSpaceObject
+public abstract class WorldObject : MonoBehaviour, IInteractable, IHighlightableSpaceObject
 {
     public abstract string LabelName { get; }
     [SerializeField] private SpriteRenderer _renderer;

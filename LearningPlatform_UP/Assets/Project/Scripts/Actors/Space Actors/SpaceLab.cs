@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SpaceLab : SpaceObject
+public class SpaceLab : WorldObject
 {
     public override string LabelName => "Space Lab";
     private const string SCENE_NAME = "LabScene";
