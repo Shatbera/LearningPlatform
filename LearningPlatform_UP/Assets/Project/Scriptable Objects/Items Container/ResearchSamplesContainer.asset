@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35c6e9d2eaeae7149822153cc5bfa1f5, type: 3}
-  m_Name: ResearchSamplesContaine
+  m_Name: ResearchSamplesContainer
   m_EditorClassIdentifier: 
   Items:
   - {fileID: 11400000, guid: 8e319e026298bfa4eae2ab579a605435, type: 2}

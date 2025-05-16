@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/LabScene.unity
     guid: e9a636a07a66a7a40b5cb354d56742f1
   - enabled: 1
+    path: Assets/Project/Scenes/OceanLabScene.unity
+    guid: 00710a217002c3f419d6c504d2e5a64d
+  - enabled: 1
     path: Assets/Project/Scenes/Planets/EarthScene.unity
     guid: ef30d39aab2bd2948a627de421c53cd5
   - enabled: 1

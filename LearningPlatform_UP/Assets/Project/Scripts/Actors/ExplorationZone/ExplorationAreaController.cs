@@ -59,6 +59,7 @@ public class ExplorationAreaController : Singleton<ExplorationAreaController>
         else
         {
             _screenFade.Fade(true, FADE_DURATION);
+            yield return new WaitForSeconds(FADE_DURATION);
         }
 
         SwitchScene(true, sceneName); 

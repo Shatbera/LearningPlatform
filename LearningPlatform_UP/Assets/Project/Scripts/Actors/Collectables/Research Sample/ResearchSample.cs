@@ -25,6 +25,20 @@ public class ResearchSample : ClickableObject, IPickableItem
         _animator.SetFloat("Offset", Random.Range(0f, 1f));
         _animator.SetInteger("Animation", (int)_animation);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Trigger entered");
+        if (collision.CompareTag("Player"))
+        {
+            Debug.Log("PLayer entered");
+            if (_researchSamplesSystem.Service.AddItem(_sampleSO.Id, 1))
+            {
+                _itemPickupAnimatorRef.Service.AnimatePickup(this);
+                Destroy(gameObject);
+            }
+        }
+    }
+
     public override void OnClick()
     {
         if(_researchSamplesSystem.Service.AddItem(_sampleSO.Id, 1))
