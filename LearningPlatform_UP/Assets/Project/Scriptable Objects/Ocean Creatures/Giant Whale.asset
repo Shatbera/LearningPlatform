@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
+  m_Name: Giant Whale
+  m_EditorClassIdentifier: 
+  ObjectName: Giant Whale
+  Facts:
+  - text: "The Gentle Giant!\nThe giant whale is one of the largest animals on Earth\u2014bigger
+      than a bus!\nDespite its size, it eats tiny creatures called krill, swallowing
+      thousands in one giant gulp.\nIt communicates with deep, powerful songs that
+      can travel for hundreds of kilometers underwater.\nEven though it looks massive,
+      it\u2019s a gentle and graceful traveler of the sea."

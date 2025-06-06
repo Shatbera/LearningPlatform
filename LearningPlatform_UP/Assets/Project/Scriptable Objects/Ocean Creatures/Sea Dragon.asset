@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
+  m_Name: Sea Dragon
+  m_EditorClassIdentifier: 
+  ObjectName: Sea Dragon
+  Facts:
+  - text: "The Living Leaf!\nSea dragons are relatives of seahorses, and they look
+      like floating seaweed to stay safe from predators.\nTheir leafy fins don\u2019t
+      help them swim fast\u2014they're for camouflage, not speed.\nThey drift gently
+      through the water, blending into coral and kelp like underwater ninjas.\nIt\u2019s
+      not a mythical dragon\u2014but it\u2019s just as magical!"

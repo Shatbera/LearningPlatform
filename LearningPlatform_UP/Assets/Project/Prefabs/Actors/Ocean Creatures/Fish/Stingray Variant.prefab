@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stingray Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4038236797089551839, guid: 4f42b6cec83c86d4fb8fe6d23255642f, type: 3}
+      propertyPath: _creatureData
+      value: 
+      objectReference: {fileID: 11400000, guid: 4665ec1cf7a9e49158a79bd87e6fb57f, type: 2}
     - target: {fileID: 5033790333865374481, guid: 4f42b6cec83c86d4fb8fe6d23255642f, type: 3}
       propertyPath: m_Size.x
       value: 10.24

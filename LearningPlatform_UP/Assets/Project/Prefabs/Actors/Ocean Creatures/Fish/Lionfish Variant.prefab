@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lionfish Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4038236797089551839, guid: 4f42b6cec83c86d4fb8fe6d23255642f, type: 3}
+      propertyPath: _creatureData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3b70f56633f3849ddb37bd7e777e90cc, type: 2}
     - target: {fileID: 5033790333865374481, guid: 4f42b6cec83c86d4fb8fe6d23255642f, type: 3}
       propertyPath: m_Sprite
       value: 

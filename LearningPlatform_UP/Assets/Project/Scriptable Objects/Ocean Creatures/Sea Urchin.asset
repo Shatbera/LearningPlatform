@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
+  m_Name: Sea Urchin
+  m_EditorClassIdentifier: 
+  ObjectName: Sea Urchin
+  Facts:
+  - text: "The Ocean\u2019s Spiky Ball!\nSea urchins look like little balls covered
+      in sharp spines, but those spines help them move, protect, and clean themselves!\nThey
+      crawl slowly across rocks using tiny tube feet hidden underneath.\nWith a mouth
+      on the bottom called \u201CAristotle\u2019s lantern,\u201D they scrape algae
+      off surfaces\u2014like ocean lawnmowers!\nSome even wear seashells and rocks
+      as camouflage hats!"

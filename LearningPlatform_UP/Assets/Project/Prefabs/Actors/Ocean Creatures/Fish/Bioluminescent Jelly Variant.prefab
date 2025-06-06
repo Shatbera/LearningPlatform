@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bioluminescent Jelly Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4038236797089551839, guid: 4f42b6cec83c86d4fb8fe6d23255642f, type: 3}
+      propertyPath: _creatureData
+      value: 
+      objectReference: {fileID: 11400000, guid: 373bbd44cfbaa42fa89b06686e1c0d44, type: 2}
     - target: {fileID: 5033790333865374481, guid: 4f42b6cec83c86d4fb8fe6d23255642f, type: 3}
       propertyPath: m_Sprite
       value: 

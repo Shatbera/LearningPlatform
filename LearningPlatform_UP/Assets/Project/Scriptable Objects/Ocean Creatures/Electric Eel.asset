@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
+  m_Name: Electric Eel
+  m_EditorClassIdentifier: 
+  ObjectName: Electric Eel
+  Facts:
+  - text: "Nature\u2019s Battery!\nThe electric eel can produce up to 600 volts of
+      electricity\u2014enough to stun prey or scare off predators!\nIt uses this
+      power to hunt in dark, muddy waters, where eyesight doesn\u2019t help much.\nEven
+      though it\u2019s called an eel, it\u2019s actually more like a knifefish.\nIt
+      \u201Ctalks\u201D to other eels with small zaps\u2014an underwater Morse code!"

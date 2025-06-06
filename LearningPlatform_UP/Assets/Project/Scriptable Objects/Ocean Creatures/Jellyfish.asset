@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
+  m_Name: Jellyfish
+  m_EditorClassIdentifier: 
+  ObjectName: Jellyfish
+  Facts:
+  - text: "The Floating Mystery!\nJellyfish have been drifting through oceans for
+      over 500 million years\u2014long before dinosaurs!\nThey have no brain, heart,
+      or bones, yet they move and catch food with their stinging tentacles.\nThey
+      glow, pulse, and float like ocean ghosts, riding the currents with ease.\nSome
+      are tiny, some are huge\u2014but all are mesmerizing wonders of the deep."

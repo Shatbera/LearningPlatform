@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
+  m_Name: Lionfish
+  m_EditorClassIdentifier: 
+  ObjectName: Lionfish
+  Facts:
+  - text: "Beautiful but Dangerous!\nThe lionfish is covered in bright stripes and
+      long, flowing spines\u2014like a lion\u2019s mane underwater!\nBut don\u2019t
+      be fooled\u2014those spines are venomous, and they help scare away predators.\nIt
+      hunts with lightning-fast strikes and is known for being a stealthy invader
+      in coral reefs.\nLooks like royalty, hunts like a ninja!"
