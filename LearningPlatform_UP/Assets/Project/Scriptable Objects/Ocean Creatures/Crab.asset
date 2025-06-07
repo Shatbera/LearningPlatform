@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Crab
   m_EditorClassIdentifier: 
   ObjectName: Crab
+  ObjectSprite: {fileID: 21300000, guid: 8b6e3175541a0ea4ea0dd1379a353bd6, type: 3}
   Facts:
   - text: "The Armored Scuttler!\nCrabs wear their skeleton on the outside like armor\u2014this
       is called an exoskeleton!\nThey move sideways using their strong legs and use

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Clownfish
   m_EditorClassIdentifier: 
   ObjectName: Clownfish
+  ObjectSprite: {fileID: 21300000, guid: 155d2b53dbbff9940b0a3eb52dcabf0b, type: 3}
   Facts:
   - text: "Clownfish live in a special partnership with sea anemones\u2014stinging
       creatures that protect the clownfish from danger.\nBut guess what? The clownfish

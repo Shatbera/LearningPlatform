@@ -40,6 +40,7 @@ public class Popup : MonoBehaviour
         if (visible)
         {
             Opened?.Invoke();
+            AudioManagerGlobal.Instance.PlayOneShot("openPaper");
         }
         else
         {
@@ -48,7 +49,7 @@ public class Popup : MonoBehaviour
     }
     public void OnPopupOpenFinished()
     {
-        closeBtn.gameObject.SetActive(true);
+        closeBtn.gameObject.SetActive(showCloseBtn);
     }
 
     public void OnPopupCloseFinished()

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Electric Eel
   m_EditorClassIdentifier: 
   ObjectName: Electric Eel
+  ObjectSprite: {fileID: 21300000, guid: 4cf37ba9e3e1ae54b9338e49ece41158, type: 3}
   Facts:
   - text: "Nature\u2019s Battery!\nThe electric eel can produce up to 600 volts of
       electricity\u2014enough to stun prey or scare off predators!\nIt uses this

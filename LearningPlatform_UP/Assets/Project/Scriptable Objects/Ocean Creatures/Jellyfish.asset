@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Jellyfish
   m_EditorClassIdentifier: 
   ObjectName: Jellyfish
+  ObjectSprite: {fileID: 21300000, guid: 863736d18d7ab4d47949a072027a8528, type: 3}
   Facts:
   - text: "The Floating Mystery!\nJellyfish have been drifting through oceans for
       over 500 million years\u2014long before dinosaurs!\nThey have no brain, heart,

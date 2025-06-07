@@ -575,7 +575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7818388149440695928, guid: 6704a545b1fc57c458e085f43af934bd, type: 3}
       propertyPath: m_TextStyleHashCode
-      value: 81074727
+      value: 105680263
       objectReference: {fileID: 0}
     - target: {fileID: 7818388149440695928, guid: 6704a545b1fc57c458e085f43af934bd, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -702,7 +702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7818388149440695928, guid: 6704a545b1fc57c458e085f43af934bd, type: 3}
       propertyPath: m_TextStyleHashCode
-      value: 81074727
+      value: 105680263
       objectReference: {fileID: 0}
     - target: {fileID: 7818388149440695928, guid: 6704a545b1fc57c458e085f43af934bd, type: 3}
       propertyPath: m_VerticalAlignment

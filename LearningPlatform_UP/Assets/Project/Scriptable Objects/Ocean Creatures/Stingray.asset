@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Stingray
   m_EditorClassIdentifier: 
   ObjectName: Stingray
+  ObjectSprite: {fileID: 21300000, guid: 541ba42f5fc21cd4a848b56fe19c642f, type: 3}
   Facts:
   - text: "The Gliding Shadow!\nStingrays flap their wide fins like wings, letting
       them glide smoothly across the ocean floor.\nThey often hide under sand, using

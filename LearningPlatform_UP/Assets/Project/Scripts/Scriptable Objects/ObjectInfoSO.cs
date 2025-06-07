@@ -10,5 +10,6 @@ public abstract class ObjectInfoSO : ScriptableObject
     }
 
     public string ObjectName;
+    public Sprite ObjectSprite;
     public Fact[] Facts;
 }

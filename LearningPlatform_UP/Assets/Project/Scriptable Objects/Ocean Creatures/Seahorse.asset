@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Seahorse
   m_EditorClassIdentifier: 
   ObjectName: Seahorse
+  ObjectSprite: {fileID: 21300000, guid: 5b47b4770dbd8934fbd170e31a8001b1, type: 3}
   Facts:
   - text: "Tails & Tiny Miracles!\nSeahorses are one of the only animals where the
       male gives birth!\nThe dad carries the babies in a special pouch until they\u2019re

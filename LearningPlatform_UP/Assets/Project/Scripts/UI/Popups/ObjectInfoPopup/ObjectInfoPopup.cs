@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,9 +6,12 @@ using UnityEngine.UI;
 public class ObjectInfoPopup : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
+    [SerializeField] private TMP_Text nameTxt;
     [SerializeField] private Button prevBtn;
-    [SerializeField] private Button nextBtn; 
-
+    [SerializeField] private Button nextBtn;
+    [SerializeField] private Button completeBtn;
+    [SerializeField] private Image objectImg;
+    
 
     private ObjectInfoSO _data;
     private Popup popup;
@@ -18,10 +22,21 @@ public class ObjectInfoPopup : MonoBehaviour
         popup = GetComponent<Popup>();
         prevBtn.onClick.AddListener(PrevClick);
         nextBtn.onClick.AddListener(NextClick);
+        completeBtn.onClick.AddListener(CompleteClick);
     }
+
+    private void CompleteClick()
+    {
+        popup.Close();
+        AudioManagerGlobal.Instance.PlayOneShot("readComplete");
+        Debug.Log("on complete read");
+    }
+
     public void Setup(ObjectInfoSO data)
     {
         _data = data;
+        objectImg.sprite = data.ObjectSprite;
+        nameTxt.text = data.ObjectName;
         curPage = 0;
         UpdatePage();
     }
@@ -36,7 +51,6 @@ public class ObjectInfoPopup : MonoBehaviour
     {
         if(curPage >= _data.Facts.Length - 1)
         {
-            popup.Close();
             return;
         }
         curPage = Mathf.Min(curPage + 1, _data.Facts.Length - 1);
@@ -47,5 +61,7 @@ public class ObjectInfoPopup : MonoBehaviour
     {
         text.text = _data.Facts[curPage].text;
         prevBtn.gameObject.SetActive(curPage > 0);
+        nextBtn.gameObject.SetActive(curPage < _data.Facts.Length - 1);
+        completeBtn.gameObject.SetActive(curPage == _data.Facts.Length - 1);
     }
 }

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sea Urchin
   m_EditorClassIdentifier: 
   ObjectName: Sea Urchin
+  ObjectSprite: {fileID: 21300000, guid: dd364534e152cb64f853653b3bce2547, type: 3}
   Facts:
   - text: "The Ocean\u2019s Spiky Ball!\nSea urchins look like little balls covered
       in sharp spines, but those spines help them move, protect, and clean themselves!\nThey

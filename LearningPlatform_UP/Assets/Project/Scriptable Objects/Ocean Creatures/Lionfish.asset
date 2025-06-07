@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Lionfish
   m_EditorClassIdentifier: 
   ObjectName: Lionfish
+  ObjectSprite: {fileID: 21300000, guid: ca99cbf18d2a8d04d96add19ddacc2c7, type: 3}
   Facts:
   - text: "Beautiful but Dangerous!\nThe lionfish is covered in bright stripes and
       long, flowing spines\u2014like a lion\u2019s mane underwater!\nBut don\u2019t

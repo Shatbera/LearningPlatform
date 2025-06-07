@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sea Dragon
   m_EditorClassIdentifier: 
   ObjectName: Sea Dragon
+  ObjectSprite: {fileID: 21300000, guid: 604ab484e834cd14185541e30b00b605, type: 3}
   Facts:
   - text: "The Living Leaf!\nSea dragons are relatives of seahorses, and they look
       like floating seaweed to stay safe from predators.\nTheir leafy fins don\u2019t

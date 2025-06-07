@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sea Turtle
   m_EditorClassIdentifier: 
   ObjectName: Sea Turtle
+  ObjectSprite: {fileID: 21300000, guid: 96dd1a5802d7b2c47bb6fbe9394f9851, type: 3}
   Facts:
   - text: "The Ocean Traveler!\nSea turtles can live for over 50 years and travel
       thousands of kilometers across the ocean.\nThey always return to the same beach

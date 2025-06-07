@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: AnglerFish
   m_EditorClassIdentifier: 
   ObjectName: Anglerfish
+  ObjectSprite: {fileID: 21300000, guid: a6003698270c1cc4c89ef5cd0bd44747, type: 3}
   Facts:
   - text: "This deep-sea predator uses a glowing lure to catch its food in the dark!\nThe
       anglerfish lives in the pitch-black ocean depths. It has a built-in fishing

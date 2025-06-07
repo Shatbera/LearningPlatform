@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Giant Whale
   m_EditorClassIdentifier: 
   ObjectName: Giant Whale
+  ObjectSprite: {fileID: 21300000, guid: 2d3d5b5bb388c05489190166bbfe2171, type: 3}
   Facts:
   - text: "The Gentle Giant!\nThe giant whale is one of the largest animals on Earth\u2014bigger
       than a bus!\nDespite its size, it eats tiny creatures called krill, swallowing
