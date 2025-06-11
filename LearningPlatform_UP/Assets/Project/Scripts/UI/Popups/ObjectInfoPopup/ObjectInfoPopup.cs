@@ -44,6 +44,7 @@ public class ObjectInfoPopup : MonoBehaviour
     private void PrevClick()
     {
         curPage = Mathf.Max(curPage - 1, 0);
+        //AudioManagerGlobal.Instance.PlayOneShot("switchPaper");
         UpdatePage();
     }
 
@@ -54,6 +55,7 @@ public class ObjectInfoPopup : MonoBehaviour
             return;
         }
         curPage = Mathf.Min(curPage + 1, _data.Facts.Length - 1);
+        //AudioManagerGlobal.Instance.PlayOneShot("switchPaper");
         UpdatePage();
     }
 

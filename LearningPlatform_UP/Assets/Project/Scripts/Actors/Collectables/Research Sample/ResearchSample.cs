@@ -47,7 +47,9 @@ public class ResearchSample : ClickableObject, IPickableItem
     }
 
     private void Pickup(){
+        AudioManagerGlobal.Instance.PlayOneShot("itemPickup");
         AudioManagerGlobal.Instance.PlayOneShot("rewardLight");
+        ParticlesManager.Instance.SpawnParticle("itemPickup", transform.position);
         _itemPickupAnimatorRef.Service.AnimatePickup(this);
             Destroy(gameObject);
     }

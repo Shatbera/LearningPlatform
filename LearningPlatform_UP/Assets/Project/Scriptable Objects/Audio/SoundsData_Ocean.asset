@@ -10,12 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e60d4b0f0ed99b4a9d6829f2ae95c29, type: 3}
-  m_Name: SoundsData
+  m_Name: SoundsData_Ocean
   m_EditorClassIdentifier: 
   Sounds:
   - Name: openPaper
     Clip: {fileID: 8300000, guid: 66216fcd130ab684b90d40d744a35426, type: 3}
     Volume: 0.5
+  - Name: switchPaper
+    Clip: {fileID: 8300000, guid: 5b5e9fd42f8b50548aa60de6f37509ab, type: 3}
+    Volume: 1
   - Name: rewardLight
     Clip: {fileID: 8300000, guid: 983648e92fb9cd248bb57f98544af05f, type: 3}
+    Volume: 1
+  - Name: itemPickup
+    Clip: {fileID: 8300000, guid: e1d80fc70013ecb4a95ed2547a8372e3, type: 3}
     Volume: 1
