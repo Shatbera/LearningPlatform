@@ -16,6 +16,6 @@ MonoBehaviour:
   - Name: openPaper
     Clip: {fileID: 8300000, guid: 66216fcd130ab684b90d40d744a35426, type: 3}
     Volume: 0.5
-  - Name: readComplete
+  - Name: rewardLight
     Clip: {fileID: 8300000, guid: 983648e92fb9cd248bb57f98544af05f, type: 3}
     Volume: 1

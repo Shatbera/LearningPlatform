@@ -68,6 +68,7 @@ public class ResearchPad : MonoBehaviour, IResearchPad
         }
         researchTask.Progress = 1;
         researchTask.RaiseComplete();
+        AudioManagerGlobal.Instance.PlayOneShot("rewardLight");
         _placedSample = null;
     }
 }

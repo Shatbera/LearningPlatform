@@ -33,8 +33,7 @@ public class ResearchSample : ClickableObject, IPickableItem
             Debug.Log("PLayer entered");
             if (_researchSamplesSystem.Service.AddItem(_sampleSO.Id, 1))
             {
-                _itemPickupAnimatorRef.Service.AnimatePickup(this);
-                Destroy(gameObject);
+                Pickup();
             }
         }
     }
@@ -43,11 +42,15 @@ public class ResearchSample : ClickableObject, IPickableItem
     {
         if(_researchSamplesSystem.Service.AddItem(_sampleSO.Id, 1))
         {
-            _itemPickupAnimatorRef.Service.AnimatePickup(this);
-            Destroy(gameObject);
+            Pickup();
         }
     }
 
+    private void Pickup(){
+        AudioManagerGlobal.Instance.PlayOneShot("rewardLight");
+        _itemPickupAnimatorRef.Service.AnimatePickup(this);
+            Destroy(gameObject);
+    }
 
     private void OnValidate()
     {

@@ -28,7 +28,7 @@ public class ObjectInfoPopup : MonoBehaviour
     private void CompleteClick()
     {
         popup.Close();
-        AudioManagerGlobal.Instance.PlayOneShot("readComplete");
+        AudioManagerGlobal.Instance.PlayOneShot("rewardLight");
         Debug.Log("on complete read");
     }
 
