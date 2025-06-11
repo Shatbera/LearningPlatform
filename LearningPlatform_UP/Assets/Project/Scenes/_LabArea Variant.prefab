@@ -421,6 +421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: _LabArea Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6861050460732268262, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
+      propertyPath: visibleAnchor
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7627627000543933934, guid: 2d5cab39f87f5ca4fa719a01e71f43bf, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0

@@ -382,6 +382,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tintController: {fileID: 1977323499}
+--- !u!1 &134476954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 134476956}
+  - component: {fileID: 134476955}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &134476955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134476954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89ff2651b6f5024b87d821f35d69ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundsData: {fileID: 11400000, guid: 2edeab27b8cf8b64880182becf65452d, type: 2}
+  _source: {fileID: 419432034}
+--- !u!4 &134476956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134476954}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &281321172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,7 +2167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06305d7a3ae4cc24f9fec50e3a372ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _world: 0
   _researchSamples: {fileID: 11400000, guid: ee06f0ff9c3bbc04ba004b062b677b51, type: 2}
   _researchSystemService: {fileID: 11400000, guid: 1a6d070425cea284e83b6ee588553618, type: 2}
   _saveSystemRef: {fileID: 11400000, guid: 3e07e6af8d41ce842af1a37b411a740f, type: 2}
@@ -2229,6 +2274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a61554f7907ffd4b8d9510e079b7904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _world: 0
   _servicesBootstrap: {fileID: 617431565}
   _saveSystemServiceRefSO: {fileID: 11400000, guid: 3e07e6af8d41ce842af1a37b411a740f, type: 2}
 --- !u!4 &1468195585
@@ -3550,6 +3596,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 471566404}
   - {fileID: 1468195585}
+  - {fileID: 134476956}
   - {fileID: 617431564}
   - {fileID: 1410299380}
   - {fileID: 938423185}

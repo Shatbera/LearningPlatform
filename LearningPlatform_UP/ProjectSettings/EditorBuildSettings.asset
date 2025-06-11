@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/SpaceExplorer.unity
     guid: 4a591d010002fc4459d428f45038ef1b
   - enabled: 1
+    path: Assets/Project/Scenes/OceanMystery.unity
+    guid: c404b8c528e5c4d47a53d681138d28dd
+  - enabled: 1
     path: Assets/Project/Scenes/LabScene.unity
     guid: e9a636a07a66a7a40b5cb354d56742f1
   - enabled: 1
@@ -38,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Scenes/Planets/VenusScene.unity
     guid: 8579ab0c70327994f8d3d8e4f31911ae
+  - enabled: 1
+    path: Assets/Project/Scenes/Menu.unity
+    guid: 9070c66100c2a4823b8af3a1959c03d2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using Unity.Cinemachine;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -20,7 +21,9 @@ public class ExplorationAreaController : Singleton<ExplorationAreaController>
     private const float FADE_DURATION = 0.3f;
     private const float FADE_DELAY = 0.1f;
 
+    private const string MENU_SCENE = "Menu";
     private string _loadedAreaSceneName;
+    private bool _explorationAreaLoaded = false;
     protected override void Awake()
     {
         base.Awake();
@@ -62,7 +65,8 @@ public class ExplorationAreaController : Singleton<ExplorationAreaController>
             yield return new WaitForSeconds(FADE_DURATION);
         }
 
-        SwitchScene(true, sceneName); 
+        SwitchScene(true, sceneName);
+        _explorationAreaLoaded = true;
 
         yield return new WaitForSeconds(FADE_DELAY);
         _screenFade.Fade(false, FADE_DURATION);
@@ -72,7 +76,7 @@ public class ExplorationAreaController : Singleton<ExplorationAreaController>
 
     public void SwitchScene(bool exploration, string sceneName = null)
     {
-        _exitButton.gameObject.SetActive(exploration);
+        //_exitButton.gameObject.SetActive(exploration);
         foreach(var obj in _mainSceneObjects)
         {
             obj.SetActive(!exploration);
@@ -90,7 +94,11 @@ public class ExplorationAreaController : Singleton<ExplorationAreaController>
     }
     public void Exit()
     {
-        StartCoroutine(ExitCoroutine());
+        if(_explorationAreaLoaded){
+            StartCoroutine(ExitCoroutine());
+        }else{
+            SceneManager.LoadScene(MENU_SCENE);
+        }
     }
 
     private IEnumerator ExitCoroutine()
@@ -98,6 +106,7 @@ public class ExplorationAreaController : Singleton<ExplorationAreaController>
         _screenFade.Fade(true, FADE_DURATION);
         yield return new WaitForSeconds(FADE_DURATION);
         SwitchScene(false);
+        _explorationAreaLoaded = false;
         yield return new WaitForSeconds(FADE_DELAY);
         _screenFade.Fade(false, FADE_DURATION);
     }

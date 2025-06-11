@@ -17,6 +17,7 @@ public class Player : MonoBehaviour, IInteractor
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (!gameObject.scene.isLoaded) return;
         IInteractable interactable = collision.GetComponent<IInteractable>();
         if (interactable != null)
         {
