@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
   m_Name: Jellyfish
   m_EditorClassIdentifier: 
-  ObjectName: Jellyfish
+  LocalizedObjectName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 15993601515520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ObjectSprite: {fileID: 21300000, guid: 863736d18d7ab4d47949a072027a8528, type: 3}
   Facts:
   - text: "The Floating Mystery!\nJellyfish have been drifting through oceans for
@@ -20,3 +28,6 @@ MonoBehaviour:
       or bones, yet they move and catch food with their stinging tentacles.\nThey
       glow, pulse, and float like ocean ghosts, riding the currents with ease.\nSome
       are tiny, some are huge\u2014but all are mesmerizing wonders of the deep."
+  references:
+    version: 2
+    RefIds: []

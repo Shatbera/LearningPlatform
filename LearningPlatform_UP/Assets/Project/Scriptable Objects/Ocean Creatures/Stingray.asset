@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
   m_Name: Stingray
   m_EditorClassIdentifier: 
-  ObjectName: Stingray
+  LocalizedObjectName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 16223143190528
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ObjectSprite: {fileID: 21300000, guid: 541ba42f5fc21cd4a848b56fe19c642f, type: 3}
   Facts:
   - text: "The Gliding Shadow!\nStingrays flap their wide fins like wings, letting
@@ -20,3 +28,6 @@ MonoBehaviour:
       their flat bodies for camouflage.\nTheir tail has a sharp, venomous barb\u2014used
       only for defense!\nWith eyes on top and a mouth underneath, they\u2019re built
       for sneaky snacking on clams and crustaceans."
+  references:
+    version: 2
+    RefIds: []

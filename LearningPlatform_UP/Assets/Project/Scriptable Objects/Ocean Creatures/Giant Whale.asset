@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
   m_Name: Giant Whale
   m_EditorClassIdentifier: 
-  ObjectName: Giant Whale
+  LocalizedObjectName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 15952698662912
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ObjectSprite: {fileID: 21300000, guid: 2d3d5b5bb388c05489190166bbfe2171, type: 3}
   Facts:
   - text: "The Gentle Giant!\nThe giant whale is one of the largest animals on Earth\u2014bigger
@@ -20,3 +28,6 @@ MonoBehaviour:
       thousands in one giant gulp.\nIt communicates with deep, powerful songs that
       can travel for hundreds of kilometers underwater.\nEven though it looks massive,
       it\u2019s a gentle and graceful traveler of the sea."
+  references:
+    version: 2
+    RefIds: []

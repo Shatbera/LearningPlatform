@@ -1,10 +1,11 @@
 using UnityEngine;
 using System;
+using UnityEngine.Localization;
 public class Planet : WorldObject
 {
     [SerializeField] private PlanetSO planetData;
 
-    public override string LabelName => planetData.ObjectName;
+    public override LocalizedString LocalizedLabelName => planetData.LocalizedObjectName;
 
     //public static event Action<PlanetSO> Interacted;
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ObjectInfoPopup : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
-    [SerializeField] private TMP_Text nameTxt;
+    [SerializeField] private LocalizedTextSetter nameTxtSetter;
     [SerializeField] private Button prevBtn;
     [SerializeField] private Button nextBtn;
     [SerializeField] private Button completeBtn;
@@ -16,6 +16,7 @@ public class ObjectInfoPopup : MonoBehaviour
     private ObjectInfoSO _data;
     private Popup popup;
     private int curPage;
+    
 
     private void Awake()
     {
@@ -36,7 +37,7 @@ public class ObjectInfoPopup : MonoBehaviour
     {
         _data = data;
         objectImg.sprite = data.ObjectSprite;
-        nameTxt.text = data.ObjectName;
+        nameTxtSetter.SetLocalizedText(data.LocalizedObjectName);
         curPage = 0;
         UpdatePage();
     }

@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
   m_Name: Electric Eel
   m_EditorClassIdentifier: 
-  ObjectName: Electric Eel
+  LocalizedObjectName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 15925100142592
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ObjectSprite: {fileID: 21300000, guid: 4cf37ba9e3e1ae54b9338e49ece41158, type: 3}
   Facts:
   - text: "Nature\u2019s Battery!\nThe electric eel can produce up to 600 volts of
@@ -20,3 +28,6 @@ MonoBehaviour:
       power to hunt in dark, muddy waters, where eyesight doesn\u2019t help much.\nEven
       though it\u2019s called an eel, it\u2019s actually more like a knifefish.\nIt
       \u201Ctalks\u201D to other eels with small zaps\u2014an underwater Morse code!"
+  references:
+    version: 2
+    RefIds: []

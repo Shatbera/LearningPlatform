@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.Localization;
 
 public abstract class WorldObject : MonoBehaviour, IInteractable, IHighlightableSpaceObject
 {
-    public abstract string LabelName { get; }
+    public abstract LocalizedString LocalizedLabelName { get; }
     [SerializeField] private SpriteRenderer _renderer;
     public SpriteRenderer Renderer => _renderer;
     [SerializeField] private SpaceObjectHighlighterServiceRefSO _highlighterServiceRef;

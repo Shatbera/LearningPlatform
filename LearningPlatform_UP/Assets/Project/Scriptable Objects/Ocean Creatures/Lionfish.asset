@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
   m_Name: Lionfish
   m_EditorClassIdentifier: 
-  ObjectName: Lionfish
+  LocalizedObjectName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 16032138780672
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ObjectSprite: {fileID: 21300000, guid: ca99cbf18d2a8d04d96add19ddacc2c7, type: 3}
   Facts:
   - text: "Beautiful but Dangerous!\nThe lionfish is covered in bright stripes and
@@ -20,3 +28,6 @@ MonoBehaviour:
       be fooled\u2014those spines are venomous, and they help scare away predators.\nIt
       hunts with lightning-fast strikes and is known for being a stealthy invader
       in coral reefs.\nLooks like royalty, hunts like a ninja!"
+  references:
+    version: 2
+    RefIds: []

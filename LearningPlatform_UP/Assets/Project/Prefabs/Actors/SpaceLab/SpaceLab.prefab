@@ -47,8 +47,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _renderer: {fileID: 7428914856262250974}
-  _zoomCameraOnHighlight: 0
   _highlighterServiceRef: {fileID: 11400000, guid: 5a390a72b81bd124098b8f7d38272721, type: 2}
+  _localizedName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 26792768299008
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!58 &567909582000323353
 CircleCollider2D:
   m_ObjectHideFlags: 0

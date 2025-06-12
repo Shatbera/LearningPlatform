@@ -97,6 +97,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _renderer: {fileID: 3163241452512010089}
   _highlighterServiceRef: {fileID: 11400000, guid: 47c8db4ea5c15d14c98ee9a942ef457b, type: 2}
+  _localizedName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 25058125799424
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &8835436604896954349
 GameObject:
   m_ObjectHideFlags: 0

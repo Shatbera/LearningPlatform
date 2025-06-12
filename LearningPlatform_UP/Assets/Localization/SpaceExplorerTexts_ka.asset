@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SpaceExplorerTexts_ka
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ka
+  m_SharedData: {fileID: 11400000, guid: 6c9825274246e407d8d990969f77224e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 72623316992
+    m_Localized: "\u10D9\u10DD\u10E1\u10DB\u10DD\u10E1\u10D8\u10E1 \u10DB\u10D9\u10D5\u10DA\u10D4\u10D5\u10D0\u10E0\u10D8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13577434947584
+    m_Localized: "\u10D3\u10D4\u10D3\u10D0\u10DB\u10D8\u10EC\u10D0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13727754608640
+    m_Localized: "\u10D8\u10E3\u10DE\u10D8\u10E2\u10D4\u10E0\u10D8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13822084505600
+    m_Localized: "\u10DB\u10D0\u10E0\u10E1\u10D8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13860193951744
+    m_Localized: "\u10DB\u10D4\u10E0\u10D9\u10E3\u10E0\u10D8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13878153961472
+    m_Localized: "\u10DC\u10D4\u10DE\u10E2\u10E3\u10DC\u10D8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13902636113920
+    m_Localized: "\u10E1\u10D0\u10E2\u10E3\u10E0\u10DC\u10D8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13929035063296
+    m_Localized: "\u10E3\u10E0\u10D0\u10DC\u10D8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13950480539648
+    m_Localized: "\u10D5\u10D4\u10DC\u10D4\u10E0\u10D0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26792768299008
+    m_Localized: "\u10DA\u10D0\u10D1\u10DD\u10E0\u10D0\u10E2\u10DD\u10E0\u10D8\u10D0"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

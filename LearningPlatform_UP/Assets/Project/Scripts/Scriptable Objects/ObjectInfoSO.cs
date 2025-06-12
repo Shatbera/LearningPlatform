@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Localization;
 
 public abstract class ObjectInfoSO : ScriptableObject
 {
@@ -9,7 +10,7 @@ public abstract class ObjectInfoSO : ScriptableObject
         public string text;
     }
 
-    public string ObjectName;
+    public LocalizedString LocalizedObjectName;
     public Sprite ObjectSprite;
     public Fact[] Facts;
 }

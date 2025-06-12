@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d9d1946410d5845ac16874ebaebab2, type: 3}
   m_Name: Planet_Mercury
   m_EditorClassIdentifier: 
-  ObjectName: Mercury
+  LocalizedObjectName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 13860193951744
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ObjectSprite: {fileID: 21300000, guid: 28d3fc08ffd376c4b9e447175274856a, type: 3}
   Facts:
   - text: "Mercury is the closest planet to the Sun \u2014 it\u2019s the first planet
@@ -26,3 +34,6 @@ MonoBehaviour:
   - text: "Mercury\u2019s surface looks like the Moon \u2014 it\u2019s full of craters
       from space rocks hitting it!"
   SceneName: MercuryScene
+  references:
+    version: 2
+    RefIds: []

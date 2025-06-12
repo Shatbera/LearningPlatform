@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.Localization;
 
 public class OceanLab : WorldObject
 {
-    public override string LabelName => "Laboratory";
+    [SerializeField] private LocalizedString _localizedName;
+    public override LocalizedString LocalizedLabelName => _localizedName;
     private const string SCENE_NAME = "OceanLabScene";
     public override void OnInteract(IInteractor interactor)
     {

@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
   m_Name: Sea Urchin
   m_EditorClassIdentifier: 
-  ObjectName: Sea Urchin
+  LocalizedObjectName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 16129316610048
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ObjectSprite: {fileID: 21300000, guid: dd364534e152cb64f853653b3bce2547, type: 3}
   Facts:
   - text: "The Ocean\u2019s Spiky Ball!\nSea urchins look like little balls covered
@@ -21,3 +29,6 @@ MonoBehaviour:
       on the bottom called \u201CAristotle\u2019s lantern,\u201D they scrape algae
       off surfaces\u2014like ocean lawnmowers!\nSome even wear seashells and rocks
       as camouflage hats!"
+  references:
+    version: 2
+    RefIds: []

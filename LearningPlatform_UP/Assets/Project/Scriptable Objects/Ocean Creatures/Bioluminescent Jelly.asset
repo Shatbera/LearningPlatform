@@ -12,10 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
   m_Name: Bioluminescent Jelly
   m_EditorClassIdentifier: 
-  ObjectName: Bioluminescent Jelly
+  LocalizedObjectName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 15691867480064
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ObjectSprite: {fileID: 21300000, guid: 232ab08c2130485479377c770ca24d84, type: 3}
   Facts:
   - text: "This jelly lives deep in the ocean where it's always dark. To survive,
       it glows in the dark using a special power called bioluminescence.\nIt flashes
       its light to scare predators, find friends, or attract tiny food.\nIts glow
       comes from tiny light-making chemicals in its body\u2014like a living nightlight!"
+  references:
+    version: 2
+    RefIds: []

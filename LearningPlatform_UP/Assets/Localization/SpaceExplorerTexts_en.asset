@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SpaceExplorerTexts_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 6c9825274246e407d8d990969f77224e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 72623316992
+    m_Localized: Space Explorer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13577434947584
+    m_Localized: Earth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13727754608640
+    m_Localized: Jupiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13822084505600
+    m_Localized: Mars
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13860193951744
+    m_Localized: Mercury
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13878153961472
+    m_Localized: Neptune
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13902636113920
+    m_Localized: Saturn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13929035063296
+    m_Localized: Uranus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13950480539648
+    m_Localized: Venus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26792768299008
+    m_Localized: Space Lab
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

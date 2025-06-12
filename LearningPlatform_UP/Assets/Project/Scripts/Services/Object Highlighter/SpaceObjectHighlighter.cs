@@ -14,7 +14,7 @@ public class SpaceObjectHighlighter : MonoBehaviour, IObjectHighlighter<IHighlig
 
         ObjectLabel label = _labelsPool.Get();
         label.SetVisible(true);
-        label.SetText(highlightable.LabelName);
+        label.SetText(highlightable.LocalizedLabelName);
         _activeLabels.Add(highlightable, label);
 
         UpdateLabelPosition(highlightable, label);

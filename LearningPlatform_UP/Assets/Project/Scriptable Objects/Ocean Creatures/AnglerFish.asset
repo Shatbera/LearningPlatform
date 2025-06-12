@@ -12,10 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743e35424f65fa04b8b7e85a6993e674, type: 3}
   m_Name: AnglerFish
   m_EditorClassIdentifier: 
-  ObjectName: Anglerfish
+  LocalizedObjectName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 15593989201920
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   ObjectSprite: {fileID: 21300000, guid: a6003698270c1cc4c89ef5cd0bd44747, type: 3}
   Facts:
   - text: "This deep-sea predator uses a glowing lure to catch its food in the dark!\nThe
       anglerfish lives in the pitch-black ocean depths. It has a built-in fishing
       rod on its head with a glowing tip called a bioluminescent lure, which it wiggles
       to attract curious prey \u2014 then SNAP! Dinner is served."
+  references:
+    version: 2
+    RefIds: []

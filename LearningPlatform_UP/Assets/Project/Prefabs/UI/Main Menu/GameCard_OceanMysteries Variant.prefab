@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCard_OceanMysteries Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7209001031915334372, guid: 69696e7fcf6d6443991db628b29ea131, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 7175397376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209001031915334372, guid: 69696e7fcf6d6443991db628b29ea131, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:a1b035445b65e4fa48f4c4f3199ea335
+      objectReference: {fileID: 0}
     - target: {fileID: 7231102657906067503, guid: 69696e7fcf6d6443991db628b29ea131, type: 3}
       propertyPath: m_text
       value: Ocean Mysteries

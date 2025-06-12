@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: SpaceExplorerTexts Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: SpaceExplorerTexts
+  m_TableCollectionNameGuidString: 6c9825274246e407d8d990969f77224e
+  m_Entries:
+  - m_Id: 72623316992
+    m_Key: game_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13577434947584
+    m_Key: planet_earth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13727754608640
+    m_Key: planet_jupiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13822084505600
+    m_Key: planet_mars
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13860193951744
+    m_Key: planet_mercury
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13878153961472
+    m_Key: planet_neptune
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13902636113920
+    m_Key: planet_saturn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13929035063296
+    m_Key: planet_uranus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13950480539648
+    m_Key: planet_venus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26792768299008
+    m_Key: laboratory
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 873429229458948367
+  references:
+    version: 2
+    RefIds:
+    - rid: 873429229458948367
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1749734929941

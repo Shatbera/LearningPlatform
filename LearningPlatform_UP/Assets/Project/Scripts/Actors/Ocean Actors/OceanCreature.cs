@@ -1,10 +1,11 @@
 using System;
 using UnityEngine;
+using UnityEngine.Localization;
 
 public class OceanCreature : WorldObject, IInteractable
 {
     [SerializeField] private OceanCreatureSO _creatureData;
-    public override string LabelName => _creatureData.ObjectName;
+    public override LocalizedString LocalizedLabelName => _creatureData.LocalizedObjectName;
 
     public override void OnInteract(IInteractor interactor)
     {

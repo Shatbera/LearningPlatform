@@ -2,25 +2,25 @@ using TMPro;
 using UnityEngine;
 using DG.Tweening;
 using System;
+using UnityEngine.Localization;
 
 public class ObjectLabel : MonoBehaviour
 {
     private const float FADE_DURATION = 0.22f;
 
-    [SerializeField] private TMP_Text _text;
+    [SerializeField] private LocalizedTextSetter _localizedTextSetter;
     [SerializeField] private CanvasGroup _canvasGroup;
 
-    public void SetText(string text)
+    public void SetText(LocalizedString localizedText)
     {
-        _text.text = text;
+        _localizedTextSetter.SetLocalizedText(localizedText);
     }
-
-    public void SetVisible(bool visible, Action onComplete = null) 
+    public void SetVisible(bool visible, Action onComplete = null)
     {
-        if(visible)
+        if (visible)
         {
             _canvasGroup.alpha = 0;
-            _canvasGroup.DOFade(1, FADE_DURATION).OnComplete(()=>onComplete?.Invoke());
+            _canvasGroup.DOFade(1, FADE_DURATION).OnComplete(() => onComplete?.Invoke());
         }
         else
         {

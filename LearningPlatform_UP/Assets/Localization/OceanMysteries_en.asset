@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: OceanMysteries_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: a1b035445b65e4fa48f4c4f3199ea335, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 7175397376
+    m_Localized: Ocean Mysteries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15593989201920
+    m_Localized: Anglerfish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15691867480064
+    m_Localized: Bioluminescent Jelly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15820888465408
+    m_Localized: Clownfish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15897677783040
+    m_Localized: Crab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15925100142592
+    m_Localized: Electric Eel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15952698662912
+    m_Localized: Blue Whale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15993601515520
+    m_Localized: Jellyfish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16032138780672
+    m_Localized: Lionfish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16052615372800
+    m_Localized: Remora
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16073163268096
+    m_Localized: Sea Dragon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16089365864448
+    m_Localized: Sea Turtle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16129316610048
+    m_Localized: Sea Urchin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16189945274368
+    m_Localized: Seahorse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16223143190528
+    m_Localized: Stingray
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25058125799424
+    m_Localized: Laboratory
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
