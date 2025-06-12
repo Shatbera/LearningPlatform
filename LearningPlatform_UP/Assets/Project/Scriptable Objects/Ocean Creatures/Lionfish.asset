@@ -28,6 +28,15 @@ MonoBehaviour:
       be fooled\u2014those spines are venomous, and they help scare away predators.\nIt
       hunts with lightning-fast strikes and is known for being a stealthy invader
       in coral reefs.\nLooks like royalty, hunts like a ninja!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+      m_TableEntryReference:
+        m_KeyId: 93886022090752
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   references:
     version: 2
     RefIds: []

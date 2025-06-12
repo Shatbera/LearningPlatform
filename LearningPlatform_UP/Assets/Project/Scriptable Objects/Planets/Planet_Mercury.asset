@@ -25,14 +25,59 @@ MonoBehaviour:
   Facts:
   - text: "Mercury is the closest planet to the Sun \u2014 it\u2019s the first planet
       in our solar system!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30263844265984
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It gets super hot during the day (over 400\xB0C) but freezing cold at
       night \u2014 that\u2019s because it has almost no atmosphere to hold heat."
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30664106696704
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "One day on Mercury is really long \u2014 it takes about 59 Earth days
       for Mercury to spin around once!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30671547392000
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "Mercury has no moons \u2014 it\u2019s too close to the Sun to hold onto
       any."
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30677864013824
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "Mercury\u2019s surface looks like the Moon \u2014 it\u2019s full of craters
       from space rocks hitting it!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30686089043968
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   SceneName: MercuryScene
   references:
     version: 2

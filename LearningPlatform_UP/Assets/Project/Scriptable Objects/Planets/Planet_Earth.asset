@@ -25,14 +25,59 @@ MonoBehaviour:
   Facts:
   - text: "Earth is the only planet we know that has life \u2014 that means plants,
       animals, and people all live here!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 29384084807680
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "About 70% of Earth is covered in water, which is why it's sometimes called
       the \u201CBlue Planet.\u201D"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 29610447200256
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "Earth has air we can breathe, made mostly of nitrogen and oxygen \u2014
       super important for all living things!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 29627203444736
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It takes 365 days for Earth to go around the Sun, and that\u2019s what
       we call a year!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 29634644140032
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "Earth has one moon, and it helps create the ocean\u2019s tides and lights
       up the night sky."
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 29904165920768
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   SceneName: EarthScene
   references:
     version: 2

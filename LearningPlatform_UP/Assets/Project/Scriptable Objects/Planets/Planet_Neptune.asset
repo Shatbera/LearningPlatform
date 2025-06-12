@@ -25,14 +25,59 @@ MonoBehaviour:
   Facts:
   - text: "Neptune is the farthest planet from the Sun \u2014 it\u2019s the 8th planet
       in our solar system!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30786332909568
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It\u2019s super windy \u2014 Neptune has the strongest winds in the whole
       solar system, blowing faster than 1,200 mph (2,000 km/h)!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30813990150144
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It\u2019s a gas giant \u2014 made mostly of gases like hydrogen and helium,
       with a deep blue color."
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30821804138496
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It has a giant storm called the Great Dark Spot, kind of like Jupiter\u2019s
       storm but darker and smaller"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30844260442112
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "Neptune has 14 moons \u2014 the biggest one is Triton, which spins the
       opposite way of Neptune\u2019s rotation!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30853919924224
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   SceneName: NeptuneScene
   references:
     version: 2

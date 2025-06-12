@@ -6,8 +6,7 @@ public abstract class ObjectInfoSO : ScriptableObject
     [System.Serializable]
     public struct Fact
     {
-        [TextArea]
-        public string text;
+        public LocalizedString LocalizedText;
     }
 
     public LocalizedString LocalizedObjectName;

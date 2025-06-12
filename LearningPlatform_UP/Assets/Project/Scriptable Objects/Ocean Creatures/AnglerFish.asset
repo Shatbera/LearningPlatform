@@ -27,6 +27,15 @@ MonoBehaviour:
       anglerfish lives in the pitch-black ocean depths. It has a built-in fishing
       rod on its head with a glowing tip called a bioluminescent lure, which it wiggles
       to attract curious prey \u2014 then SNAP! Dinner is served."
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+      m_TableEntryReference:
+        m_KeyId: 93635747971072
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   references:
     version: 2
     RefIds: []

@@ -25,14 +25,59 @@ MonoBehaviour:
   Facts:
   - text: "Mars is called the \"Red Planet\" \u2013 It gets its red color from iron
       in the soil, which has rusted over time!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30001876426752
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "Mars has the tallest volcano in the solar system! \u2013 Olympus Mons
       is about three times taller than Mount Everest!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30129475543040
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "A day on Mars is almost like Earth\u2019s! \u2013 One day on Mars is 24
       hours and 37 minutes, just a little longer than a day on Earth."
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30147020316672
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "Mars has huge dust storms! \u2013 These storms can cover the entire planet
       and last for months!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30154662338560
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "There might have been water on Mars! \u2013 Scientists believe that long
       ago, Mars had rivers, lakes, and even oceans!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 30161826209792
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   SceneName: MarsScene
   references:
     version: 2

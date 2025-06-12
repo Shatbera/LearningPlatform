@@ -28,6 +28,15 @@ MonoBehaviour:
       their flat bodies for camouflage.\nTheir tail has a sharp, venomous barb\u2014used
       only for defense!\nWith eyes on top and a mouth underneath, they\u2019re built
       for sneaky snacking on clams and crustaceans."
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+      m_TableEntryReference:
+        m_KeyId: 94027932172288
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   references:
     version: 2
     RefIds: []

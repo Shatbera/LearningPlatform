@@ -28,6 +28,15 @@ MonoBehaviour:
       or bones, yet they move and catch food with their stinging tentacles.\nThey
       glow, pulse, and float like ocean ghosts, riding the currents with ease.\nSome
       are tiny, some are huge\u2014but all are mesmerizing wonders of the deep."
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+      m_TableEntryReference:
+        m_KeyId: 93960068333568
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   references:
     version: 2
     RefIds: []

@@ -82,6 +82,119 @@ MonoBehaviour:
     m_Localized: Laboratory
     m_Metadata:
       m_Items: []
+  - m_Id: 93635747971072
+    m_Localized: "This deep-sea predator uses a glowing lure to catch its food in
+      the dark!\nThe anglerfish lives in the pitch-black ocean depths. It has a built-in
+      fishing rod on its head with a glowing tip called a bioluminescent lure, which
+      it wiggles to attract curious prey \u2014 then SNAP! Dinner is served."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93695680380928
+    m_Localized: "This jelly lives deep in the ocean where it's always dark. To survive,
+      it glows in the dark using a special power called bioluminescence.\nIt flashes
+      its light to scare predators, find friends, or attract tiny food.\nIts glow
+      comes from tiny light-making chemicals in its body\u2014like a living nightlight!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93754048315392
+    m_Localized: "Clownfish live in a special partnership with sea anemones\u2014stinging
+      creatures that protect the clownfish from danger.\nBut guess what? The clownfish
+      doesn\u2019t get stung! It has a slimy coat that keeps it safe.\nThey clean
+      the anemone, and the anemone keeps predators away.\nBest friends forever under
+      the sea!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93782888349696
+    m_Localized: "The Armored Scuttler!\nCrabs wear their skeleton on the outside
+      like armor\u2014this is called an exoskeleton!\nThey move sideways using their
+      strong legs and use their claws to grab food or defend themselves.\nWhen they
+      grow too big for their shell, they shed it and grow a new one.\nIt\u2019s like
+      getting a brand new suit of armor!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93809790615552
+    m_Localized: "Nature\u2019s Battery!\nThe electric eel can produce up to 600
+      volts of electricity\u2014enough to stun prey or scare off predators!\nIt uses
+      this power to hunt in dark, muddy waters, where eyesight doesn\u2019t help
+      much.\nEven though it\u2019s called an eel, it\u2019s actually more like a
+      knifefish.\nIt \u201Ctalks\u201D to other eels with small zaps\u2014an underwater
+      Morse code!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93841621188608
+    m_Localized: "The blue whale is the largest animal on Earth \u2014 even bigger
+      than a bus!\nDespite its massive size, it feeds on tiny creatures called krill,
+      swallowing thousands in a single gulp.\nIt communicates using deep, powerful
+      sounds that can travel for hundreds of kilometers underwater.\nThough it looks
+      huge, the blue whale is a calm and graceful traveler of the ocean."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93862701760512
+    m_Localized: "The Floating Mystery!\nJellyfish have been drifting through oceans
+      for over 500 million years\u2014long before dinosaurs!\nThey have no brain,
+      heart, or bones, yet they move and catch food with their stinging tentacles.\nThey
+      glow, pulse, and float like ocean ghosts, riding the currents with ease.\nSome
+      are tiny, some are huge\u2014but all are mesmerizing wonders of the deep."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93886022090752
+    m_Localized: "Beautiful but Dangerous!\nThe lionfish is covered in bright stripes
+      and long, flowing spines\u2014like a lion\u2019s mane underwater!\nBut don\u2019t
+      be fooled\u2014those spines are venomous, and they help scare away predators.\nIt
+      hunts with lightning-fast strikes and is known for being a stealthy invader
+      in coral reefs.\nLooks like royalty, hunts like a ninja!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93905345249280
+    m_Localized: "The Ocean Hitchhiker!\nThe remora has a suction pad on top of its
+      head\u2014like a natural sticky cup!\nIt uses it to stick to sharks, whales,
+      and turtles, getting free rides through the ocean.\nWhile traveling, it eats
+      leftover scraps and keeps its host clean.\nIt\u2019s the ultimate ride-share
+      buddy of the sea!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93938006294528
+    m_Localized: "The Living Leaf!\nSea dragons are relatives of seahorses, and they
+      look like floating seaweed to stay safe from predators.\nTheir leafy fins don\u2019t
+      help them swim fast\u2014they're for camouflage, not speed.\nThey drift gently
+      through the water, blending into coral and kelp like underwater ninjas.\nIt\u2019s
+      not a mythical dragon\u2014but it\u2019s just as magical!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93960068333568
+    m_Localized: "The Ocean Traveler!\nSea turtles can live for over 50 years and
+      travel thousands of kilometers across the ocean.\nThey always return to the
+      same beach where they were born to lay their eggs\u2014like they have a built-in
+      GPS!\nWith their strong flippers, they glide gracefully through the water like
+      flying birds.\nThey help keep the ocean healthy by eating jellyfish and seagrass\u2014they\u2019re
+      nature\u2019s cleanup crew!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93987922706432
+    m_Localized: "The Ocean\u2019s Spiky Ball!\nSea urchins look like little balls
+      covered in sharp spines, but those spines help them move, protect, and clean
+      themselves!\nThey crawl slowly across rocks using tiny tube feet hidden underneath.\nWith
+      a mouth on the bottom called \u201CAristotle\u2019s lantern,\u201D they scrape
+      algae off surfaces\u2014like ocean lawnmowers!\nSome even wear seashells and
+      rocks as camouflage hats!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94010622279680
+    m_Localized: "Tails & Tiny Miracles!\nSeahorses are one of the only animals where
+      the male gives birth!\nThe dad carries the babies in a special pouch until
+      they\u2019re ready to swim free.\nThey use their curly tails to anchor onto
+      plants so they don\u2019t drift away in currents.\nWith eyes that move independently,
+      they watch for food and danger at the same time\u2014like tiny underwater robots!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94027932172288
+    m_Localized: "The Gliding Shadow!\nStingrays flap their wide fins like wings,
+      letting them glide smoothly across the ocean floor.\nThey often hide under
+      sand, using their flat bodies for camouflage.\nTheir tail has a sharp, venomous
+      barb\u2014used only for defense!\nWith eyes on top and a mouth underneath,
+      they\u2019re built for sneaky snacking on clams and crustaceans."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

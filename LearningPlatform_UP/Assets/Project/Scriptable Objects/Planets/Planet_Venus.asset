@@ -26,17 +26,62 @@ MonoBehaviour:
   - text: "Venus is the brightest planet \u2014 It shines so bright in the sky that
       you can often see it just after sunset or before sunrise. That\u2019s why it\u2019s
       called the \u201CEvening Star\u201D or \u201CMorning Star\u201D!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 31196628115456
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It\u2019s the hottest planet \u2014 Even though Mercury is closer to the
       Sun, Venus is hotter, with surface temperatures over 460\xB0C (860\xB0F) \u2014
       hot enough to melt lead!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 31238940254208
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It spins backward \u2014 Venus rotates in the opposite direction of most
       other planets, and it spins very slowly. A day on Venus is longer than its
       year!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 31249627340800
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It has thick, toxic clouds \u2014 Venus is covered with thick clouds of
       carbon dioxide and sulfuric acid, trapping heat like a super-powered greenhouse"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 31256040431616
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It\u2019s Earth\u2019s \u201Ctwin\u201D \u2014 Venus is almost the same
       size and made of similar rock as Earth, which is why people call it Earth\u2019s
       \u201Csister planet\u201D \u2014 but it\u2019s way too hot to live on!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 31302869835776
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   SceneName: VenusScene
   references:
     version: 2

@@ -29,6 +29,15 @@ MonoBehaviour:
       their strong flippers, they glide gracefully through the water like flying
       birds.\nThey help keep the ocean healthy by eating jellyfish and seagrass\u2014they\u2019re
       nature\u2019s cleanup crew!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+      m_TableEntryReference:
+        m_KeyId: 93960068333568
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   references:
     version: 2
     RefIds: []

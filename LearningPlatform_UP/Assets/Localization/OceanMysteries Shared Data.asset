@@ -40,7 +40,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15952698662912
-    m_Key: creature_giantwhale
+    m_Key: creature_bluewhale
     m_Metadata:
       m_Items: []
   - m_Id: 15993601515520
@@ -77,6 +77,62 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 25058125799424
     m_Key: laboratory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93635747971072
+    m_Key: creature_anglergish_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93695680380928
+    m_Key: creature_bioluminescentjelly_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93754048315392
+    m_Key: creature_clownfish_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93782888349696
+    m_Key: creature_crab_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93809790615552
+    m_Key: creature_electriceel_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93841621188608
+    m_Key: creature_bluewhale_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93862701760512
+    m_Key: creature_jellyfish_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93886022090752
+    m_Key: creature_lionfish_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93905345249280
+    m_Key: creature_remora_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93938006294528
+    m_Key: creature_seadragon_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93960068333568
+    m_Key: creature_seaturtle_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93987922706432
+    m_Key: creature_seaurchin_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94010622279680
+    m_Key: creature_seahorse_info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94027932172288
+    m_Key: creature_stingray_info_1
     m_Metadata:
       m_Items: []
   m_Metadata:

@@ -7,11 +7,12 @@ public class ObjectInfoPopup : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
     [SerializeField] private LocalizedTextSetter nameTxtSetter;
+    [SerializeField] private LocalizedTextSetter infoTextSetter;
     [SerializeField] private Button prevBtn;
     [SerializeField] private Button nextBtn;
     [SerializeField] private Button completeBtn;
     [SerializeField] private Image objectImg;
-    
+
 
     private ObjectInfoSO _data;
     private Popup popup;
@@ -62,7 +63,8 @@ public class ObjectInfoPopup : MonoBehaviour
 
     private void UpdatePage()
     {
-        text.text = _data.Facts[curPage].text;
+        //text.text = _data.Facts[curPage].text;
+        infoTextSetter.SetLocalizedText(_data.Facts[curPage].LocalizedText);
         prevBtn.gameObject.SetActive(curPage > 0);
         nextBtn.gameObject.SetActive(curPage < _data.Facts.Length - 1);
         completeBtn.gameObject.SetActive(curPage == _data.Facts.Length - 1);

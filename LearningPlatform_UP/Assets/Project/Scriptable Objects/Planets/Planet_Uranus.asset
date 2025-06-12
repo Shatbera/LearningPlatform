@@ -25,15 +25,60 @@ MonoBehaviour:
   Facts:
   - text: "Uranus is blue-green \u2014 Its pretty color comes from methane gas in
       its atmosphere, which absorbs red light and reflects blue!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 31064553676800
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It rolls like a ball \u2014 Uranus spins on its side, unlike any other
       planet! It's tilted so much it looks like it's rolling around the Sun"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 31085902684160
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It\u2019s an ice giant \u2014 Uranus is made mostly of icy materials like
       water, methane, and ammonia, not just gas like Jupiter or Saturn."
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 31093339185152
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It has rings too! \u2014 Uranus has faint rings that are hard to see,
       but they\u2019re real and circle the planet."
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 31099894882304
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It\u2019s one of the coldest planets \u2014 Even though Neptune is farther
       from the Sun, Uranus gets colder, with temperatures dropping to \u2013224\xB0C
       (\u2013371\xB0F)!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 31106689654784
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   SceneName: UranusScene
   references:
     version: 2

@@ -25,15 +25,60 @@ MonoBehaviour:
   Facts:
   - text: "Jupiter is the biggest planet in our solar system \u2014 it's so big that
       more than 1,300 Earths could fit inside it!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 29841364606976
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "It has a giant storm called the Great Red Spot that\u2019s been spinning
       for over 300 years \u2014 it\u2019s like a huge hurricane on Jupiter!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 29881814474752
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "Jupiter is made of gas, not solid ground like Earth. You couldn't stand
       on it \u2014 you'd sink into clouds of gas!"
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 29889427136512
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: It has at least 95 moons, and some of them, like Europa and Ganymede, might
       even have oceans under their surfaces.
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 29896217714688
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   - text: "Jupiter has super strong gravity, much stronger than Earth\u2019s \u2014
       it's the reason Jupiter can hold on to so many moons and even pull in space
       rocks that could hit Earth."
+    LocalizedText:
+      m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 29904165920768
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
   SceneName: JupiterScene
   references:
     version: 2
