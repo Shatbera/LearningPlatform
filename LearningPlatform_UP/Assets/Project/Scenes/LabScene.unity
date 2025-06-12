@@ -211,6 +211,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5649721023843022216, guid: 62f1ed11fc936e042bce56b57ee54294, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7871245406570594792, guid: 62f1ed11fc936e042bce56b57ee54294, type: 3}
       propertyPath: m_Name
       value: LabCanvas

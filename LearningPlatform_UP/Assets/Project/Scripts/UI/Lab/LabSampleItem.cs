@@ -6,11 +6,14 @@ public class LabSampleItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 {
     [SerializeField] private Image _iconImg;
     [SerializeField] private RectTransform _dragContainer;
-
     [SerializeField] private ResearchPadRefSO _researchPadRef;
 
     private CollectableItemEntry<ResearchSampleSO, ResearchSampleItemState> _sampleEntry;
     private Canvas _canvas;
+
+    private Vector2 _dragStartPos;
+    private bool _previewShown = false;
+    private const float DRAG_Y = 50f;
 
     private void Awake()
     {
@@ -30,23 +33,48 @@ public class LabSampleItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        _dragStartPos = eventData.position;
+        _previewShown = false;
         _dragContainer.SetParent(_canvas.transform);
-        _researchPadRef.Service.TryShowSamplePreview(_sampleEntry.Item);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         _dragContainer.anchoredPosition += eventData.delta;
+
+        float dragDeltaY = eventData.position.y - _dragStartPos.y;
+
+        if (!_previewShown && dragDeltaY > DRAG_Y)
+        {
+            _researchPadRef.Service.TryShowSamplePreview(_sampleEntry.Item);
+            _previewShown = true;
+        }
+        else if (_previewShown && dragDeltaY <= DRAG_Y)
+        {
+            _researchPadRef.Service.TryHideSamplePreview(_sampleEntry.Item);
+            _previewShown = false;
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        _researchPadRef.Service.TryHideSamplePreview(_sampleEntry.Item);
-        if (_researchPadRef.Service.TryPlaceSample(_sampleEntry.Item))
+        float dragDeltaY = eventData.position.y - _dragStartPos.y;
+
+        if (_previewShown)
         {
-            _sampleEntry.State.IsUnlocked = true;
-            SetVisible(false);
+            _researchPadRef.Service.TryHideSamplePreview(_sampleEntry.Item);
+            _previewShown = false;
         }
+
+        if (dragDeltaY > DRAG_Y)
+        {
+            if (_researchPadRef.Service.TryPlaceSample(_sampleEntry.Item))
+            {
+                _sampleEntry.State.IsUnlocked = true;
+                SetVisible(false);
+            }
+        }
+
         _dragContainer.SetParent(transform);
         _dragContainer.localPosition = Vector2.zero;
     }
