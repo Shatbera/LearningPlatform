@@ -265,6 +265,480 @@ MonoBehaviour:
       live on!"
     m_Metadata:
       m_Items: []
+  - m_Id: 113025872756736
+    m_Localized: Humus-Rich Earth Clump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113242563084288
+    m_Localized: "Collected from fertile soil, this sample is full of organic matter
+      and microbes that help plants grow. Earth\u2019s soil is alive with billions
+      of bacteria and fungi that support ecosystems."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113263735930880
+    m_Localized: Pond Water Microdrop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113274116833280
+    m_Localized: This tiny vial holds clean water from a small lake, with trace minerals
+      and microscopic life like algae and protozoa. It shows how freshwater ecosystems
+      support both animals and plants.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113317142003712
+    m_Localized: Clean Atmosphere Sample
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113329615863808
+    m_Localized: "This capsule contains a portion of Earth\u2019s breathable air
+      \u2014 78% nitrogen, 21% oxygen, and traces of other gases. It\u2019s a perfectly
+      balanced mix for complex life."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113344132349952
+    m_Localized: Leaf Tissue Extract
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113363572948992
+    m_Localized: This slide holds a microscopic view of leaf cells, where photosynthesis
+      happens. It shows how plants convert sunlight and carbon dioxide into food
+      and oxygen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113385928589312
+    m_Localized: Basalt Magma Shard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113405822173184
+    m_Localized: "This shard of cooled lava comes from a volcano. It tells the story
+      of Earth\u2019s inner heat and shifting plates, shaping the land we walk on."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113418472194048
+    m_Localized: Microplastic Fiber Cluster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113429796814848
+    m_Localized: This sample contains tiny plastic fibers left by human activity.
+      These particles are now found in water, soil, and even the air, showing how
+      human impact reaches everywhere.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113635292545024
+    m_Localized: Striped Atmosphere Extract
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113675717246976
+    m_Localized: "Jupiter\u2019s colorful stripes are made of fast-moving ammonia
+      clouds swirling in opposite directions. This sample came from one of those
+      windy bands that help create Jupiter\u2019s famous striped look!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113699075325952
+    m_Localized: Storm Core Fragment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113709774995456
+    m_Localized: "This swirling bit came from the Great Red Spot\u2014a massive storm
+      bigger than Earth that\u2019s been spinning on Jupiter for over 300 years!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113737499344896
+    m_Localized: Jovian Thunderbolt Charge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113749260173312
+    m_Localized: "This charged vial holds a spark from one of Jupiter\u2019s powerful
+      lightning storms\u201410 times stronger than Earth\u2019s and flashing deep
+      inside the thick clouds!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113766591037440
+    m_Localized: Upper Cloud Ice Crystal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113776435068928
+    m_Localized: "This frozen flake formed from ammonia in Jupiter\u2019s upper atmosphere,
+      where it\u2019s cold enough for chemical snow to fall from the sky!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113794340552704
+    m_Localized: Jupiter Magnetosphere Scanner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113811130351616
+    m_Localized: "This detector recorded Jupiter\u2019s massive magnetic field\u2014it\u2019s
+      stronger than any planet\u2019s and stretches millions of kilometers into space!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113831808270336
+    m_Localized: Hypothetical Core Pressure Cell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113843854311424
+    m_Localized: This sample simulates the crushing pressure deep inside Jupiter,
+      where scientists think a rocky core may be hiding beneath layers of liquid
+      and gas!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113891413524480
+    m_Localized: Oxidized Martian Regolith
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113911978196992
+    m_Localized: "This dusty soil is full of iron that has rusted over time. That\u2019s
+      why Mars looks red from space! Unlike Earth, this rust covers almost the entire
+      surface."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113937680891904
+    m_Localized: Frozen Water Shard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113952780386304
+    m_Localized: "This icy chip came from Mars\u2019 south pole. Scientists think
+      frozen water hides deep underground, and long ago, there may have been rivers
+      and lakes flowing across the planet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113975303798784
+    m_Localized: Thin Air Bubble
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113992370421760
+    m_Localized: "This tiny air bubble shows just how thin the Martian air is. There\u2019s
+      barely any oxygen, and spacesuits are a must! Even boiling water acts strangely
+      here because of the pressure."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114005959966720
+    m_Localized: Solar Radiation Tracer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114016655441920
+    m_Localized: "This sample tracks powerful rays from space. Without a magnetic
+      field like Earth\u2019s, Mars gets hit by solar radiation all the time\u2014future
+      astronauts need serious protection"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114033873059840
+    m_Localized: Stormborne Dust Layer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114059282153472
+    m_Localized: This fine dust came from a storm that stretched across the whole
+      planet! Martian storms are huge, and they can block out sunlight for days.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114072833949696
+    m_Localized: Olympus Lava Fragment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114096720510976
+    m_Localized: "This rock may have come from Olympus Mons, the biggest volcano
+      in the solar system! Even though it\u2019s inactive now, it once erupted with
+      powerful lava flows."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114119562690560
+    m_Localized: Extreme Temperature Crystal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114162545917952
+    m_Localized: "Collected from Mercury's sun-facing side, this heat-damaged crystal
+      survived temperatures over 430\xB0C. It\u2019s warped, partially melted, and
+      holds trace energy from intense solar radiation"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114181130878976
+    m_Localized: Shadow Ice Fragment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114195307626496
+    m_Localized: "From a crater in permanent shadow near Mercury's poles, this sample
+      holds frozen water, preserved in total darkness at -180\xB0C, despite the planet\u2019s
+      closeness to the Sun."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114213796118528
+    m_Localized: Crater Dust Cluster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114223300411392
+    m_Localized: "This dusty clump is made of fine, grayish soil created by constant
+      meteor impacts. Mercury\u2019s surface is covered with regolith\u2014dust and
+      crushed rock\u2014with no atmosphere to slow impacts."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114243554705408
+    m_Localized: Mercury Magneto Capsule
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114254229209088
+    m_Localized: Despite being small, Mercury has a weak but active magnetic field,
+      likely generated by a partially molten core. This capsule contains a trace
+      of its magnetic activity.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114282402349056
+    m_Localized: Impact Spark Shard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114308574806016
+    m_Localized: "With no real atmosphere to protect it, Mercury is constantly bombarded
+      by tiny space rocks. This shard came from a fresh crater \u2014 still warm
+      when collected."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114330787840000
+    m_Localized: Spin-Orbit Beacon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114384382656512
+    m_Localized: "Mercury rotates three times for every two orbits around the Sun
+      \u2014 a 3:2 resonance. This device records that strange rhythm, showing how
+      Mercury\u2019s slow day is tied to its orbit."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114413012975616
+    m_Localized: Supercooled Methane Shard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114444499615744
+    m_Localized: "Neptune\u2019s blue color comes from methane gas in its atmosphere.
+      At high altitudes, it gets so cold that methane freezes into tiny crystals,
+      making the planet glow deep blue."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114497347846144
+    m_Localized: High-Pressure Sky Sample
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114510727675904
+    m_Localized: Pressure inside Neptune rises so fast it could crush a spacecraft.
+      Just a few hundred kilometers down, the pressure is thousands of times stronger
+      than on Earth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114529866285056
+    m_Localized: Supersonic Anemometer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114538867261440
+    m_Localized: "Neptune\u2019s winds blow over 2,000 km/h, the fastest in the solar
+      system. These super-fast jet streams are powered by Neptune\u2019s inner heat,
+      not sunlight."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114559499042816
+    m_Localized: Slushy Mantle Droplet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114569628286976
+    m_Localized: "Beneath Neptune\u2019s clouds might be a slushy ocean made of water,
+      ammonia, and methane. It could even be superionic, where water behaves like
+      a mix of solid and liquid."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114581166817280
+    m_Localized: Diamond Dust Sample
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114614612197376
+    m_Localized: "Neptune\u2019s deep interior may turn carbon into falling diamonds.
+      Intense pressure crushes carbon atoms into crystals that might rain through
+      the planet"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114625479639040
+    m_Localized: Magnetic Field Detector
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114649643024384
+    m_Localized: "Neptune\u2019s magnetic field is tilted and off-center, spinning
+      in a strange way. It\u2019s likely created in a shallow zone, unlike Earth\u2019s
+      deep magnetic core."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114681616203776
+    m_Localized: Ice-Rock Ring Fragment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114707205652480
+    m_Localized: "This icy chunk was collected from Saturn\u2019s rings, which are
+      made of billions of pieces of ice and rock, some as small as grains and others
+      as big as mountains. These rings are thin but stretch out over 280,000 km wide!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114725517983744
+    m_Localized: Polar Vortex Fragment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114736934879232
+    m_Localized: "This piece comes from Saturn\u2019s bizarre hexagon-shaped storm
+      at its north pole. The storm is massive\u2014wider than Earth\u2014and its
+      six-sided shape has puzzled scientists for years!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114750671224832
+    m_Localized: Saturnian Storm Echo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114762885038080
+    m_Localized: "This capsule captured radio signals from powerful lightning storms
+      deep in Saturn\u2019s atmosphere. These \u201CSaturn Electrostatic Discharges\u201D
+      can last for days and create more energy than anything on Earth!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114774641672192
+    m_Localized: Upper Atmosphere Flake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114800965124096
+    m_Localized: "This crystal formed from supercooled hydrogen in Saturn\u2019s
+      upper atmosphere, where winds blow over 1,800 km/h and temperatures can drop
+      below -170\xB0C!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114817129971712
+    m_Localized: Reflective Particle Residue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114832997023744
+    m_Localized: "This shimmering dust was gathered from the shadowed areas of Saturn\u2019s
+      rings. Some particles are darkened by micrometeorites and cosmic radiation,
+      which slowly change their composition over time."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114849321254912
+    m_Localized: Saturn Magnetosphere Reader
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114865716789248
+    m_Localized: "This device recorded Saturn\u2019s powerful and mysterious magnetic
+      field. It\u2019s nearly perfectly aligned with the planet\u2019s rotation\u2014a
+      rare feature that scientists still don\u2019t fully understand!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114888030486528
+    m_Localized: Methane Ice Crystal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114918112034816
+    m_Localized: "This crystal contains frozen methane, the gas that gives Uranus
+      its signature blue color. Methane absorbs red light and reflects blue. It\u2019s
+      like holding the planet\u2019s glow in your hand!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114936671830016
+    m_Localized: Ionized Gas Orb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114953696509952
+    m_Localized: "This glowing sphere is full of charged particles from Uranus\u2019s
+      upper atmosphere. It helps explain why the planet has strange magnetic activity\u2014even
+      though it spins almost sideways!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114972294053888
+    m_Localized: Deep Mantle Fragment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114993320099840
+    m_Localized: "This rocky shard likely came from deep beneath the clouds. Uranus
+      has an icy mantle full of water, ammonia, and silicate rock\u2014this sample
+      may have broken loose during a storm or quake."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115008146964480
+    m_Localized: Ammonia Ice Flake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115031240802304
+    m_Localized: "A fragile layer of frozen ammonia and water ice, this sample came
+      from the lower cloud layers of Uranus. It shows how cold and complex the planet\u2019s
+      atmosphere really is!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115068565913600
+    m_Localized: Magneto-Core Tracker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115079068450816
+    m_Localized: "This compact sensor gathered magnetic readings across Uranus\u2019s
+      strange field. Scientists use data like this to map how the planet\u2019s magnetosphere
+      tilts wildly as it rotates."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115108659265536
+    m_Localized: Atmospheric Temperature Core
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115122538217472
+    m_Localized: "Despite being far from the Sun, Uranus is colder than Neptune!
+      This sample confirms Uranus has the coldest atmosphere of all planets, reaching
+      \u2013224\xB0C."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115161373278208
+    m_Localized: Sulfuric Mist Droplet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115185847042048
+    m_Localized: "Collected from Venus\u2019s thick clouds, this droplet contains
+      sulfuric acid, the main ingredient in Venus\u2019s toxic atmosphere. The clouds
+      are so dense, they reflect most sunlight and trap intense heat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115214372503552
+    m_Localized: Baked Basalt Slab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115228465364992
+    m_Localized: "This scorched rock was taken from Venus\u2019s surface, where temperatures
+      reach over 460\xB0C \u2014 hotter than Mercury! The rock is cracked and dry
+      from volcanic heat and pressure."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115245313884160
+    m_Localized: Venusian Compression Unit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115256193908736
+    m_Localized: "This sealed device captured the incredible surface pressure on
+      Venus, which is 90 times greater than Earth\u2019s \u2014 enough to crush submarines."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115269263360000
+    m_Localized: Static Storm Collector
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115283830177792
+    m_Localized: Venus experiences intense lightning in its thick clouds, possibly
+      due to swirling dust and fast-moving winds. This sample glows with trapped
+      static energy from the storm.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115292004876288
+    m_Localized: Volcanic Residue Bead
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115306940792832
+    m_Localized: "Venus may still have active volcanoes. This molten bead was gathered
+      from a region showing recent lava flows \u2014 evidence that Venus might be
+      geologically alive."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115323470544896
+    m_Localized: Unusual Chemical Trace
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115343754199040
+    m_Localized: "This tiny bubble holds a strange chemical compound found in Venus\u2019s
+      upper atmosphere. Some scientists wonder if it\u2019s a sign of unknown chemical
+      processes, or even microbial life."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

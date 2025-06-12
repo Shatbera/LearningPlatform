@@ -1,13 +1,16 @@
 using UnityEngine;
-using UnityEditor;
+using UnityEngine.Localization;
+
 [CreateAssetMenu(fileName = "ResearchSample", menuName = "Scriptable Objects/ResearchSample")]
 public class ResearchSampleSO : CollectableItemSO
 {
     public string ID;
     public Sprite Sprite;
     public string SampleName;
+    public LocalizedString LocalizedSampleName;
     [TextArea]
     public string SampleInfo;
+    public LocalizedString LocalizedSampleInfo;
 
     public override string Id => ID;
 
