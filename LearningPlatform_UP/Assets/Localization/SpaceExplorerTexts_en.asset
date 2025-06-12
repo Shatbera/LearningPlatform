@@ -58,6 +58,213 @@ MonoBehaviour:
     m_Localized: Space Lab
     m_Metadata:
       m_Items: []
+  - m_Id: 29384084807680
+    m_Localized: "Earth is the only planet we know that has life \u2014 that means
+      plants, animals, and people all live here!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29610447200256
+    m_Localized: "About 70% of Earth is covered in water, which is why it's sometimes
+      called the \u201CBlue Planet.\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29627203444736
+    m_Localized: "Earth has air we can breathe, made mostly of nitrogen and oxygen
+      \u2014 super important for all living things!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29634644140032
+    m_Localized: "It takes 365 days for Earth to go around the Sun, and that\u2019s
+      what we call a year!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29674401947648
+    m_Localized: "Earth has one moon, and it helps create the ocean\u2019s tides
+      and lights up the night sky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29841364606976
+    m_Localized: "Jupiter is the biggest planet in our solar system \u2014 it's so
+      big that more than 1,300 Earths could fit inside it!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29881814474752
+    m_Localized: "It has a giant storm called the Great Red Spot that\u2019s been
+      spinning for over 300 years \u2014 it\u2019s like a huge hurricane on Jupiter!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29889427136512
+    m_Localized: "Jupiter is made of gas, not solid ground like Earth. You couldn't
+      stand on it \u2014 you'd sink into clouds of gas!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29896217714688
+    m_Localized: It has at least 95 moons, and some of them, like Europa and Ganymede,
+      might even have oceans under their surfaces.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29904165920768
+    m_Localized: "Jupiter has super strong gravity, much stronger than Earth\u2019s
+      \u2014 it's the reason Jupiter can hold on to so many moons and even pull in
+      space rocks that could hit Earth."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30001876426752
+    m_Localized: "Mars is called the \"Red Planet\" \u2013 It gets its red color
+      from iron in the soil, which has rusted over time!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30129475543040
+    m_Localized: "Mars has the tallest volcano in the solar system! \u2013 Olympus
+      Mons is about three times taller than Mount Everest!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30147020316672
+    m_Localized: "A day on Mars is almost like Earth\u2019s! \u2013 One day on Mars
+      is 24 hours and 37 minutes, just a little longer than a day on Earth."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30154662338560
+    m_Localized: "Mars has huge dust storms! \u2013 These storms can cover the entire
+      planet and last for months!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30161826209792
+    m_Localized: "There might have been water on Mars! \u2013 Scientists believe
+      that long ago, Mars had rivers, lakes, and even oceans!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30263844265984
+    m_Localized: "Mercury is the closest planet to the Sun \u2014 it\u2019s the first
+      planet in our solar system!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30664106696704
+    m_Localized: "It gets super hot during the day (over 400\xB0C) but freezing cold
+      at night \u2014 that\u2019s because it has almost no atmosphere to hold heat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30671547392000
+    m_Localized: "One day on Mercury is really long \u2014 it takes about 59 Earth
+      days for Mercury to spin around once!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30677864013824
+    m_Localized: "Mercury has no moons \u2014 it\u2019s too close to the Sun to hold
+      onto any."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30686089043968
+    m_Localized: "Mercury\u2019s surface looks like the Moon \u2014 it\u2019s full
+      of craters from space rocks hitting it!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30786332909568
+    m_Localized: "Neptune is the farthest planet from the Sun \u2014 it\u2019s the
+      8th planet in our solar system!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30813990150144
+    m_Localized: "It\u2019s super windy \u2014 Neptune has the strongest winds in
+      the whole solar system, blowing faster than 1,200 mph (2,000 km/h)!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30821804138496
+    m_Localized: "It\u2019s a gas giant \u2014 made mostly of gases like hydrogen
+      and helium, with a deep blue color."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30844260442112
+    m_Localized: "It has a giant storm called the Great Dark Spot, kind of like Jupiter\u2019s
+      storm but darker and smaller"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30853919924224
+    m_Localized: "Neptune has 14 moons \u2014 the biggest one is Triton, which spins
+      the opposite way of Neptune\u2019s rotation!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30931950755840
+    m_Localized: "Saturn has beautiful rings \u2014 It\u2019s famous for its big,
+      bright rings made of ice, rocks, and dust!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30960690126848
+    m_Localized: "It\u2019s a gas giant \u2014 Just like Jupiter, Saturn is mostly
+      made of gases and doesn\u2019t have a solid surface to stand on."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30967719780352
+    m_Localized: "Saturn has lots of moons \u2014 It has over 80 moons, and the biggest
+      one is Titan, which is even larger than Mercury!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30974338392064
+    m_Localized: "It\u2019s super fast at spinning \u2014 A day on Saturn is only
+      about 10.5 hours long because it spins so quickly!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30975126921216
+    m_Localized: "It\u2019s lighter than water \u2014 If there were a big enough
+      bathtub, Saturn would float in it because it\u2019s so light for its size!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064553676800
+    m_Localized: "Uranus is blue-green \u2014 Its pretty color comes from methane
+      gas in its atmosphere, which absorbs red light and reflects blue!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31085902684160
+    m_Localized: "It rolls like a ball \u2014 Uranus spins on its side, unlike any
+      other planet! It's tilted so much it looks like it's rolling around the Sun"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31093339185152
+    m_Localized: "It\u2019s an ice giant \u2014 Uranus is made mostly of icy materials
+      like water, methane, and ammonia, not just gas like Jupiter or Saturn."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31099894882304
+    m_Localized: "It has rings too! \u2014 Uranus has faint rings that are hard to
+      see, but they\u2019re real and circle the planet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31106689654784
+    m_Localized: "It\u2019s one of the coldest planets \u2014 Even though Neptune
+      is farther from the Sun, Uranus gets colder, with temperatures dropping to
+      \u2013224\xB0C (\u2013371\xB0F)!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31196628115456
+    m_Localized: "Venus is the brightest planet \u2014 It shines so bright in the
+      sky that you can often see it just after sunset or before sunrise. That\u2019s
+      why it\u2019s called the \u201CEvening Star\u201D or \u201CMorning Star\u201D!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31238940254208
+    m_Localized: "It\u2019s the hottest planet \u2014 Even though Mercury is closer
+      to the Sun, Venus is hotter, with surface temperatures over 460\xB0C (860\xB0F)
+      \u2014 hot enough to melt lead!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31249627340800
+    m_Localized: "It spins backward \u2014 Venus rotates in the opposite direction
+      of most other planets, and it spins very slowly. A day on Venus is longer than
+      its year!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31256040431616
+    m_Localized: "It has thick, toxic clouds \u2014 Venus is covered with thick clouds
+      of carbon dioxide and sulfuric acid, trapping heat like a super-powered greenhouse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31302869835776
+    m_Localized: "It\u2019s Earth\u2019s \u201Ctwin\u201D \u2014 Venus is almost
+      the same size and made of similar rock as Earth, which is why people call it
+      Earth\u2019s \u201Csister planet\u201D \u2014 but it\u2019s way too hot to
+      live on!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
