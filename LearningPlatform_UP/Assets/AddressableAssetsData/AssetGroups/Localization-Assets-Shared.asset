@@ -25,8 +25,18 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8bc111508c0e3f9439143d96ca00d7c2
+    m_Address: Assets/Localization/Common/Common Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a1b035445b65e4fa48f4c4f3199ea335
     m_Address: Assets/Localization/OceanMysteries Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6a8115080b818e4eb0ed2ae703d4c73
+    m_Address: Assets/Localization/JungleAdventures Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

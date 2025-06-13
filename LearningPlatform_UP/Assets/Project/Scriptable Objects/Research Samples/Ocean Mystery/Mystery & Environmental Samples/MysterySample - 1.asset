@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MysterySample_1
   Sprite: {fileID: -1357077098, guid: af1b2da9efe693245a43c847c32fe7ea, type: 3}
   SampleName: Glowing Algae Drop
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278719871574016
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Some algae can glow in the dark! This magical-looking light is called
     bioluminescence, and it\u2019s caused by a chemical reaction when the water is
     disturbed \u2014 like from a wave or a swimming fish."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278777878798336
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

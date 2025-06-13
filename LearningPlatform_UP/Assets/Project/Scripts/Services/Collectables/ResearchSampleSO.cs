@@ -14,7 +14,8 @@ public class ResearchSampleSO : CollectableItemSO
 
     public override string Id => ID;
 
-    public override string DisplayName => SampleName;
+    //public override string DisplayName => SampleName;
+    public override LocalizedString LocalizedDisplayName => LocalizedSampleName;
 
     public override Sprite Icon => Sprite;
 

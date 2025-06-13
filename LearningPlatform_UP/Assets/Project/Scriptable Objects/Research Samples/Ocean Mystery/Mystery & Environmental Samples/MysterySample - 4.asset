@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MysterySample_4
   Sprite: {fileID: -344951365, guid: af1b2da9efe693245a43c847c32fe7ea, type: 3}
   SampleName: Plastic Fragment
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278853741174784
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Tiny pieces of plastic, called microplastics, are found in oceans
     all over the world. Sea animals often mistake them for food \u2014 it\u2019s
     one of the biggest threats to ocean health today."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278870686162944
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

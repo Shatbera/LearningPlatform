@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: ShellsSample_5
   Sprite: {fileID: -756121009, guid: 0821a25314f5f5748a98515685673dd1, type: 3}
   SampleName: Sea Cucumber Skin
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 279106825478144
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Sea cucumbers slowly crawl across the ocean floor, cleaning it as
     they go. They suck up sand and digest nutrients, leaving the ocean cleaner behind
     them \u2014 like little underwater vacuum cleaners!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 279123808215040
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

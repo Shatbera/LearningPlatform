@@ -15,6 +15,18 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-English (en)
   m_GUID: 205694f8113514bdd95a71db549b2d38
   m_SerializeEntries:
+  - m_GUID: 4116a58ec1228b540a76c407f7719ccb
+    m_Address: Common_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5fb822fe9283524b8846e66127e6b3f
+    m_Address: JungleAdventures_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f4324b632540045b2a9a700e7d7030e1
     m_Address: OceanMysteries_en
     m_ReadOnly: 1

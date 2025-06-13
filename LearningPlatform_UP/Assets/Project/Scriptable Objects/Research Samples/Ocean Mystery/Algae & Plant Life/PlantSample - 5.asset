@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: PlantSample_5
   Sprite: {fileID: 972686487, guid: 3b1c5e4d0ab8e5041b57e84556217f52, type: 3}
   SampleName: Seagrass Blade
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278022803415040
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: Seagrass is a real flowering plant that lives underwater. It grows
     in huge green meadows and helps protect baby fish and turtles. Its roots hold
     the ocean floor together, like grass on land holds the dirt.
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278036271325184
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

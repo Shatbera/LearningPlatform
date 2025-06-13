@@ -6,6 +6,15 @@ public class LocalizedTextSetter : MonoBehaviour
 {
     private TMP_Text _text;
     private LocalizedString _currentLocalizedString;
+
+    public void SetRawText(string text)
+    {
+        if (_text == null)
+        {
+            _text = GetComponent<TMP_Text>();
+        }
+        _text.text = text;
+    }
     public void SetLocalizedText(LocalizedString localizedString)
     {
         if (_currentLocalizedString != null)

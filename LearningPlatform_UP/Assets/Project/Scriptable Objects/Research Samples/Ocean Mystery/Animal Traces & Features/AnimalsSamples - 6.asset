@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: AnimalsSamples_6
   Sprite: {fileID: 2026118047, guid: 4b5ac6fc7575ccb46af023839362b93d, type: 3}
   SampleName: Shark Tooth
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278408012488704
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Sharks constantly lose teeth \u2014 and that\u2019s okay! They grow
     new ones in rows like a conveyor belt, replacing old teeth every few days to
     weeks depending on the species."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278419777511424
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -21,6 +21,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-ka
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 29c30f2c285f6e348ae2d2d23cfa21b0
+    m_Address: JungleAdventures_ka
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ka
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 947a74da2b66d5e48bbb0fb6ec1ad66e
+    m_Address: Common_ka
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ka
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f8e95c7bea9ce45e3a99c54f73bf0e29
     m_Address: OceanMysteries_ka
     m_ReadOnly: 1

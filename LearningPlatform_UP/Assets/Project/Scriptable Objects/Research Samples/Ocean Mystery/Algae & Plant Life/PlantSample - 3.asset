@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: PlantSample_3
   Sprite: {fileID: -1623550846, guid: 3b1c5e4d0ab8e5041b57e84556217f52, type: 3}
   SampleName: Phytoplankton Drop
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 277954998296576
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Don\u2019t let their tiny size fool you! Phytoplankton float near
     the surface of the ocean and produce more than half the oxygen we breathe. Without
     them, animals (and people!) would run out of air."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 277970479472640
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

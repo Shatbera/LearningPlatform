@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MysterySample_3
   Sprite: {fileID: 1132721292, guid: af1b2da9efe693245a43c847c32fe7ea, type: 3}
   SampleName: Message in a Bottle
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278823047258112
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "People have sent messages in bottles across oceans for hundreds of
     years. Some are found decades later on faraway shores \u2014 carrying stories,
     coordinates, or cries for help."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278840235515904
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

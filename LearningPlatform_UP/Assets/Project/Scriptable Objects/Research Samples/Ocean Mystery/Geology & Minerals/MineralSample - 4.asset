@@ -15,5 +15,26 @@ MonoBehaviour:
   ID: MineralSample_4
   Sprite: {fileID: -648908050, guid: 42eafcf9a6ed1494b94d5c4a2f09e79b, type: 3}
   SampleName: Pumice Rock
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278601256656896
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: Pumice is a type of volcanic rock full of tiny holes, which makes it
     so light it can float on water!
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278623629074432
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

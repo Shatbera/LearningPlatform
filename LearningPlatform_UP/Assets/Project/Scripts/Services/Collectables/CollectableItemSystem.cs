@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEngine;
 
 public class CollectableItemSystem<TItem, TState> : ICollectableItemSystem<TItem, TState>, ISaveable
     where TItem : ICollectableItem
@@ -24,7 +23,6 @@ public class CollectableItemSystem<TItem, TState> : ICollectableItemSystem<TItem
             return false;
 
         entry.State.ChangeAmount(amount);
-        Debug.Log($"added {amount} {entry.Item.DisplayName}");
         return true;
     }
 

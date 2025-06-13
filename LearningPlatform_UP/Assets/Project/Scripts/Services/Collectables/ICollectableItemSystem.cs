@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
 
 public interface ICollectableItemSystem<TItem, TState> where TItem : ICollectableItem where TState : CollectableItemState
 {
@@ -13,7 +14,7 @@ public interface ICollectableItemSystem<TItem, TState> where TItem : ICollectabl
 public interface ICollectableItem
 {
     public abstract string Id { get; }
-    public abstract string DisplayName { get; }
+    public abstract LocalizedString LocalizedDisplayName { get; }
     public abstract Sprite Icon { get; }
 }
 

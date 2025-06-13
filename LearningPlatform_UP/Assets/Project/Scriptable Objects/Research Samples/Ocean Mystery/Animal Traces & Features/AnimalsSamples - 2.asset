@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: AnimalsSamples_2
   Sprite: {fileID: -306968357, guid: 4b5ac6fc7575ccb46af023839362b93d, type: 3}
   SampleName: Jellyfish Tentacle
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278198687358976
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Jellyfish don\u2019t have a brain or bones, but they\u2019ve survived
     for over 500 million years. Some jellyfish have stingers powerful enough to scare
     away predators \u2014 or even stop a fish in its tracks!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278231298072576
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

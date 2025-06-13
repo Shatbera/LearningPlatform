@@ -15,5 +15,26 @@ MonoBehaviour:
   ID: MineralSample_6
   Sprite: {fileID: 1422423816, guid: 42eafcf9a6ed1494b94d5c4a2f09e79b, type: 3}
   SampleName: Limestone Chip
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278669699309568
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: Limestone is often formed from the compacted shells of ancient sea
     creatures. Many coral reefs and sea caves are made of limestone.
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278692109475840
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

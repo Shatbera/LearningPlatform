@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: ShellsSample_1
   Sprite: {fileID: 67676546, guid: 0821a25314f5f5748a98515685673dd1, type: 3}
   SampleName: Clam Shell
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278971974410240
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Clams spend most of their lives buried in sand, quietly filtering
     seawater to eat. Some clams can live more than 100 years \u2014 that\u2019s older
     than most people!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278993021427712
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

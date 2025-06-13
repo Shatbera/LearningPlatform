@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MysterySample_2
   Sprite: {fileID: -900395624, guid: af1b2da9efe693245a43c847c32fe7ea, type: 3}
   SampleName: Ancient Coin
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278793527746560
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This coin may have come from a shipwreck long ago. Oceans hold secrets
     from ancient travelers, pirates, and lost civilizations \u2014 all buried beneath
     the waves."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278811521310720
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

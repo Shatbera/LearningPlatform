@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: PlantSample_1
   Sprite: {fileID: 1028690587, guid: 3b1c5e4d0ab8e5041b57e84556217f52, type: 3}
   SampleName: Seaweed Strip
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 277737842401280
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Seaweed might look like a plant, but it's actually algae! It lives
     in shallow water and soaks up sunlight to make food \u2014 just like trees do
     on land. Some types of seaweed are even used in sushi and ice c"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 277867811299328
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

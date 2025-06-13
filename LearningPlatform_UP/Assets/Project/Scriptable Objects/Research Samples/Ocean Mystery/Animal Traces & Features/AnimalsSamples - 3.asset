@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: AnimalsSamples_3
   Sprite: {fileID: -1091160672, guid: 4b5ac6fc7575ccb46af023839362b93d, type: 3}
   SampleName: Crab Claw Fragment
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278248985452544
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Crabs grow by shedding their old shell in a process called molting.
     Right after molting, their new shell is soft \u2014 so they have to hide until
     it hardens again!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278265490038784
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: PlantSample_4
   Sprite: {fileID: -1479036556, guid: 3b1c5e4d0ab8e5041b57e84556217f52, type: 3}
   SampleName: Red Algae Thread
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 277982173192192
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: Red algae love warm, sunny oceans and come in bright colors. Humans
     use them to make jelly and toothpaste! Some red algae even live deeper than other
     plants because they absorb blue light best.
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278005418024960
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

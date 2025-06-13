@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: AnimalsSamples_1
   Sprite: {fileID: 591243918, guid: 4b5ac6fc7575ccb46af023839362b93d, type: 3}
   SampleName: Fish Scale
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278149341372416
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Fish scales grow in layers as the fish gets older \u2014 just like
     the rings inside a tree! Scientists can tell a fish\u2019s age by looking closely
     at a scale under a microscope."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278183822745600
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

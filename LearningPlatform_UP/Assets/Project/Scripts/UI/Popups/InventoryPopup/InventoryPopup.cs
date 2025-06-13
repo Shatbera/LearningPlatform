@@ -9,8 +9,10 @@ public class InventoryPopup : MonoBehaviour
     [SerializeField] private ResearchSampleSystemServiceRefSO _samplesRefSO;
     [SerializeField] private ComponentPool<InventoryItemSlot> _inventorySlots;
 
-    [SerializeField] private TMP_Text _itemNameTxt;
-    [SerializeField] private TMP_Text _itemInfoTxt;
+    //[SerializeField] private TMP_Text _itemNameTxt;
+    //[SerializeField] private TMP_Text _itemInfoTxt;
+    [SerializeField] private LocalizedTextSetter _itemNameTxtSetter;
+    [SerializeField] private LocalizedTextSetter _itemInfoTxtSetter;
     [SerializeField] private Image _itemIconImg;
 
     private List<InventoryItemSlot> _activeSlots = new();
@@ -35,8 +37,10 @@ public class InventoryPopup : MonoBehaviour
             slot.transform.SetParent(_inventorySlots.Parent);
             _activeSlots.Add(slot);
         }
-        _itemNameTxt.text = "...";
-        _itemInfoTxt.text = "...";
+        //_itemNameTxt.text = "...";
+        //_itemInfoTxt.text = "...";
+        _itemNameTxtSetter.SetRawText("...");
+        _itemInfoTxtSetter.SetRawText("...");
         _itemIconImg.gameObject.SetActive(false);
     }
 
@@ -46,8 +50,17 @@ public class InventoryPopup : MonoBehaviour
         {
             slot.SetSelected(slot == itemSlot);
         }
-        _itemNameTxt.text = itemSlot.Item.Item.DisplayName;
-        _itemInfoTxt.text = itemSlot.Item.State.IsUnlocked ? itemSlot.Item.Item.SampleInfo : "Locked";
+        //_itemNameTxt.text = itemSlot.Item.Item.DisplayName;
+        //_itemInfoTxt.text = itemSlot.Item.State.IsUnlocked ? itemSlot.Item.Item.SampleInfo : "Locked";
+        _itemNameTxtSetter.SetLocalizedText(itemSlot.Item.Item.LocalizedDisplayName);
+        if (itemSlot.Item.State.IsUnlocked)
+        {
+            _itemInfoTxtSetter.SetLocalizedText(itemSlot.Item.Item.LocalizedSampleInfo);
+        }
+        else
+        {
+            _itemInfoTxtSetter.SetRawText("???");
+        }
         _itemIconImg.sprite = itemSlot.Item.Item.Icon;
         _itemIconImg.gameObject.SetActive(true);
     }

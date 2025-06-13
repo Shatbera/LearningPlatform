@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: AnimalsSamples_4
   Sprite: {fileID: -1024328721, guid: 4b5ac6fc7575ccb46af023839362b93d, type: 3}
   SampleName: Octopus Ink Sample
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278279641620480
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "When threatened, octopuses shoot out a cloud of dark ink to confuse
     predators. Some ink even contains chemicals that dull the predator\u2019s sense
     of smell!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278296485945344
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

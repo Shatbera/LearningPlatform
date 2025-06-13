@@ -15,5 +15,26 @@ MonoBehaviour:
   ID: MineralSample_5
   Sprite: {fileID: -363763947, guid: 42eafcf9a6ed1494b94d5c4a2f09e79b, type: 3}
   SampleName: Deep Sea Sediment
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278638086840320
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This fine, dusty layer forms over time as tiny dead plankton and particles
     settle on the ocean floor \u2014 creating a record of ocean history."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278657116397568
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

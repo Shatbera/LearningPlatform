@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: PlantSample_6
   Sprite: {fileID: 1434268780, guid: 3b1c5e4d0ab8e5041b57e84556217f52, type: 3}
   SampleName: Sargassum Leaf
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278057070878720
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Sargassum floats on the ocean surface in golden-brown mats. Tiny fish,
     shrimp, and even baby turtles use it as a floating home. Some boats even get
     stuck in it because there\u2019s so much!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278073470607360
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MysterySample_5
   Sprite: {fileID: -762682700, guid: af1b2da9efe693245a43c847c32fe7ea, type: 3}
   SampleName: Ghost Net Fiber
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278881192894464
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: Ghost nets are abandoned fishing nets that drift through the sea. They
     trap fish, turtles, and even dolphins by accident. Cleaning them up helps protect
     marine life.
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278897290633216
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

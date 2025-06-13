@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: PlantSample_2
   Sprite: {fileID: -1324829059, guid: 3b1c5e4d0ab8e5041b57e84556217f52, type: 3}
   SampleName: Kelp Leaf
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 277908659625984
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Kelp is the giant of the algae world. It can grow over 60 centimeters
     (2 feet) every single day! Kelp forests are like underwater jungles \u2014 they
     provide food and hiding places for otters, fish, and sea snails."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 277936929234944
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

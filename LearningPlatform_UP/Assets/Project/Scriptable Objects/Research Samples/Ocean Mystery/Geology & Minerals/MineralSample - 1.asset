@@ -15,5 +15,26 @@ MonoBehaviour:
   ID: MineralSample_1
   Sprite: {fileID: -38390839, guid: 42eafcf9a6ed1494b94d5c4a2f09e79b, type: 3}
   SampleName: Black Sand Grain
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278440442847232
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Black sand is made from cooled lava! It\u2019s mostly found on volcanic
     beaches and is rich in minerals like basalt and magnetite."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278521455828992
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

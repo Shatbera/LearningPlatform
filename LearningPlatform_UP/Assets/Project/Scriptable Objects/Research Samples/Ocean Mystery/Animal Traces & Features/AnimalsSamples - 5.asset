@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: AnimalsSamples_5
   Sprite: {fileID: 1792243540, guid: 4b5ac6fc7575ccb46af023839362b93d, type: 3}
   SampleName: Dolphin Echo Ping
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278366400798720
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Dolphins don\u2019t rely on sight \u2014 they use echolocation! They
     send out sound waves and listen to the echoes bouncing back to \u201Csee\u201D
     the shape and distance of things underwater."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278387380707328
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

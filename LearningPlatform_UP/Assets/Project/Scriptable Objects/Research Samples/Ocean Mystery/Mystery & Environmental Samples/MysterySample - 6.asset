@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MysterySample_6
   Sprite: {fileID: -1164392579, guid: af1b2da9efe693245a43c847c32fe7ea, type: 3}
   SampleName: Ocean Map Scrap
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278916760592384
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: This torn piece of map might lead to something mysterious. Explorers
     and scientists use underwater maps to discover new trenches, ridges, and even
     ancient ruins hidden below.
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 278935282638848
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

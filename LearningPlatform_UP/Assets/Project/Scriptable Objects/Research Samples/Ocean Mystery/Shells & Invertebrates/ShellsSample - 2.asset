@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: ShellsSample_2
   Sprite: {fileID: -309034106, guid: 0821a25314f5f5748a98515685673dd1, type: 3}
   SampleName: Sea Urchin Spine
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 279009526013952
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: Sea urchins might look like prickly balls, but they move around using
     hundreds of tiny tube feet. Their spines help protect them from hungry fish and
     curious crabs.
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1b035445b65e4fa48f4c4f3199ea335
+    m_TableEntryReference:
+      m_KeyId: 279024155746304
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
