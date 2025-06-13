@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MercurySample_2
   Sprite: {fileID: -800641783, guid: b1af26bef6a237043a65d4f6bb193023, type: 3}
   SampleName: Shadow Ice Fragment
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114181130878976
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "From a crater in permanent shadow near Mercury's poles, this sample
     holds frozen water, preserved in total darkness at -180\xB0C, despite the planet\u2019s
     closeness to the Sun."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114195307626496
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

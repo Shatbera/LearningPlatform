@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: SaturnSample_6
   Sprite: {fileID: 1377878350, guid: b0fd13a85e9a391459a7226e6c71c0d3, type: 3}
   SampleName: Saturn Magnetosphere Reader
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114849321254912
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This device recorded Saturn\u2019s powerful and mysterious magnetic
     field. It\u2019s nearly perfectly aligned with the planet\u2019s rotation\u2014a
     rare feature that scientists still don\u2019t fully understand!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114865716789248
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

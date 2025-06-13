@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MercurySample_3
   Sprite: {fileID: -738411581, guid: b1af26bef6a237043a65d4f6bb193023, type: 3}
   SampleName: Crater Dust Cluster
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114213796118528
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This dusty clump is made of fine, grayish soil created by constant
     meteor impacts. Mercury\u2019s surface is covered with regolith\u2014dust and
     crushed rock\u2014with no atmosphere to slow impacts."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114223300411392
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

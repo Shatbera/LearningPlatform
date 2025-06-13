@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: SaturnSample_2
   Sprite: {fileID: 253203830, guid: b0fd13a85e9a391459a7226e6c71c0d3, type: 3}
   SampleName: Polar Vortex Fragment
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114725517983744
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This piece comes from Saturn\u2019s bizarre hexagon-shaped storm at
     its north pole. The storm is massive\u2014wider than Earth\u2014and its six-sided
     shape has puzzled scientists for years!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114736934879232
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

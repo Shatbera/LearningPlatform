@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MarsSample_3
   Sprite: {fileID: 678411385, guid: 2197f8b8cbc419a41b0ed919d992fd2c, type: 3}
   SampleName: Thin Air Bubble
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113975303798784
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This tiny air bubble shows just how thin the Martian air is. There\u2019s
     barely any oxygen, and spacesuits are a must! Even boiling water acts strangely
     here because of the pressure."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113992370421760
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: EarthSample_3
   Sprite: {fileID: -1145206708, guid: 877fbc0a54e5d3a4ca1094ec88dd042a, type: 3}
   SampleName: Clean Atmosphere Sample
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113317142003712
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This capsule contains a portion of Earth\u2019s breathable air \u2014
     78% nitrogen, 21% oxygen, and traces of other gases. It\u2019s a perfectly balanced
     mix for complex life."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113329615863808
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

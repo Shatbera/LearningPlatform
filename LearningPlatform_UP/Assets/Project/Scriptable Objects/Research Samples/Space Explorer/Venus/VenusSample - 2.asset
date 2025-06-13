@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: VenusSample_2
   Sprite: {fileID: 177979780, guid: ee52a1449833e284e99999706c426a8f, type: 3}
   SampleName: Baked Basalt Slab
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115214372503552
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This scorched rock was taken from Venus\u2019s surface, where temperatures
     reach over 460\xB0C \u2014 hotter than Mercury! The rock is cracked and dry from
     volcanic heat and pressure."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115228465364992
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

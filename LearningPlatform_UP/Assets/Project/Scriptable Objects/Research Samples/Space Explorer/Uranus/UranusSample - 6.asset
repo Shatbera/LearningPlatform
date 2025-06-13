@@ -15,5 +15,26 @@ MonoBehaviour:
   ID: UranusSample_6
   Sprite: {fileID: 836929797, guid: 16d7624d15e567f40ad0b7d6113f3e4d, type: 3}
   SampleName: Atmospheric Temperature Core
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115108659265536
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Despite being far from the Sun, Uranus is colder than Neptune! This
     sample confirms Uranus has the coldest atmosphere of all planets, reaching \u2013224\xB0C."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115122538217472
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

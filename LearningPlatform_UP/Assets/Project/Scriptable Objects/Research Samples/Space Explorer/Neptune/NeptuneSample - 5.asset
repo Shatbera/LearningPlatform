@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: NeptuneSample_5
   Sprite: {fileID: -222672039, guid: 80768c8f16287074487c1779327f56be, type: 3}
   SampleName: Diamond Dust Sample
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114581166817280
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Neptune\u2019s deep interior may turn carbon into falling diamonds.
     Intense pressure crushes carbon atoms into crystals that might rain through the
     planet"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114614612197376
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

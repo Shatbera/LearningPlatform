@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MercurySample_6
   Sprite: {fileID: -318446251, guid: b1af26bef6a237043a65d4f6bb193023, type: 3}
   SampleName: Spin-Orbit Beacon
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114330787840000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Mercury rotates three times for every two orbits around the Sun \u2014
     a 3:2 resonance. This device records that strange rhythm, showing how Mercury\u2019s
     slow day is tied to its orbit."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114384382656512
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

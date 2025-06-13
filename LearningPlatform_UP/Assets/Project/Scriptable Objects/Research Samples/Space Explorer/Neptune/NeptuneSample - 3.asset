@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: NeptuneSample_3
   Sprite: {fileID: 1390158299, guid: 80768c8f16287074487c1779327f56be, type: 3}
   SampleName: Supersonic Anemometer
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114529866285056
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Neptune\u2019s winds blow over 2,000 km/h, the fastest in the solar
     system. These super-fast jet streams are powered by Neptune\u2019s inner heat,
     not sunlight."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114538867261440
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

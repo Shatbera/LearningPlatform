@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: EarthSample_1
   Sprite: {fileID: -1396321658, guid: 877fbc0a54e5d3a4ca1094ec88dd042a, type: 3}
   SampleName: Humus-Rich Earth Clump
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113025872756736
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Collected from fertile soil, this sample is full of organic matter
     and microbes that help plants grow. Earth\u2019s soil is alive with billions
     of bacteria and fungi that support ecosystems."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113242563084288
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

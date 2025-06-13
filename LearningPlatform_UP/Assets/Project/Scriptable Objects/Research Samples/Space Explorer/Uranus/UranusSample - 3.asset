@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: UranusSample_3
   Sprite: {fileID: -1665303138, guid: 16d7624d15e567f40ad0b7d6113f3e4d, type: 3}
   SampleName: Deep Mantle Fragment
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114972294053888
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This rocky shard likely came from deep beneath the clouds. Uranus
     has an icy mantle full of water, ammonia, and silicate rock\u2014this sample
     may have broken loose during a storm or quake."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114993320099840
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

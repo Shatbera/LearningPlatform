@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MarsSample_6
   Sprite: {fileID: -1242382935, guid: 2197f8b8cbc419a41b0ed919d992fd2c, type: 3}
   SampleName: Olympus Lava Fragment
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114072833949696
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This rock may have come from Olympus Mons, the biggest volcano in
     the solar system! Even though it\u2019s inactive now, it once erupted with powerful
     lava flows."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114096720510976
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

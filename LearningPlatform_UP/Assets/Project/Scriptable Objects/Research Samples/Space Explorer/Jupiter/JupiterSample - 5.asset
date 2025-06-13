@@ -15,5 +15,26 @@ MonoBehaviour:
   ID: JupiterSample_5
   Sprite: {fileID: 357409921, guid: 8aef4938fbe0d6e4994885d3614b1b59, type: 3}
   SampleName: Jupiter Magnetosphere Scanner
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113794340552704
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This detector recorded Jupiter\u2019s massive magnetic field\u2014it\u2019s
     stronger than any planet\u2019s and stretches millions of kilometers into space!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113811130351616
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

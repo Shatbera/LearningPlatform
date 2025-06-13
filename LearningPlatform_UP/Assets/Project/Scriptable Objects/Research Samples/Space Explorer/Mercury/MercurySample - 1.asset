@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MercurySample_1
   Sprite: {fileID: -523688401, guid: b1af26bef6a237043a65d4f6bb193023, type: 3}
   SampleName: Extreme Temperature Crystal
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114119562690560
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Collected from Mercury's sun-facing side, this heat-damaged crystal
     survived temperatures over 430\xB0C. It\u2019s warped, partially melted, and
     holds trace energy from intense solar radiation"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114162545917952
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

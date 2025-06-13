@@ -15,5 +15,26 @@ MonoBehaviour:
   ID: MarsSample_5
   Sprite: {fileID: 1517095059, guid: 2197f8b8cbc419a41b0ed919d992fd2c, type: 3}
   SampleName: Stormborne Dust Layer
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114033873059840
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: This fine dust came from a storm that stretched across the whole planet!
     Martian storms are huge, and they can block out sunlight for days.
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114059282153472
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: SaturnSample_5
   Sprite: {fileID: 1632492288, guid: b0fd13a85e9a391459a7226e6c71c0d3, type: 3}
   SampleName: Reflective Particle Residue
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114817129971712
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This shimmering dust was gathered from the shadowed areas of Saturn\u2019s
     rings. Some particles are darkened by micrometeorites and cosmic radiation, which
     slowly change their composition over time."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114832997023744
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

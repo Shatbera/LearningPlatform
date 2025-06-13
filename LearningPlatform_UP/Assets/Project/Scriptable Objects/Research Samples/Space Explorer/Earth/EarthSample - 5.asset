@@ -15,5 +15,26 @@ MonoBehaviour:
   ID: EarthSample_5
   Sprite: {fileID: 475412131, guid: 877fbc0a54e5d3a4ca1094ec88dd042a, type: 3}
   SampleName: Basalt Magma Shard
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113385928589312
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This shard of cooled lava comes from a volcano. It tells the story
     of Earth\u2019s inner heat and shifting plates, shaping the land we walk on."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113405822173184
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

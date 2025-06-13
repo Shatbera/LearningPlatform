@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MarsSample_1
   Sprite: {fileID: -1315753312, guid: 2197f8b8cbc419a41b0ed919d992fd2c, type: 3}
   SampleName: Oxidized Martian Regolith
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113891413524480
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This dusty soil is full of iron that has rusted over time. That\u2019s
     why Mars looks red from space! Unlike Earth, this rust covers almost the entire
     surface."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113911978196992
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MarsSample_4
   Sprite: {fileID: 1951719943, guid: 2197f8b8cbc419a41b0ed919d992fd2c, type: 3}
   SampleName: Solar Radiation Tracer
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114005959966720
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This sample tracks powerful rays from space. Without a magnetic field
     like Earth\u2019s, Mars gets hit by solar radiation all the time\u2014future
     astronauts need serious protection"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114016655441920
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

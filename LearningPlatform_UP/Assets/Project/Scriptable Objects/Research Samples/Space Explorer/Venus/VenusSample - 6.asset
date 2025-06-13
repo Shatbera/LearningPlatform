@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: VenusSample_6
   Sprite: {fileID: -136578910, guid: ee52a1449833e284e99999706c426a8f, type: 3}
   SampleName: Unusual Chemical Trace
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115323470544896
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This tiny bubble holds a strange chemical compound found in Venus\u2019s
     upper atmosphere. Some scientists wonder if it\u2019s a sign of unknown chemical
     processes, or even microbial life."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115343754199040
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

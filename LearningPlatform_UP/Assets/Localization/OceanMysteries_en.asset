@@ -195,6 +195,302 @@ MonoBehaviour:
       they\u2019re built for sneaky snacking on clams and crustaceans."
     m_Metadata:
       m_Items: []
+  - m_Id: 277737842401280
+    m_Localized: Seaweed Strip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277867811299328
+    m_Localized: "Seaweed might look like a plant, but it's actually algae! It lives
+      in shallow water and soaks up sunlight to make food \u2014 just like trees
+      do on land. Some types of seaweed are even used in sushi and ice c"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277908659625984
+    m_Localized: Kelp Leaf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277936929234944
+    m_Localized: "Kelp is the giant of the algae world. It can grow over 60 centimeters
+      (2 feet) every single day! Kelp forests are like underwater jungles \u2014
+      they provide food and hiding places for otters, fish, and sea snails."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277954998296576
+    m_Localized: Phytoplankton Drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277970479472640
+    m_Localized: "Don\u2019t let their tiny size fool you! Phytoplankton float near
+      the surface of the ocean and produce more than half the oxygen we breathe.
+      Without them, animals (and people!) would run out of air."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277982173192192
+    m_Localized: Red Algae Thread
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278005418024960
+    m_Localized: Red algae love warm, sunny oceans and come in bright colors. Humans
+      use them to make jelly and toothpaste! Some red algae even live deeper than
+      other plants because they absorb blue light best.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278022803415040
+    m_Localized: Seagrass Blade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278036271325184
+    m_Localized: Seagrass is a real flowering plant that lives underwater. It grows
+      in huge green meadows and helps protect baby fish and turtles. Its roots hold
+      the ocean floor together, like grass on land holds the dirt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278057070878720
+    m_Localized: Sargassum Leaf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278073470607360
+    m_Localized: "Sargassum floats on the ocean surface in golden-brown mats. Tiny
+      fish, shrimp, and even baby turtles use it as a floating home. Some boats even
+      get stuck in it because there\u2019s so much!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278149341372416
+    m_Localized: Fish Scale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278183822745600
+    m_Localized: "Fish scales grow in layers as the fish gets older \u2014 just like
+      the rings inside a tree! Scientists can tell a fish\u2019s age by looking closely
+      at a scale under a microscope."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278198687358976
+    m_Localized: Jellyfish Tentacle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278231298072576
+    m_Localized: "Jellyfish don\u2019t have a brain or bones, but they\u2019ve survived
+      for over 500 million years. Some jellyfish have stingers powerful enough to
+      scare away predators \u2014 or even stop a fish in its tracks!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278248985452544
+    m_Localized: Crab Claw Fragment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278265490038784
+    m_Localized: "Crabs grow by shedding their old shell in a process called molting.
+      Right after molting, their new shell is soft \u2014 so they have to hide until
+      it hardens again!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278279641620480
+    m_Localized: Octopus Ink Sample
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278296485945344
+    m_Localized: "When threatened, octopuses shoot out a cloud of dark ink to confuse
+      predators. Some ink even contains chemicals that dull the predator\u2019s sense
+      of smell!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278366400798720
+    m_Localized: Dolphin Echo Ping
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278387380707328
+    m_Localized: "Dolphins don\u2019t rely on sight \u2014 they use echolocation!
+      They send out sound waves and listen to the echoes bouncing back to \u201Csee\u201D
+      the shape and distance of things underwater."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278408012488704
+    m_Localized: Shark Tooth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278419777511424
+    m_Localized: "Sharks constantly lose teeth \u2014 and that\u2019s okay! They
+      grow new ones in rows like a conveyor belt, replacing old teeth every few days
+      to weeks depending on the species."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278440442847232
+    m_Localized: Black Sand Grain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278521455828992
+    m_Localized: "Black sand is made from cooled lava! It\u2019s mostly found on
+      volcanic beaches and is rich in minerals like basalt and magnetite."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278535200563200
+    m_Localized: Manganese Nodule
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278547817029632
+    m_Localized: "These metal-rich lumps grow on the deep ocean floor \u2014 but
+      very slowly. It can take millions of years for one nodule to grow just a few
+      centimeters!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278569509969920
+    m_Localized: Salt Crystal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278585129558016
+    m_Localized: "Ocean salt forms naturally when seawater evaporates under the sun.
+      It\u2019s the same kind of salt that flavors your food \u2014 but it starts
+      in the sea!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278601256656896
+    m_Localized: Pumice Rock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278623629074432
+    m_Localized: Pumice is a type of volcanic rock full of tiny holes, which makes
+      it so light it can float on water!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278638086840320
+    m_Localized: Deep Sea Sediment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278657116397568
+    m_Localized: "This fine, dusty layer forms over time as tiny dead plankton and
+      particles settle on the ocean floor \u2014 creating a record of ocean history."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278669699309568
+    m_Localized: Limestone Chip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278692109475840
+    m_Localized: Limestone is often formed from the compacted shells of ancient sea
+      creatures. Many coral reefs and sea caves are made of limestone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278719871574016
+    m_Localized: Glowing Algae Drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278777878798336
+    m_Localized: "Some algae can glow in the dark! This magical-looking light is
+      called bioluminescence, and it\u2019s caused by a chemical reaction when the
+      water is disturbed \u2014 like from a wave or a swimming fish."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278793527746560
+    m_Localized: Ancient Coin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278811521310720
+    m_Localized: "This coin may have come from a shipwreck long ago. Oceans hold
+      secrets from ancient travelers, pirates, and lost civilizations \u2014 all
+      buried beneath the waves."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278823047258112
+    m_Localized: Message in a Bottle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278840235515904
+    m_Localized: "People have sent messages in bottles across oceans for hundreds
+      of years. Some are found decades later on faraway shores \u2014 carrying stories,
+      coordinates, or cries for help."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278853741174784
+    m_Localized: Plastic Fragment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278870686162944
+    m_Localized: "Tiny pieces of plastic, called microplastics, are found in oceans
+      all over the world. Sea animals often mistake them for food \u2014 it\u2019s
+      one of the biggest threats to ocean health today."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278881192894464
+    m_Localized: Ghost Net Fiber
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278897290633216
+    m_Localized: Ghost nets are abandoned fishing nets that drift through the sea.
+      They trap fish, turtles, and even dolphins by accident. Cleaning them up helps
+      protect marine life.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278916760592384
+    m_Localized: Ocean Map Scrap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278935282638848
+    m_Localized: This torn piece of map might lead to something mysterious. Explorers
+      and scientists use underwater maps to discover new trenches, ridges, and even
+      ancient ruins hidden below.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278971974410240
+    m_Localized: Clam Shell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278993021427712
+    m_Localized: "Clams spend most of their lives buried in sand, quietly filtering
+      seawater to eat. Some clams can live more than 100 years \u2014 that\u2019s
+      older than most people!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279009526013952
+    m_Localized: Sea Urchin Spine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279024155746304
+    m_Localized: Sea urchins might look like prickly balls, but they move around
+      using hundreds of tiny tube feet. Their spines help protect them from hungry
+      fish and curious crabs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279038856781824
+    m_Localized: Starfish Arm Tip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279051435499520
+    m_Localized: "Starfish don\u2019t just lose arms \u2014 they grow them back!
+      Some starfish can even regrow an entire body from just one arm, as long as
+      part of the center remains."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279071253585920
+    m_Localized: Coral Fragment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279088307625984
+    m_Localized: "Coral reefs may look like colorful rocks, but they\u2019re actually
+      made by tiny animals called polyps. Each polyp builds a hard shell, and together
+      they form coral colonies \u2014 homes for thousands of ocean creatures."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279106825478144
+    m_Localized: Sea Cucumber Skin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279123808215040
+    m_Localized: "Sea cucumbers slowly crawl across the ocean floor, cleaning it
+      as they go. They suck up sand and digest nutrients, leaving the ocean cleaner
+      behind them \u2014 like little underwater vacuum cleaners!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279136017833984
+    m_Localized: Snail Shell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 279147510226944
+    m_Localized: Ocean snails carry their homes on their backs. As they move, they
+      leave winding trails through the sand, and some even drill into other shells
+      to eat what's inside
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

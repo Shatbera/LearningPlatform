@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MarsSample_2
   Sprite: {fileID: 358659415, guid: 2197f8b8cbc419a41b0ed919d992fd2c, type: 3}
   SampleName: Frozen Water Shard
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113937680891904
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This icy chip came from Mars\u2019 south pole. Scientists think frozen
     water hides deep underground, and long ago, there may have been rivers and lakes
     flowing across the planet."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113952780386304
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

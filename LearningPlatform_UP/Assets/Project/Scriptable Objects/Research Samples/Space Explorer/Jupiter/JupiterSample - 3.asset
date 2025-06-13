@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: JupiterSample_3
   Sprite: {fileID: 75074255, guid: 8aef4938fbe0d6e4994885d3614b1b59, type: 3}
   SampleName: Jovian Thunderbolt Charge
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113737499344896
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This charged vial holds a spark from one of Jupiter\u2019s powerful
     lightning storms\u201410 times stronger than Earth\u2019s and flashing deep inside
     the thick clouds!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113749260173312
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

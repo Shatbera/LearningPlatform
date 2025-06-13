@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: NeptuneSample_6
   Sprite: {fileID: 866953287, guid: 80768c8f16287074487c1779327f56be, type: 3}
   SampleName: Magnetic Field Detector
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114625479639040
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Neptune\u2019s magnetic field is tilted and off-center, spinning in
     a strange way. It\u2019s likely created in a shallow zone, unlike Earth\u2019s
     deep magnetic core."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114649643024384
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

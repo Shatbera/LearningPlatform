@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: EarthSample_6
   Sprite: {fileID: -1746573544, guid: 877fbc0a54e5d3a4ca1094ec88dd042a, type: 3}
   SampleName: Microplastic Fiber Cluster
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113418472194048
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: This sample contains tiny plastic fibers left by human activity. These
     particles are now found in water, soil, and even the air, showing how human impact
     reaches everywhere.
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113429796814848
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

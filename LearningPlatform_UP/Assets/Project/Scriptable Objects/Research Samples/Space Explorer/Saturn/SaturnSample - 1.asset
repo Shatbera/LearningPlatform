@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: SaturnSample_1
   Sprite: {fileID: -1968584023, guid: b0fd13a85e9a391459a7226e6c71c0d3, type: 3}
   SampleName: Ice-Rock Ring Fragment
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114681616203776
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This icy chunk was collected from Saturn\u2019s rings, which are made
     of billions of pieces of ice and rock, some as small as grains and others as
     big as mountains. These rings are thin but stretch out over 280,000 km wide!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114707205652480
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: EarthSample_4
   Sprite: {fileID: -233896942, guid: 877fbc0a54e5d3a4ca1094ec88dd042a, type: 3}
   SampleName: Leaf Tissue Extract
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113344132349952
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: This slide holds a microscopic view of leaf cells, where photosynthesis
     happens. It shows how plants convert sunlight and carbon dioxide into food and
     oxygen.
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113363572948992
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

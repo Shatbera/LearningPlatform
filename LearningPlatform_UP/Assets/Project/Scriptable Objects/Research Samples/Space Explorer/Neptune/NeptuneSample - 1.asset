@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: NeptuneSample_1
   Sprite: {fileID: 1482464016, guid: 80768c8f16287074487c1779327f56be, type: 3}
   SampleName: Supercooled Methane Shard
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114413012975616
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Neptune\u2019s blue color comes from methane gas in its atmosphere.
     At high altitudes, it gets so cold that methane freezes into tiny crystals, making
     the planet glow deep blue."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114444499615744
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

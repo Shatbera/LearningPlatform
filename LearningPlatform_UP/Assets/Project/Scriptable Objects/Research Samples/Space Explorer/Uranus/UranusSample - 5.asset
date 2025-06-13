@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: UranusSample_5
   Sprite: {fileID: -539681091, guid: 16d7624d15e567f40ad0b7d6113f3e4d, type: 3}
   SampleName: Magneto-Core Tracker
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115068565913600
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This compact sensor gathered magnetic readings across Uranus\u2019s
     strange field. Scientists use data like this to map how the planet\u2019s magnetosphere
     tilts wildly as it rotates."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115079068450816
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

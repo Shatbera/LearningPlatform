@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: MercurySample_5
   Sprite: {fileID: -1138697173, guid: b1af26bef6a237043a65d4f6bb193023, type: 3}
   SampleName: Impact Spark Shard
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114282402349056
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "With no real atmosphere to protect it, Mercury is constantly bombarded
     by tiny space rocks. This shard came from a fresh crater \u2014 still warm when
     collected."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114308574806016
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: VenusSample_4
   Sprite: {fileID: -1096152051, guid: ee52a1449833e284e99999706c426a8f, type: 3}
   SampleName: Static Storm Collector
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115269263360000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: Venus experiences intense lightning in its thick clouds, possibly due
     to swirling dust and fast-moving winds. This sample glows with trapped static
     energy from the storm.
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115283830177792
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

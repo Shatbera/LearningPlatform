@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: EarthSample_2
   Sprite: {fileID: -457335622, guid: 877fbc0a54e5d3a4ca1094ec88dd042a, type: 3}
   SampleName: Pond Water Microdrop
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113263735930880
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: This tiny vial holds clean water from a small lake, with trace minerals
     and microscopic life like algae and protozoa. It shows how freshwater ecosystems
     support both animals and plants.
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113274116833280
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

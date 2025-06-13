@@ -15,5 +15,26 @@ MonoBehaviour:
   ID: VenusSample_3
   Sprite: {fileID: -1763113356, guid: ee52a1449833e284e99999706c426a8f, type: 3}
   SampleName: Venusian Compression Unit
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115245313884160
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This sealed device captured the incredible surface pressure on Venus,
     which is 90 times greater than Earth\u2019s \u2014 enough to crush submarines."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115256193908736
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -15,5 +15,26 @@ MonoBehaviour:
   ID: JupiterSample_2
   Sprite: {fileID: -467735779, guid: 8aef4938fbe0d6e4994885d3614b1b59, type: 3}
   SampleName: Storm Core Fragment
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113699075325952
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This swirling bit came from the Great Red Spot\u2014a massive storm
     bigger than Earth that\u2019s been spinning on Jupiter for over 300 years!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 113709774995456
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

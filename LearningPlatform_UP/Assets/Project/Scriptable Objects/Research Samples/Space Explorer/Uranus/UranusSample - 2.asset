@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: UranusSample_2
   Sprite: {fileID: -2056264664, guid: 16d7624d15e567f40ad0b7d6113f3e4d, type: 3}
   SampleName: Ionized Gas Orb
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114936671830016
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "This glowing sphere is full of charged particles from Uranus\u2019s
     upper atmosphere. It helps explain why the planet has strange magnetic activity\u2014even
     though it spins almost sideways!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114953696509952
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

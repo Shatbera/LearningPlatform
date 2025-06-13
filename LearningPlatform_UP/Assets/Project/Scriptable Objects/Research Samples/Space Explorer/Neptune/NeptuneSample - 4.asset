@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: NeptuneSample_4
   Sprite: {fileID: 718788301, guid: 80768c8f16287074487c1779327f56be, type: 3}
   SampleName: Slushy Mantle Droplet
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114559499042816
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Beneath Neptune\u2019s clouds might be a slushy ocean made of water,
     ammonia, and methane. It could even be superionic, where water behaves like a
     mix of solid and liquid."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114569628286976
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

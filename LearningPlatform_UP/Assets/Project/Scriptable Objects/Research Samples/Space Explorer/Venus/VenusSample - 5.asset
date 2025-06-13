@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: VenusSample_5
   Sprite: {fileID: -1096096989, guid: ee52a1449833e284e99999706c426a8f, type: 3}
   SampleName: Volcanic Residue Bead
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115292004876288
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "Venus may still have active volcanoes. This molten bead was gathered
     from a region showing recent lava flows \u2014 evidence that Venus might be geologically
     alive."
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115306940792832
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

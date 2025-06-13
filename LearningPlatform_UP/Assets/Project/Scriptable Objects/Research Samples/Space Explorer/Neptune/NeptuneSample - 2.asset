@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: NeptuneSample_2
   Sprite: {fileID: 987394220, guid: 80768c8f16287074487c1779327f56be, type: 3}
   SampleName: High-Pressure Sky Sample
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114497347846144
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: Pressure inside Neptune rises so fast it could crush a spacecraft.
     Just a few hundred kilometers down, the pressure is thousands of times stronger
     than on Earth.
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 114510727675904
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -15,6 +15,27 @@ MonoBehaviour:
   ID: UranusSample_4
   Sprite: {fileID: -511752779, guid: 16d7624d15e567f40ad0b7d6113f3e4d, type: 3}
   SampleName: Ammonia Ice Flake
+  LocalizedSampleName:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115008146964480
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   SampleInfo: "A fragile layer of frozen ammonia and water ice, this sample came
     from the lower cloud layers of Uranus. It shows how cold and complex the planet\u2019s
     atmosphere really is!"
+  LocalizedSampleInfo:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 115031240802304
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
