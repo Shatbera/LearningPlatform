@@ -40,7 +40,7 @@ public class Popup : MonoBehaviour
         if (visible)
         {
             Opened?.Invoke();
-            AudioManagerGlobal.Instance.PlayOneShot("openPaper");
+            if(AudioManagerGlobal.Instance != null) AudioManagerGlobal.Instance.PlayOneShot("openPaper");
         }
         else
         {

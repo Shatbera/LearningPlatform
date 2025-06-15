@@ -5,6 +5,7 @@ public enum PopupTag
     None,
     ObjectInfo,
     Inventory,
+    Language,
 }
 public interface IPopupsController
 {
