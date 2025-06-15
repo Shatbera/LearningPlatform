@@ -2,16 +2,18 @@ using UnityEngine;
 using UnityEngine.Localization.Settings;
 using System.Collections;
 
-public class LanguagePopup : MonoBehaviour
+public class LanguageChanger : MonoBehaviour
 {
     private const string LanguageKey = "selected_language";
 
-    private void Awake()
+    private void OnEnable()
     {
-        foreach(var entry in GetComponentsInChildren<LanguageEntry>(true))
-        {
-            entry.Setup(ChangeLanguage);
-        }
+        LanguageEntry.LanguageSelected += ChangeLanguage;
+    }
+
+    private void OnDisable()
+    {
+        LanguageEntry.LanguageSelected -= ChangeLanguage;
     }
     private void Start()
     {
