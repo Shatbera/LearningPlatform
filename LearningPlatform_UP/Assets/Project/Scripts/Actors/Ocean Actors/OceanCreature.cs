@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Localization;
 
-public class OceanCreature : WorldObject, IInteractable
+public class OceanCreature : WorldObject
 {
     [SerializeField] private OceanCreatureSO _creatureData;
     public override LocalizedString LocalizedLabelName => _creatureData.LocalizedObjectName;
