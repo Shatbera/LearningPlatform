@@ -28,7 +28,7 @@ public class CommandSystem : ICommandSystem
         var commandQueue = _commandsDict[sequenceTag];
         if(commandQueue.Count == 0)
         {
-            _commandsDict.Remove(commandQueue);
+            _commandsDict.Remove(sequenceTag);
             return;
         }
         var command = commandQueue.Dequeue();

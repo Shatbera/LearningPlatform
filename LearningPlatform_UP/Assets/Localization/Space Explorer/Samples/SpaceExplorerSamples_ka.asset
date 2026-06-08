@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SpaceExplorerSamples_ka
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ka
+  m_SharedData: {fileID: 11400000, guid: 93455c96970458f40a700f3de2d14b53, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 397671514112
+    m_Localized: "\u10DE\u10D0\u10E2\u10D0\u10E0\u10D0 \u10DB\u10EA\u10D4\u10DC\u10D0\u10E0\u10D4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 599316873216
+    m_Localized: "\u10DB\u10EA\u10D4\u10DC\u10D0\u10E0\u10D4\u10D4\u10D1\u10D8 \u10DB\u10D6\u10D8\u10E1
+      \u10E1\u10D8\u10DC\u10D0\u10D7\u10DA\u10D4\u10E1\u10D0 \u10D3\u10D0 \u10EC\u10E7\u10D0\u10DA\u10E1
+      \u10D8\u10E7\u10D4\u10DC\u10D4\u10D1\u10D4\u10DC \u10D6\u10E0\u10D3\u10D8\u10E1\u10D7\u10D5\u10D8\u10E1.
+      \u10D8\u10E1\u10D8\u10DC\u10D8 \u10D0\u10E1\u10D4\u10D5\u10D4 \u10D2\u10D0\u10DB\u10DD\u10E7\u10DD\u10E4\u10D4\u10DC
+      \u10DF\u10D0\u10DC\u10D2\u10D1\u10D0\u10D3\u10E1 \u10EA\u10DD\u10EA\u10EE\u10D0\u10DA\u10D8
+      \u10D0\u10E0\u10E1\u10D4\u10D1\u10D4\u10D1\u10D8\u10E1\u10D7\u10D5\u10D8\u10E1."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 599316873217
+    m_Localized: "\u10ec\u10e7\u10da\u10d8\u10e1 \u10ec\u10d5\u10d4\u10d7\u10d8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 599316873218
+    m_Localized: "\u10ec\u10e7\u10d0\u10da\u10d8 \u10d0\u10e3\u10ea\u10d8\u10da\u10d4\u10d1\u10d4\u10da\u10d8\u10d0 \u10db\u10ea\u10d4\u10dc\u10d0\u10e0\u10d4\u10d4\u10d1\u10d8\u10e1\u10d7\u10d5\u10d8\u10e1, \u10ea\u10ee\u10dd\u10d5\u10d4\u10da\u10d4\u10d1\u10d8\u10e1\u10d7\u10d5\u10d8\u10e1 \u10d3\u10d0 \u10d0\u10d3\u10d0\u10db\u10d8\u10d0\u10dc\u10d4\u10d1\u10d8\u10e1\u10d7\u10d5\u10d8\u10e1."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 599316873219
+    m_Localized: "\u10dc\u10d8\u10d0\u10d3\u10d0\u10d2\u10d8\u10e1 \u10dc\u10d8\u10db\u10e3\u10e8\u10d8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 599316873220
+    m_Localized: "\u10dc\u10d8\u10d0\u10d3\u10d0\u10d2\u10d8 \u10d4\u10ee\u10db\u10d0\u10e0\u10d4\u10d1\u10d0 \u10db\u10ea\u10d4\u10dc\u10d0\u10e0\u10d4\u10d4\u10d1\u10e1 \u10d6\u10e0\u10d3\u10d0\u10e8\u10d8, \u10e0\u10d0\u10d3\u10d2\u10d0\u10dc \u10d0\u10eb\u10da\u10d4\u10d5\u10e1 \u10db\u10d0\u10d7 \u10e1\u10d0\u10d9\u10d5\u10d4\u10d1 \u10dc\u10d8\u10d5\u10d7\u10d8\u10d4\u10e0\u10d4\u10d1\u10d4\u10d1\u10e1."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

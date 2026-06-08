@@ -30,6 +30,12 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 93455c96970458f40a700f3de2d14b53
+    m_Address: Assets/Localization/Space Explorer/Samples/SpaceExplorerSamples Shared
+      Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a1b035445b65e4fa48f4c4f3199ea335
     m_Address: Assets/Localization/OceanMysteries Shared Data.asset
     m_ReadOnly: 1
