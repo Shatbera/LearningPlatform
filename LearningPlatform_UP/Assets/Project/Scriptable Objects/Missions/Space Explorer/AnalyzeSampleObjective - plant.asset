@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a06a1840809544fa8ebc430774637c76, type: 3}
-  m_Name: _MissionCatalog_SpaceExplorer
+  m_Script: {fileID: 11500000, guid: c9d852eb3b3d4a1da3d2a063a607f5ea, type: 3}
+  m_Name: AnalyzeSampleObjective - plant
   m_EditorClassIdentifier: 
-  _missions:
-  - {fileID: 11400000, guid: 7713907d3cff9bc43b19765328a0b849, type: 2}
-  - {fileID: 11400000, guid: d45f15469a39a2341b6cc479d45aafb8, type: 2}
+  _targetAmount: 1
+  _sample: {fileID: 11400000, guid: b50a34ab6dba95340aade811c7817e2f, type: 2}

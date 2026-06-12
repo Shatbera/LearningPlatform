@@ -611,6 +611,14 @@ MonoBehaviour:
     m_Key: mission.find-plant.hint
     m_Metadata:
       m_Items: []
+  - m_Id: 132321511604002816
+    m_Key: mission.researcg-plant.title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132321698187616256
+    m_Key: mission.research-plant.hint
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

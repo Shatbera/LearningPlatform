@@ -4,6 +4,21 @@ using System.IO;
 
 public class SaveTools
 {
+    [MenuItem("Save System/New Game")]
+    public static void NewGame()
+    {
+        if (EditorApplication.isPlaying)
+        {
+            EditorUtility.DisplayDialog(
+                "New Game",
+                "Exit Play Mode before starting a new game. Otherwise the current session may save again when play mode stops.",
+                "OK");
+            return;
+        }
+
+        ClearAllSaveFiles();
+    }
+
     [MenuItem("Tools/Clear All Save Files")]
     public static void ClearAllSaveFiles()
     {

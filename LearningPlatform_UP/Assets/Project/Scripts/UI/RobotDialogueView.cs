@@ -1,13 +1,18 @@
 using UnityEngine;
 using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 public class RobotDialogueView : MonoBehaviour
 {
     [SerializeField] private GameObject _container;
-    [SerializeField] private LocalizedTextSetter _messageText;
+    [SerializeField] private LocalizeStringEvent _messageText;
     [SerializeField] private Button _closeButton;
 
+    private void Awake()
+    {
+        SetVisible(false);
+    }
     private void OnEnable()
     {
         _closeButton?.onClick.AddListener(Hide);
@@ -21,13 +26,8 @@ public class RobotDialogueView : MonoBehaviour
     public void Show(LocalizedString message)
     {
         SetVisible(true);
-        _messageText.SetLocalizedText(message);
-    }
-
-    public void Show(string message)
-    {
-        SetVisible(true);
-        _messageText.SetRawText(message);
+        _messageText.StringReference = message;
+        _messageText.RefreshString();
     }
 
     public void Hide()

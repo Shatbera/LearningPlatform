@@ -747,6 +747,14 @@ MonoBehaviour:
     m_Localized: Look for the glowing plant on Earth, near the spaceship.
     m_Metadata:
       m_Items: []
+  - m_Id: 132321511604002816
+    m_Localized: Analyze the Small Plant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132321698187616256
+    m_Localized: Bring the Small Plant to the Space Lab
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
