@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a964bf71744664a2598237ed7c5dda, type: 3}
+  m_Name: Mission_find-plant
+  m_EditorClassIdentifier: 
+  _id: find_small_plant
+  _title:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 132307871517679616
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _icon: {fileID: 21300000, guid: f75dfb6b6b9a4a145bba5ece26b7da1c, type: 3}
+  _hint:
+    m_TableReference:
+      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+    m_TableEntryReference:
+      m_KeyId: 132308008080023552
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _objectives:
+  - {fileID: 11400000, guid: 6e03488a2475f2c46949f6945362ff68, type: 2}
+  references:
+    version: 2
+    RefIds: []

@@ -739,6 +739,14 @@ MonoBehaviour:
       processes, or even microbial life."
     m_Metadata:
       m_Items: []
+  - m_Id: 132307871517679616
+    m_Localized: Find the Small Plant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132308008080023552
+    m_Localized: Look for the glowing plant on Earth, near the spaceship.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

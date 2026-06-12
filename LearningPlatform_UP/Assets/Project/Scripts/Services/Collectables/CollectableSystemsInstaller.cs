@@ -7,12 +7,16 @@ public class CollectableSystemsInstaller : ServiceInstaller
     [SerializeField] private ResearchSampleSystemServiceRefSO _researchSystemService;
 
     [SerializeField] private SaveSystemServiceRefSO _saveSystemRef;
+    [SerializeField] private ItemCollectEventChannel _itemCollectEventChannel;
 
 
     public override void Install()
     {
         IEnumerable<(ResearchSampleSO item, ResearchSampleItemState)> itemStates = _researchSamples.Items.Select(item => (item, new ResearchSampleItemState(item.Id)));
-        var researchSystem = new CollectableItemSystem<ResearchSampleSO, ResearchSampleItemState>(itemStates, saveKey: "collectableSystem");
+        var researchSystem = new CollectableItemSystem<ResearchSampleSO, ResearchSampleItemState>(
+            itemStates,
+            saveKey: "collectableSystem",
+            _itemCollectEventChannel);
         _researchSystemService.InstallService(researchSystem);
         _saveSystemRef.Service.Register(researchSystem);
     }

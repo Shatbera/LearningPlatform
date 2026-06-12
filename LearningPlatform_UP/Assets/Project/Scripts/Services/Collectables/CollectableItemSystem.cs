@@ -6,10 +6,15 @@ public class CollectableItemSystem<TItem, TState> : ICollectableItemSystem<TItem
 {
     private readonly Dictionary<string, CollectableItemEntry<TItem, TState>> _items = new();
     private readonly string _saveKey;
+    private readonly ItemCollectEventChannel _itemCollectEventChannel;
 
-    public CollectableItemSystem(IEnumerable<(TItem, TState)> items, string saveKey)
+    public CollectableItemSystem(
+        IEnumerable<(TItem, TState)> items,
+        string saveKey,
+        ItemCollectEventChannel itemCollectEventChannel = null)
     {
         _saveKey = saveKey;
+        _itemCollectEventChannel = itemCollectEventChannel;
 
         foreach (var item in items)
         {
@@ -23,6 +28,11 @@ public class CollectableItemSystem<TItem, TState> : ICollectableItemSystem<TItem
             return false;
 
         entry.State.ChangeAmount(amount);
+        _itemCollectEventChannel?.Raise(new ItemCollectEventData
+        {
+            Item = entry.Item,
+            Amount = amount
+        });
         return true;
     }
 

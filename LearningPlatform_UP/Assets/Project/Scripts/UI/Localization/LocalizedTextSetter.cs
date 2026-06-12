@@ -9,6 +9,12 @@ public class LocalizedTextSetter : MonoBehaviour
 
     public void SetRawText(string text)
     {
+        if (_currentLocalizedString != null)
+        {
+            _currentLocalizedString.StringChanged -= OnLocalizedTextChanged;
+            _currentLocalizedString = null;
+        }
+
         if (_text == null)
         {
             _text = GetComponent<TMP_Text>();
@@ -21,6 +27,13 @@ public class LocalizedTextSetter : MonoBehaviour
         {
             _currentLocalizedString.StringChanged -= OnLocalizedTextChanged;
         }
+
+        if (localizedString == null)
+        {
+            SetRawText("");
+            return;
+        }
+
         _currentLocalizedString = localizedString;
 
         _currentLocalizedString.StringChanged += OnLocalizedTextChanged;

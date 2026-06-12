@@ -603,6 +603,14 @@ MonoBehaviour:
     m_Key: sample_venus_6_info
     m_Metadata:
       m_Items: []
+  - m_Id: 132307871517679616
+    m_Key: mission.find-plant.title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132308008080023552
+    m_Key: mission.find-plant.hint
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
