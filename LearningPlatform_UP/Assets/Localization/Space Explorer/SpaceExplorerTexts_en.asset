@@ -755,6 +755,18 @@ MonoBehaviour:
     m_Localized: Bring the Small Plant to the Space Lab
     m_Metadata:
       m_Items: []
+  - m_Id: 132604815740960768
+    m_Localized: "Let\u2019s start our Earth mission!\nFind the glowing Small Plant
+      near the spaceship."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132605662713544704
+    m_Localized: 'Great job! You found the Small Plant.
+
+      Now bring it to the
+      spaceship lab so we can study it.'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

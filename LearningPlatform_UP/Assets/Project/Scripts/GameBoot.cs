@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameBoot : MonoBehaviour
@@ -19,13 +18,10 @@ public class GameBoot : MonoBehaviour
     };
 
     private string SaveKey => SaveKeysDict[_world];
+
     private void Awake()
     {
         _servicesBootstrap.InstallServices();
-    }
-
-    private void Start()
-    {
         _saveSystemServiceRefSO.Service.Load(SaveKey);
         _saveSystemServiceRefSO.Service.TryRestoreRegistered();
         _canSave = true;

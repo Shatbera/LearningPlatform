@@ -12,14 +12,12 @@ public class MissionPanelUI : MonoBehaviour
     [SerializeField] private Image _iconImage;
     [SerializeField] private GameObject _progressContainer;
     [SerializeField] private TMP_Text _progressText;
-    [SerializeField] private Button _button;
 
     private IMissionSystem _missionSystem;
 
     private void OnEnable()
     {
         Bind();
-        _button?.onClick.AddListener(OnClicked);
         Refresh(_missionSystem?.CurrentMission);
     }
 
@@ -37,8 +35,6 @@ public class MissionPanelUI : MonoBehaviour
             _missionSystem.MissionProgressChanged -= Refresh;
             _missionSystem = null;
         }
-
-        _button?.onClick.RemoveListener(OnClicked);
     }
 
     private void Bind()
@@ -84,11 +80,6 @@ public class MissionPanelUI : MonoBehaviour
             _iconImage.sprite = mission.Definition.Icon;
             _iconImage.enabled = mission.Definition.Icon != null;
         }
-    }
-
-    private void OnClicked()
-    {
-        _missionSystem?.RequestCurrentMissionHint();
     }
 
     private void SetLocalizedString(LocalizeStringEvent localizeStringEvent, LocalizedString value)

@@ -3,6 +3,7 @@ using UnityEngine;
 public class ServicesBootstrap : MonoBehaviour
 {
     [SerializeField] private bool InstallOnAwake;
+    private bool _servicesInstalled;
 
     private void Awake()
     {
@@ -11,8 +12,16 @@ public class ServicesBootstrap : MonoBehaviour
             InstallServices();
         }
     }
+
     public void InstallServices()
     {
+        if (_servicesInstalled)
+        {
+            return;
+        }
+
+        _servicesInstalled = true;
+
         foreach (var service in GetComponentsInChildren<ServiceInstaller>())
         {
             service.Install();

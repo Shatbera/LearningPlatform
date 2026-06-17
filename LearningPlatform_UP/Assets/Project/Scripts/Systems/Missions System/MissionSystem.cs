@@ -1,14 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine.Localization;
 
 public class MissionSystem : IMissionSystem, ISaveable
 {
     private readonly List<MissionRuntime> _missions;
     private readonly HashSet<string> _completedMissionIds = new();
-    private int _currentMissionIndex;
     private MissionRuntime _activeMission;
+    private MissionRuntime _pendingMission;
 
     public MissionSystem(MissionCatalogSO catalog, MissionObjectiveContext context)
     {
@@ -19,31 +18,42 @@ public class MissionSystem : IMissionSystem, ISaveable
                 .Select(mission => new MissionRuntime(mission, context))
                 .ToList();
 
-        _currentMissionIndex = FindFirstIncompleteMissionIndex();
-        ActivateCurrentMission();
+        QueueNextMission();
     }
 
     public string SaveKey => "missionSystem";
-    public MissionRuntime CurrentMission => IsValidMissionIndex(_currentMissionIndex) ? _missions[_currentMissionIndex] : null;
+    public MissionRuntime CurrentMission => _activeMission;
+    public MissionRuntime PendingMission => _pendingMission;
 
+    public event Action<MissionRuntime> MissionOffered;
+    public event Action<MissionRuntime> MissionStarted;
+    public event Action<MissionRuntime> MissionCompleted;
     public event Action<MissionRuntime> CurrentMissionChanged;
     public event Action<MissionRuntime> MissionProgressChanged;
-    public event Action<LocalizedString> HintRequested;
 
-    public void RequestCurrentMissionHint()
+    public bool AcceptOfferedMission()
     {
-        if (CurrentMission != null)
+        if (_pendingMission == null || _activeMission != null)
         {
-            HintRequested?.Invoke(CurrentMission.Definition.Hint);
+            return false;
         }
+
+        MissionRuntime mission = _pendingMission;
+        _pendingMission = null;
+        ActivateMission(mission);
+        return true;
     }
 
     public object CaptureState()
     {
-        MissionSystemSaveData saveData = new MissionSystemSaveData();
+        var saveData = new MissionSystemSaveData
+        {
+            ActiveMissionId = _activeMission?.Definition.Id,
+            PendingMissionId = _pendingMission?.Definition.Id
+        };
         saveData.CompletedMissionIds.AddRange(_completedMissionIds);
 
-        foreach (var mission in _missions)
+        foreach (MissionRuntime mission in _missions)
         {
             saveData.MissionProgresses.Add(new MissionProgressSaveData
             {
@@ -63,6 +73,7 @@ public class MissionSystem : IMissionSystem, ISaveable
         }
 
         DeactivateCurrentMission();
+        _pendingMission = null;
         _completedMissionIds.Clear();
 
         foreach (string missionId in saveData.CompletedMissionIds)
@@ -75,27 +86,42 @@ public class MissionSystem : IMissionSystem, ISaveable
 
         foreach (MissionProgressSaveData progress in saveData.MissionProgresses)
         {
-            MissionRuntime mission = _missions.FirstOrDefault(x => x.Definition.Id == progress.MissionId);
+            MissionRuntime mission = FindMission(progress.MissionId);
             mission?.RestoreObjectiveAmounts(progress.ObjectiveAmounts);
         }
 
-        _currentMissionIndex = FindFirstIncompleteMissionIndex();
-        ActivateCurrentMission();
+        MissionRuntime activeMission = FindIncompleteMission(saveData.ActiveMissionId);
+        if (activeMission != null)
+        {
+            ActivateMission(activeMission, notifyStarted: false);
+        }
+        else
+        {
+            _pendingMission = FindIncompleteMission(saveData.PendingMissionId);
+            if (_pendingMission == null)
+            {
+                QueueNextMission();
+            }
+        }
+
         CurrentMissionChanged?.Invoke(CurrentMission);
         MissionProgressChanged?.Invoke(CurrentMission);
     }
 
-    private void ActivateCurrentMission()
+    private void ActivateMission(MissionRuntime mission, bool notifyStarted = true)
     {
-        _activeMission = CurrentMission;
-        if (_activeMission == null)
-        {
-            return;
-        }
-
+        _activeMission = mission;
         _activeMission.ProgressChanged += OnActiveMissionProgressChanged;
         _activeMission.Completed += CompleteActiveMission;
         _activeMission.Start();
+
+        CurrentMissionChanged?.Invoke(_activeMission);
+        MissionProgressChanged?.Invoke(_activeMission);
+
+        if (notifyStarted)
+        {
+            MissionStarted?.Invoke(_activeMission);
+        }
 
         if (_activeMission.IsCompleted)
         {
@@ -123,7 +149,7 @@ public class MissionSystem : IMissionSystem, ISaveable
 
     private void CompleteActiveMission()
     {
-        MissionRuntime completedMission = CurrentMission;
+        MissionRuntime completedMission = _activeMission;
         if (completedMission == null)
         {
             return;
@@ -131,35 +157,47 @@ public class MissionSystem : IMissionSystem, ISaveable
 
         DeactivateCurrentMission();
         _completedMissionIds.Add(completedMission.Definition.Id);
-        _currentMissionIndex = FindFirstIncompleteMissionIndex();
-        ActivateCurrentMission();
 
-        CurrentMissionChanged?.Invoke(CurrentMission);
-        MissionProgressChanged?.Invoke(CurrentMission);
+        CurrentMissionChanged?.Invoke(null);
+        MissionProgressChanged?.Invoke(null);
+        MissionCompleted?.Invoke(completedMission);
+        QueueNextMission();
     }
 
-    private int FindFirstIncompleteMissionIndex()
+    private MissionRuntime FindMission(string missionId)
     {
-        for (int i = 0; i < _missions.Count; i++)
+        return string.IsNullOrEmpty(missionId)
+            ? null
+            : _missions.FirstOrDefault(mission => mission.Definition.Id == missionId);
+    }
+
+    private MissionRuntime FindIncompleteMission(string missionId)
+    {
+        return _completedMissionIds.Contains(missionId) ? null : FindMission(missionId);
+    }
+
+    private void QueueNextMission()
+    {
+        if (_activeMission != null || _pendingMission != null)
         {
-            if (!_completedMissionIds.Contains(_missions[i].Definition.Id))
-            {
-                return i;
-            }
+            return;
         }
 
-        return -1;
-    }
+        _pendingMission = _missions.FirstOrDefault(
+            mission => !_completedMissionIds.Contains(mission.Definition.Id));
 
-    private bool IsValidMissionIndex(int index)
-    {
-        return index >= 0 && index < _missions.Count;
+        if (_pendingMission != null)
+        {
+            MissionOffered?.Invoke(_pendingMission);
+        }
     }
 }
 
 [Serializable]
 public class MissionSystemSaveData
 {
+    public string ActiveMissionId;
+    public string PendingMissionId;
     public List<string> CompletedMissionIds = new();
     public List<MissionProgressSaveData> MissionProgresses = new();
 }
