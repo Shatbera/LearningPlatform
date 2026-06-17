@@ -23,9 +23,7 @@ MonoBehaviour:
     m_LocalVariables: []
   ObjectSprite: {fileID: 21300000, guid: 154ef3b3f66f0ed4a9c2943e3f44bd81, type: 3}
   Facts:
-  - text: "Neptune is the farthest planet from the Sun \u2014 it\u2019s the 8th planet
-      in our solar system!"
-    LocalizedText:
+  - LocalizedText:
       m_TableReference:
         m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
       m_TableEntryReference:
@@ -34,9 +32,7 @@ MonoBehaviour:
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-  - text: "It\u2019s super windy \u2014 Neptune has the strongest winds in the whole
-      solar system, blowing faster than 1,200 mph (2,000 km/h)!"
-    LocalizedText:
+  - LocalizedText:
       m_TableReference:
         m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
       m_TableEntryReference:
@@ -45,9 +41,7 @@ MonoBehaviour:
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-  - text: "It\u2019s a gas giant \u2014 made mostly of gases like hydrogen and helium,
-      with a deep blue color."
-    LocalizedText:
+  - LocalizedText:
       m_TableReference:
         m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
       m_TableEntryReference:
@@ -56,9 +50,7 @@ MonoBehaviour:
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-  - text: "It has a giant storm called the Great Dark Spot, kind of like Jupiter\u2019s
-      storm but darker and smaller"
-    LocalizedText:
+  - LocalizedText:
       m_TableReference:
         m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
       m_TableEntryReference:
@@ -67,9 +59,7 @@ MonoBehaviour:
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-  - text: "Neptune has 14 moons \u2014 the biggest one is Triton, which spins the
-      opposite way of Neptune\u2019s rotation!"
-    LocalizedText:
+  - LocalizedText:
       m_TableReference:
         m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
       m_TableEntryReference:
@@ -79,6 +69,8 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   SceneName: NeptuneScene
+  Id: Planet_Neptune
+  InitiallyLocked: 1
   references:
     version: 2
     RefIds: []

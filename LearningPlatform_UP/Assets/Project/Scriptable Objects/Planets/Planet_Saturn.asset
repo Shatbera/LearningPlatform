@@ -23,9 +23,7 @@ MonoBehaviour:
     m_LocalVariables: []
   ObjectSprite: {fileID: 21300000, guid: 01b2ae6818dd9934e914f727b7c07b1f, type: 3}
   Facts:
-  - text: "Saturn has beautiful rings \u2014 It\u2019s famous for its big, bright
-      rings made of ice, rocks, and dust!"
-    LocalizedText:
+  - LocalizedText:
       m_TableReference:
         m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
       m_TableEntryReference:
@@ -34,9 +32,7 @@ MonoBehaviour:
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-  - text: "It\u2019s a gas giant \u2014 Just like Jupiter, Saturn is mostly made
-      of gases and doesn\u2019t have a solid surface to stand on."
-    LocalizedText:
+  - LocalizedText:
       m_TableReference:
         m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
       m_TableEntryReference:
@@ -45,9 +41,7 @@ MonoBehaviour:
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-  - text: "Saturn has lots of moons \u2014 It has over 80 moons, and the biggest
-      one is Titan, which is even larger than Mercury!"
-    LocalizedText:
+  - LocalizedText:
       m_TableReference:
         m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
       m_TableEntryReference:
@@ -56,9 +50,7 @@ MonoBehaviour:
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-  - text: "It\u2019s super fast at spinning \u2014 A day on Saturn is only about
-      10.5 hours long because it spins so quickly!"
-    LocalizedText:
+  - LocalizedText:
       m_TableReference:
         m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
       m_TableEntryReference:
@@ -67,9 +59,7 @@ MonoBehaviour:
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-  - text: "It\u2019s lighter than water \u2014 If there were a big enough bathtub,
-      Saturn would float in it because it\u2019s so light for its size!"
-    LocalizedText:
+  - LocalizedText:
       m_TableReference:
         m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
       m_TableEntryReference:
@@ -79,6 +69,8 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   SceneName: SaturnScene
+  Id: Planet_Saturn
+  InitiallyLocked: 1
   references:
     version: 2
     RefIds: []
