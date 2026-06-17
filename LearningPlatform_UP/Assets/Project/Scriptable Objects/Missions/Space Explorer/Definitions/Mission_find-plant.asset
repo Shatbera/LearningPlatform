@@ -32,6 +32,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  _guideTarget: {fileID: 11400000, guid: 830a100368e4e46489abe06eb2fee3cd, type: 2}
   _objectives:
   - {fileID: 11400000, guid: 6e03488a2475f2c46949f6945362ff68, type: 2}
   references:
