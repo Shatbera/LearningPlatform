@@ -93,7 +93,7 @@ public class PlanetSystem : IPlanetSystem, ISaveable
 
             if (_planetStates.TryGetValue(state.Id, out PlanetState existingState))
             {
-                existingState.IsLocked = state.IsLocked;
+                existingState.SetLocked(state.IsLocked);
             }
             else
             {
@@ -137,7 +137,7 @@ public class PlanetSystem : IPlanetSystem, ISaveable
             return false;
         }
 
-        state.IsLocked = isLocked;
+        state.SetLocked(isLocked);
         return true;
     }
 }

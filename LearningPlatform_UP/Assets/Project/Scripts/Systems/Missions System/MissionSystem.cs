@@ -1,21 +1,22 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.Localization;
 
 public class MissionSystem : IMissionSystem, ISaveable
 {
-    private readonly List<MissionRuntime> _missions;
+    private readonly List<MissionSequenceRuntimeStep> _steps;
     private readonly HashSet<string> _completedMissionIds = new();
     private MissionRuntime _activeMission;
-    private MissionRuntime _pendingMission;
+    private MissionSequenceRuntimeStep _pendingStep;
 
     public MissionSystem(MissionCatalogSO catalog, MissionObjectiveContext context)
     {
-        _missions = catalog == null
-            ? new List<MissionRuntime>()
-            : catalog.Missions
-                .Where(mission => mission != null)
-                .Select(mission => new MissionRuntime(mission, context))
+        _steps = catalog == null
+            ? new List<MissionSequenceRuntimeStep>()
+            : catalog.Steps
+                .Where(step => step?.Mission != null)
+                .Select(step => new MissionSequenceRuntimeStep(step, new MissionRuntime(step.Mission, context)))
                 .ToList();
 
         QueueNextMission();
@@ -23,7 +24,9 @@ public class MissionSystem : IMissionSystem, ISaveable
 
     public string SaveKey => "missionSystem";
     public MissionRuntime CurrentMission => _activeMission;
-    public MissionRuntime PendingMission => _pendingMission;
+    public MissionRuntime PendingMission => _pendingStep?.Mission;
+    public IReadOnlyList<LocalizedString> PendingMissionIntroDialogue =>
+        _pendingStep?.IntroDialogue ?? Array.Empty<LocalizedString>();
 
     public event Action<MissionRuntime> MissionOffered;
     public event Action<MissionRuntime> MissionStarted;
@@ -33,13 +36,13 @@ public class MissionSystem : IMissionSystem, ISaveable
 
     public bool AcceptOfferedMission()
     {
-        if (_pendingMission == null || _activeMission != null)
+        if (_pendingStep == null || _activeMission != null)
         {
             return false;
         }
 
-        MissionRuntime mission = _pendingMission;
-        _pendingMission = null;
+        MissionRuntime mission = _pendingStep.Mission;
+        _pendingStep = null;
         ActivateMission(mission);
         return true;
     }
@@ -49,16 +52,16 @@ public class MissionSystem : IMissionSystem, ISaveable
         var saveData = new MissionSystemSaveData
         {
             ActiveMissionId = _activeMission?.Definition.Id,
-            PendingMissionId = _pendingMission?.Definition.Id
+            PendingMissionId = _pendingStep?.Mission.Definition.Id
         };
         saveData.CompletedMissionIds.AddRange(_completedMissionIds);
 
-        foreach (MissionRuntime mission in _missions)
+        foreach (MissionSequenceRuntimeStep step in _steps)
         {
             saveData.MissionProgresses.Add(new MissionProgressSaveData
             {
-                MissionId = mission.Definition.Id,
-                ObjectiveAmounts = mission.CaptureObjectiveAmounts()
+                MissionId = step.Mission.Definition.Id,
+                ObjectiveAmounts = step.Mission.CaptureObjectiveAmounts()
             });
         }
 
@@ -73,7 +76,7 @@ public class MissionSystem : IMissionSystem, ISaveable
         }
 
         DeactivateCurrentMission();
-        _pendingMission = null;
+        _pendingStep = null;
         _completedMissionIds.Clear();
 
         foreach (string missionId in saveData.CompletedMissionIds)
@@ -97,8 +100,8 @@ public class MissionSystem : IMissionSystem, ISaveable
         }
         else
         {
-            _pendingMission = FindIncompleteMission(saveData.PendingMissionId);
-            if (_pendingMission == null)
+            _pendingStep = FindIncompleteStep(saveData.PendingMissionId);
+            if (_pendingStep == null)
             {
                 QueueNextMission();
             }
@@ -166,9 +169,7 @@ public class MissionSystem : IMissionSystem, ISaveable
 
     private MissionRuntime FindMission(string missionId)
     {
-        return string.IsNullOrEmpty(missionId)
-            ? null
-            : _missions.FirstOrDefault(mission => mission.Definition.Id == missionId);
+        return FindStep(missionId)?.Mission;
     }
 
     private MissionRuntime FindIncompleteMission(string missionId)
@@ -176,21 +177,46 @@ public class MissionSystem : IMissionSystem, ISaveable
         return _completedMissionIds.Contains(missionId) ? null : FindMission(missionId);
     }
 
+    private MissionSequenceRuntimeStep FindStep(string missionId)
+    {
+        return string.IsNullOrEmpty(missionId)
+            ? null
+            : _steps.FirstOrDefault(step => step.Mission.Definition.Id == missionId);
+    }
+
+    private MissionSequenceRuntimeStep FindIncompleteStep(string missionId)
+    {
+        return _completedMissionIds.Contains(missionId) ? null : FindStep(missionId);
+    }
+
     private void QueueNextMission()
     {
-        if (_activeMission != null || _pendingMission != null)
+        if (_activeMission != null || _pendingStep != null)
         {
             return;
         }
 
-        _pendingMission = _missions.FirstOrDefault(
-            mission => !_completedMissionIds.Contains(mission.Definition.Id));
+        _pendingStep = _steps.FirstOrDefault(
+            step => !_completedMissionIds.Contains(step.Mission.Definition.Id));
 
-        if (_pendingMission != null)
+        if (_pendingStep != null)
         {
-            MissionOffered?.Invoke(_pendingMission);
+            MissionOffered?.Invoke(_pendingStep.Mission);
         }
     }
+}
+
+internal class MissionSequenceRuntimeStep
+{
+    public MissionSequenceRuntimeStep(MissionCatalogStep definition, MissionRuntime mission)
+    {
+        Definition = definition;
+        Mission = mission;
+    }
+
+    public MissionCatalogStep Definition { get; }
+    public MissionRuntime Mission { get; }
+    public IReadOnlyList<LocalizedString> IntroDialogue => Definition.IntroDialogue;
 }
 
 [Serializable]

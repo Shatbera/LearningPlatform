@@ -23,6 +23,10 @@ MonoBehaviour:
     m_Key: language
     m_Metadata:
       m_Items: []
+  - m_Id: 134044539668606976
+    m_Key: button.continue
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

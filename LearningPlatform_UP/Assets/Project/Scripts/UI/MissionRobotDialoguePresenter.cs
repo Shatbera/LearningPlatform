@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Localization;
 
 public class MissionRobotDialoguePresenter : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class MissionRobotDialoguePresenter : MonoBehaviour
 
     private IMissionSystem _missionSystem;
     private bool _waitingForMissionDialogue;
+    private int _dialogueIndex;
 
     private void OnEnable()
     {
@@ -33,6 +35,7 @@ public class MissionRobotDialoguePresenter : MonoBehaviour
         }
 
         _waitingForMissionDialogue = false;
+        _dialogueIndex = 0;
     }
 
     private void Bind()
@@ -66,8 +69,31 @@ public class MissionRobotDialoguePresenter : MonoBehaviour
             return;
         }
 
+        _dialogueIndex = 0;
+        if (!ShowNextDialogueLine())
+        {
+            _missionSystem?.AcceptOfferedMission();
+        }
+    }
+
+    private bool ShowNextDialogueLine()
+    {
+        if (_missionSystem == null || _robotDialogueView == null)
+        {
+            return false;
+        }
+
+        var dialogue = _missionSystem.PendingMissionIntroDialogue;
+        if (_dialogueIndex >= dialogue.Count)
+        {
+            return false;
+        }
+
+        LocalizedString line = dialogue[_dialogueIndex];
+        _dialogueIndex++;
         _waitingForMissionDialogue = true;
-        _robotDialogueView.Show(mission.Definition.StartDialogue);
+        _robotDialogueView.Show(line);
+        return true;
     }
 
     private void OnDialogueClosed()
@@ -78,6 +104,9 @@ public class MissionRobotDialoguePresenter : MonoBehaviour
         }
 
         _waitingForMissionDialogue = false;
-        _missionSystem?.AcceptOfferedMission();
+        if (!ShowNextDialogueLine())
+        {
+            _missionSystem?.AcceptOfferedMission();
+        }
     }
 }

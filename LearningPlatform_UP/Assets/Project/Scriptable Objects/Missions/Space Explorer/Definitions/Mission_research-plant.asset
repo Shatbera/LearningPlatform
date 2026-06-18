@@ -23,15 +23,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _icon: {fileID: 21300000, guid: e2531dbb210c447358dfd4dd637545c5, type: 3}
-  _startDialogue:
-    m_TableReference:
-      m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
-    m_TableEntryReference:
-      m_KeyId: 132605662713544704
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  _guideTarget: {fileID: 11400000, guid: dea3c626a8b7403468d1cdbae187a5ef, type: 2}
   _objectives:
   - {fileID: 11400000, guid: 0a3f3d8d3e8353f4f896f57c61583d64, type: 2}
   references:

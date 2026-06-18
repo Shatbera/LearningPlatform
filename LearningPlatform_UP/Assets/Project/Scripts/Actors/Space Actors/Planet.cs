@@ -4,6 +4,7 @@ using UnityEngine.Localization;
 public class Planet : WorldObject
 {
     [SerializeField] private PlanetSO planetData;
+    [SerializeField] private GameObject lockedVisual;
 
     public override LocalizedString LocalizedLabelName => planetData.LocalizedObjectName;
     public PlanetSO Data => planetData;
@@ -12,9 +13,33 @@ public class Planet : WorldObject
 
     //public static event Action<PlanetSO> Interacted;
 
+    private void Awake()
+    {
+        RefreshLockedVisual();
+    }
+
     public void SetState(PlanetState state)
     {
+        if (_state != null)
+        {
+            _state.LockChanged -= OnLockChanged;
+        }
+
         _state = state;
+        if (_state != null)
+        {
+            _state.LockChanged += OnLockChanged;
+        }
+
+        RefreshLockedVisual();
+    }
+
+    private void OnDestroy()
+    {
+        if (_state != null)
+        {
+            _state.LockChanged -= OnLockChanged;
+        }
     }
 
     public override void OnInteract(IInteractor interactor)
@@ -31,15 +56,28 @@ public class Planet : WorldObject
         });*/
         ExplorationAreaController.Instance.LoadArea(planetData.SceneName, true, () =>
         {
-            PopupsController.Instance.OpenPopup(PopupTag.ObjectInfo, onComplete: window =>
-            {
-                window.GetComponent<ObjectInfoPopup>().Setup(planetData);
-            });
+            // PopupsController.Instance.OpenPopup(PopupTag.ObjectInfo, onComplete: window =>
+            // {
+            //     window.GetComponent<ObjectInfoPopup>().Setup(planetData);
+            // });
         });
     }
 
     private bool IsLocked()
     {
         return _state == null ? planetData.InitiallyLocked : _state.IsLocked;
+    }
+
+    private void OnLockChanged(bool isLocked)
+    {
+        RefreshLockedVisual();
+    }
+
+    private void RefreshLockedVisual()
+    {
+        if (lockedVisual != null)
+        {
+            lockedVisual.SetActive(IsLocked());
+        }
     }
 }

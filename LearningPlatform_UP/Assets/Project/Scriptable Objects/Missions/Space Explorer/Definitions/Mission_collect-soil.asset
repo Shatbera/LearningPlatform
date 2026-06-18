@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28a964bf71744664a2598237ed7c5dda, type: 3}
-  m_Name: Mission_find-plant
+  m_Name: Mission_collect-soil
   m_EditorClassIdentifier: 
-  _id: find_small_plant
+  _id: collect_soil_sample
   _title:
     m_TableReference:
       m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
     m_TableEntryReference:
-      m_KeyId: 132307871517679616
+      m_KeyId: 132700000000000003
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  _icon: {fileID: 21300000, guid: f75dfb6b6b9a4a145bba5ece26b7da1c, type: 3}
+  _icon: {fileID: 21300000, guid: 35e408386e70c6f479f459d6c5ee43cb, type: 3}
   _guideTarget: {fileID: 11400000, guid: 830a100368e4e46489abe06eb2fee3cd, type: 2}
   _objectives:
-  - {fileID: 11400000, guid: 6e03488a2475f2c46949f6945362ff68, type: 2}
+  - {fileID: 11400000, guid: 760ee2f4f372436285c44b8496954f71, type: 2}
   references:
     version: 2
     RefIds: []

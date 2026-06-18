@@ -767,6 +767,38 @@ MonoBehaviour:
       spaceship lab so we can study it.'
     m_Metadata:
       m_Items: []
+  - m_Id: 132700000000000001
+    m_Localized: Find the Water Drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132700000000000002
+    m_Localized: Analyze the Water Drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132700000000000003
+    m_Localized: Find the Soil Sample
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132700000000000004
+    m_Localized: Analyze the Soil Sample
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132700000000000101
+    m_Localized: "Excellent! Our next Earth mission is to find a Water Drop sample.\nLook near the spaceship and collect it."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132700000000000102
+    m_Localized: Great work! Now bring the Water Drop to the spaceship lab so we can study it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132700000000000103
+    m_Localized: "Now we need a Soil Sample from Earth.\nFind one near the spaceship and collect it."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132700000000000104
+    m_Localized: Nice discovery! Bring the Soil Sample to the spaceship lab so we can analyze it.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

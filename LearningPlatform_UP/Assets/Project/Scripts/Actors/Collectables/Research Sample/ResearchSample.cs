@@ -13,6 +13,7 @@ public class ResearchSample : ClickableObject, IPickableItem
     }
 
     [SerializeField] private ResearchSampleSO _sampleSO;
+    [SerializeField] private string _instanceId;
     [SerializeField] private AnimationType _animation;
     public CollectableItemSO ItemSO => _sampleSO;
 
@@ -20,28 +21,55 @@ public class ResearchSample : ClickableObject, IPickableItem
 
     [SerializeField] private SpriteRenderer _renderer;
     [SerializeField] private Animator _animator;
+    private string _collectionId;
+
+    private void Awake()
+    {
+        _collectionId = BuildCollectionId();
+
+        if (IsAlreadyCollected())
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Start()
     {
-        _animator.SetFloat("Offset", Random.Range(0f, 1f));
-        _animator.SetInteger("Animation", (int)_animation);
+        if (_animator != null)
+        {
+            _animator.SetFloat("Offset", Random.Range(0f, 1f));
+            _animator.SetInteger("Animation", (int)_animation);
+        }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Trigger entered");
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("PLayer entered");
-            if (_researchSamplesSystem.Service.AddItem(_sampleSO.Id, 1))
-            {
-                Pickup();
-            }
+            TryCollect();
         }
     }
 
     public override void OnClick()
     {
-        if(_researchSamplesSystem.Service.AddItem(_sampleSO.Id, 1))
+        TryCollect();
+    }
+
+    private void TryCollect()
+    {
+        if (_researchSamplesSystem == null || _researchSamplesSystem.Service == null || _sampleSO == null)
         {
+            return;
+        }
+
+        if (IsAlreadyCollected())
+        {
+            return;
+        }
+
+        if (_researchSamplesSystem.Service.AddItem(_sampleSO.Id, 1))
+        {
+            WorldCollectableStateSystem.Current?.MarkCollected(_collectionId);
             Pickup();
         }
     }
@@ -56,10 +84,26 @@ public class ResearchSample : ClickableObject, IPickableItem
 
     private void OnValidate()
     {
-        if(_sampleSO != null)
+        if(_sampleSO != null && _renderer != null)
         {
             _renderer.sprite = _sampleSO.Sprite;
         }
+    }
+
+    private string BuildCollectionId()
+    {
+        if (!string.IsNullOrEmpty(_instanceId))
+        {
+            return _instanceId;
+        }
+
+        return _sampleSO == null ? string.Empty : _sampleSO.Id;
+    }
+
+    private bool IsAlreadyCollected()
+    {
+        return WorldCollectableStateSystem.Current != null
+            && WorldCollectableStateSystem.Current.IsCollected(_collectionId);
     }
 
 }

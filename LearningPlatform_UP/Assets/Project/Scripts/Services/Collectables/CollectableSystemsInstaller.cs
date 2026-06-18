@@ -17,7 +17,10 @@ public class CollectableSystemsInstaller : ServiceInstaller
             itemStates,
             saveKey: "collectableSystem",
             _itemCollectEventChannel);
+        var worldCollectableStateSystem = new WorldCollectableStateSystem();
+
         _researchSystemService.InstallService(researchSystem);
         _saveSystemRef.Service.Register(researchSystem);
+        _saveSystemRef.Service.Register(worldCollectableStateSystem);
     }
 }

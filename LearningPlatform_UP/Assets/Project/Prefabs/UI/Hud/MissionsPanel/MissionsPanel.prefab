@@ -130,7 +130,6 @@ MonoBehaviour:
   _iconImage: {fileID: 7057669838515435732}
   _progressContainer: {fileID: 7583532898080370307}
   _progressText: {fileID: 2598181441740787336}
-  _button: {fileID: 531857743578743644}
 --- !u!1 &1885358470135246027
 GameObject:
   m_ObjectHideFlags: 0

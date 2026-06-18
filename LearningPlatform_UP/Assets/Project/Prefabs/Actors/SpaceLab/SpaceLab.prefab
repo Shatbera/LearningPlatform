@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3073795825504907954}
   - component: {fileID: 7698299842099889961}
   - component: {fileID: 567909582000323353}
+  - component: {fileID: 2006910499370127919}
   m_Layer: 0
   m_Name: SpaceLab
   m_TagString: Untagged
@@ -96,6 +97,21 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 2
+--- !u!114 &2006910499370127919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324567526024504056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c7ed69956a4adfb527c2caaf3b0bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _definition: {fileID: 11400000, guid: dea3c626a8b7403468d1cdbae187a5ef, type: 2}
+  _targetTransform: {fileID: 3073795825504907954}
+  _visibilityRenderer: {fileID: 7428914856262250974}
 --- !u!1 &6859846928888251629
 GameObject:
   m_ObjectHideFlags: 0

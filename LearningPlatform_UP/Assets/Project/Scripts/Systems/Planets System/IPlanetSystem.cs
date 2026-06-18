@@ -19,6 +19,8 @@ public class PlanetState
     public string Id;
     public bool IsLocked;
 
+    public event System.Action<bool> LockChanged;
+
     public PlanetState()
     {
     }
@@ -27,5 +29,16 @@ public class PlanetState
     {
         Id = id;
         IsLocked = isLocked;
+    }
+
+    public void SetLocked(bool isLocked)
+    {
+        if (IsLocked == isLocked)
+        {
+            return;
+        }
+
+        IsLocked = isLocked;
+        LockChanged?.Invoke(IsLocked);
     }
 }
