@@ -8,6 +8,7 @@ public class CollectableSystemsInstaller : ServiceInstaller
 
     [SerializeField] private SaveSystemServiceRefSO _saveSystemRef;
     [SerializeField] private ItemCollectEventChannel _itemCollectEventChannel;
+    [SerializeField] private ResearchBeginEventChannel _researchBeginEventChannel;
 
 
     public override void Install()
@@ -18,6 +19,10 @@ public class CollectableSystemsInstaller : ServiceInstaller
             saveKey: "collectableSystem",
             _itemCollectEventChannel);
         var worldCollectableStateSystem = new WorldCollectableStateSystem();
+        new SampleProgressionSystem(
+            _researchSamples.Items,
+            researchSystem,
+            _researchBeginEventChannel);
 
         _researchSystemService.InstallService(researchSystem);
         _saveSystemRef.Service.Register(researchSystem);

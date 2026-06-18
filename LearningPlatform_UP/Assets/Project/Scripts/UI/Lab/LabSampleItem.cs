@@ -70,7 +70,6 @@ public class LabSampleItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         {
             if (_researchPadRef.Service.TryPlaceSample(_sampleEntry.Item))
             {
-                _sampleEntry.State.IsUnlocked = true;
                 SetVisible(false);
             }
         }

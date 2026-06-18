@@ -27,7 +27,7 @@ public class InventoryPopup : MonoBehaviour
 
         CollectableItemEntry<ResearchSampleSO, ResearchSampleItemState>[] items = _samplesRefSO.Service.GetAll()
             .Where(x => x.State.Amount > 0)
-            .OrderByDescending(x => x.State.IsUnlocked)
+            .OrderByDescending(x => x.State.IsResearched)
             .ToArray();
         foreach(var item in items)
         {
@@ -53,7 +53,7 @@ public class InventoryPopup : MonoBehaviour
         //_itemNameTxt.text = itemSlot.Item.Item.DisplayName;
         //_itemInfoTxt.text = itemSlot.Item.State.IsUnlocked ? itemSlot.Item.Item.SampleInfo : "Locked";
         _itemNameTxtSetter.SetLocalizedText(itemSlot.Item.Item.LocalizedDisplayName);
-        if (itemSlot.Item.State.IsUnlocked)
+        if (itemSlot.Item.State.IsResearched)
         {
             _itemInfoTxtSetter.SetLocalizedText(itemSlot.Item.Item.LocalizedSampleInfo);
         }
