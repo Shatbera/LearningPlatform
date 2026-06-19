@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Localization;
 
 public class Planet : WorldObject
@@ -8,6 +9,7 @@ public class Planet : WorldObject
 
     public override LocalizedString LocalizedLabelName => planetData.LocalizedObjectName;
     public PlanetSO Data => planetData;
+    public UnityEvent PlayerEntered = new();
 
     private PlanetState _state;
 
@@ -56,6 +58,7 @@ public class Planet : WorldObject
         });*/
         ExplorationAreaController.Instance.LoadArea(planetData.SceneName, true, () =>
         {
+            PlayerEntered?.Invoke();
             // PopupsController.Instance.OpenPopup(PopupTag.ObjectInfo, onComplete: window =>
             // {
             //     window.GetComponent<ObjectInfoPopup>().Setup(planetData);

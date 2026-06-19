@@ -15,7 +15,7 @@ MonoBehaviour:
   ID: EarthSample_2
   Sprite: {fileID: 21300000, guid: ca9eadfb74fd4a6418724f288bd48544, type: 3}
   _initiallyUnlocked: 0
-  _unlocksWhenResearched: {fileID: 11400000, guid: b50a34ab6dba95340aade811c7817e2f, type: 2}
+  _unlocksWhenResearched: {fileID: 11400000, guid: fef0b14f5d7f368438e605c6ca440017, type: 2}
   SampleName: Water Drop
   LocalizedSampleName:
     m_TableReference:

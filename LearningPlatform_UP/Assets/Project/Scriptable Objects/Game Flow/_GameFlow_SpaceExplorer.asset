@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a51fe456b5747b2a4e7f327949f754b, type: 3}
+  m_Name: _GameFlow_SpaceExplorer
+  m_EditorClassIdentifier: 
+  _id: space_explorer
+  _steps:
+  - _type: 0
+    _event: {fileID: 11400000, guid: 38d8b86714194f83bc1747b8b36503d6, type: 2}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 0}
+  - _type: 1
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue:
+    - m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 132604815740960768
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    _mission: {fileID: 0}
+  - _type: 3
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 11400000, guid: 7713907d3cff9bc43b19765328a0b849, type: 2}
+  - _type: 4
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 11400000, guid: 7713907d3cff9bc43b19765328a0b849, type: 2}
+  - _type: 1
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue:
+    - m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 132605662713544704
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    _mission: {fileID: 0}
+  - _type: 3
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 11400000, guid: d45f15469a39a2341b6cc479d45aafb8, type: 2}
+  - _type: 4
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 11400000, guid: d45f15469a39a2341b6cc479d45aafb8, type: 2}
+  - _type: 1
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue:
+    - m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 132700000000000101
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    _mission: {fileID: 0}
+  - _type: 3
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 11400000, guid: 3a7bf93c973d491489c568f1c8467045, type: 2}
+  - _type: 4
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 11400000, guid: 3a7bf93c973d491489c568f1c8467045, type: 2}
+  - _type: 1
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue:
+    - m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 132700000000000102
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    _mission: {fileID: 0}
+  - _type: 3
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 11400000, guid: 77c61d3049f148d9997da2f55f71c756, type: 2}
+  - _type: 4
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 11400000, guid: 77c61d3049f148d9997da2f55f71c756, type: 2}
+  - _type: 1
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue:
+    - m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 132700000000000103
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    _mission: {fileID: 0}
+  - _type: 3
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 11400000, guid: 41f15a6a283642c085d894c64ecb18b2, type: 2}
+  - _type: 4
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 11400000, guid: 41f15a6a283642c085d894c64ecb18b2, type: 2}
+  - _type: 1
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue:
+    - m_TableReference:
+        m_TableCollectionName: GUID:6c9825274246e407d8d990969f77224e
+      m_TableEntryReference:
+        m_KeyId: 132700000000000104
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    _mission: {fileID: 0}
+  - _type: 3
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 11400000, guid: aa9ef4bb95c3487187b81cf5fc523106, type: 2}
+  - _type: 4
+    _event: {fileID: 0}
+    _delaySeconds: 0
+    _dialogue: []
+    _mission: {fileID: 11400000, guid: aa9ef4bb95c3487187b81cf5fc523106, type: 2}
+  references:
+    version: 2
+    RefIds: []
