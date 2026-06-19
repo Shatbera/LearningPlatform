@@ -13,11 +13,13 @@ public class LockedFeedbackShake2D : MonoBehaviour
     [SerializeField] private Transform _target;
     [SerializeField] private ShakeMode _mode = ShakeMode.Horizontal;
     [SerializeField] private float _duration = 0.35f;
-    [SerializeField] private float _strength = 0.12f;
+    [SerializeField] private float _positionStrength = 0.12f;
+    [SerializeField] private float _rotationStrength = 12f;
     [SerializeField] private int _vibrato = 12;
-    [SerializeField] private float _randomness = 0f;
+    [SerializeField] private float _elasticity = 0.8f;
 
-    private Tween _shakeTween;
+    private Tween _feedbackTween;
+    private Transform _activeTarget;
     private Vector3 _startLocalPosition;
     private Quaternion _startLocalRotation;
 
@@ -25,46 +27,51 @@ public class LockedFeedbackShake2D : MonoBehaviour
 
     private void OnDestroy()
     {
-        _shakeTween?.Kill();
+        _feedbackTween?.Kill();
     }
 
     public void Play()
     {
         Transform target = Target;
-        ResetShake();
+        StopActiveTween();
+        RestoreActiveTarget();
 
+        _activeTarget = target;
         _startLocalPosition = target.localPosition;
         _startLocalRotation = target.localRotation;
 
-        _shakeTween = CreateShakeTween(target)
-            .OnKill(ResetTarget)
-            .OnComplete(ResetTarget);
+        _feedbackTween = CreateTween(target).OnComplete(RestoreActiveTarget);
     }
 
-    private Tween CreateShakeTween(Transform target)
+    private Tween CreateTween(Transform target)
     {
         return _mode switch
         {
-            ShakeMode.Vertical => target.DOShakePosition(_duration, new Vector3(0f, _strength, 0f), _vibrato, _randomness, false, true),
-            ShakeMode.Rotation => target.DOShakeRotation(_duration, new Vector3(0f, 0f, _strength), _vibrato, _randomness, true),
-            _ => target.DOShakePosition(_duration, new Vector3(_strength, 0f, 0f), _vibrato, _randomness, false, true)
+            ShakeMode.Vertical => target.DOPunchPosition(Vector3.up * _positionStrength, _duration, _vibrato, _elasticity),
+            ShakeMode.Rotation => target.DOPunchRotation(Vector3.forward * _rotationStrength, _duration, _vibrato, _elasticity),
+            _ => target.DOPunchPosition(Vector3.right * _positionStrength, _duration, _vibrato, _elasticity)
         };
     }
 
-    private void ResetShake()
+    private void StopActiveTween()
     {
-        if (_shakeTween != null && _shakeTween.IsActive())
+        if (_feedbackTween != null && _feedbackTween.IsActive())
         {
-            _shakeTween.Kill();
+            _feedbackTween.Kill();
         }
 
-        ResetTarget();
+        _feedbackTween = null;
     }
 
-    private void ResetTarget()
+    private void RestoreActiveTarget()
     {
-        Target.localPosition = _startLocalPosition;
-        Target.localRotation = _startLocalRotation;
-        _shakeTween = null;
+        if (_activeTarget != null)
+        {
+            _activeTarget.localPosition = _startLocalPosition;
+            _activeTarget.localRotation = _startLocalRotation;
+        }
+
+        _feedbackTween = null;
+        _activeTarget = null;
     }
 }
