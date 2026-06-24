@@ -4,23 +4,24 @@ public class GrowPlantLightSource : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
     [SerializeField] private Transform _aimDirectionTransform;
+    [SerializeField] private PlantProgressBar _progressBar;
     [SerializeField] private float _pickRadius = 1.25f;
     [SerializeField] private float _aimToleranceDegrees = 18f;
     [SerializeField] private float _aimAxisOffsetDegrees;
+    [SerializeField] private float _progressFillRate = 0.35f;
 
     private Transform _aimTarget;
     private bool _isRotating;
     private bool _canRotate = true;
     private float _dragAngleOffsetDegrees;
+    private float _progress;
 
     public bool IsAimedAtTarget => IsAimedAt(_aimTarget);
+    public bool IsFullyCharged => _progress >= 1f;
 
     private void Awake()
     {
-        if (_camera == null)
-        {
-            _camera = Camera.main;
-        }
+        UpdateProgressBar();
     }
 
     private void Update()
@@ -47,6 +48,8 @@ public class GrowPlantLightSource : MonoBehaviour
         {
             _isRotating = false;
         }
+
+        UpdateSunProgress();
     }
 
     public void SetCamera(Camera targetCamera)
@@ -57,6 +60,12 @@ public class GrowPlantLightSource : MonoBehaviour
     public void SetAimTarget(Transform target)
     {
         _aimTarget = target;
+    }
+
+    public void SetProgressBar(PlantProgressBar progressBar)
+    {
+        _progressBar = progressBar;
+        UpdateProgressBar();
     }
 
     public void SetCanRotate(bool canRotate)
@@ -73,6 +82,30 @@ public class GrowPlantLightSource : MonoBehaviour
     {
         float angle = GetPointerAngle(pointerWorldPosition);
         transform.rotation = Quaternion.Euler(0f, 0f, angle + _dragAngleOffsetDegrees);
+    }
+
+    private void UpdateSunProgress()
+    {
+        if (IsFullyCharged || !IsAimedAtTarget)
+        {
+            return;
+        }
+
+        _progress = Mathf.Clamp01(_progress + _progressFillRate * Time.deltaTime);
+        UpdateProgressBar();
+
+        if (IsFullyCharged)
+        {
+            SetCanRotate(false);
+        }
+    }
+
+    private void UpdateProgressBar()
+    {
+        if (_progressBar != null)
+        {
+            _progressBar.SetProgress01(_progress);
+        }
     }
 
     private bool IsAimedAt(Transform target)

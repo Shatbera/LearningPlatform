@@ -1,27 +1,23 @@
 using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class GrowPlantWaterPot : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
     [SerializeField] private float _pickRadius = 1.2f;
-    [SerializeField] private float _wateringDistance = 1.25f;
-    [SerializeField] private bool _returnAfterWatering = true;
+    [SerializeField, FormerlySerializedAs("_returnAfterWatering")] private bool _returnAfterRelease = true;
     [SerializeField] private GameObject _waterFlow;
     [SerializeField] private GameObject _frame;
     [SerializeField] private float _pourRotationDegrees = -18f;
     [SerializeField] private float _pourRotationSpeed = 180f;
-    [SerializeField] private UnityEvent _watered;
 
-    private Transform _wateringTarget;
     private Vector3 _startPosition;
     private Quaternion _startRotation;
     private Quaternion _pourRotation;
     private Vector3 _dragOffset;
     private bool _isDragging;
+    private bool _canDrag = true;
     private bool _frameStartActive;
-
-    public bool IsWatered { get; private set; }
 
     private void Awake()
     {
@@ -31,18 +27,13 @@ public class GrowPlantWaterPot : MonoBehaviour
 
         _frameStartActive = _frame != null && _frame.activeSelf;
         SetWaterFlowActive(false);
-
-        if (_camera == null)
-        {
-            _camera = Camera.main;
-        }
     }
 
     private void Update()
     {
         UpdatePourVisuals();
 
-        if (IsWatered)
+        if (!_canDrag)
         {
             return;
         }
@@ -64,10 +55,14 @@ public class GrowPlantWaterPot : MonoBehaviour
 
         if (_isDragging && pointer.Up)
         {
-            TryWaterPlant();
             _isDragging = false;
             SetWaterFlowActive(false);
             SetFrameActive(_frameStartActive);
+
+            if (_returnAfterRelease)
+            {
+                transform.position = _startPosition;
+            }
         }
     }
 
@@ -76,9 +71,23 @@ public class GrowPlantWaterPot : MonoBehaviour
         _camera = targetCamera;
     }
 
-    public void SetWateringTarget(Transform target)
+    public void SetCanDrag(bool canDrag)
     {
-        _wateringTarget = target;
+        _canDrag = canDrag;
+
+        if (_canDrag)
+        {
+            return;
+        }
+
+        _isDragging = false;
+        SetWaterFlowActive(false);
+        SetFrameActive(_frameStartActive);
+
+        if (_returnAfterRelease)
+        {
+            transform.position = _startPosition;
+        }
     }
 
     private void DragTo(Vector3 pointerWorldPosition)
@@ -86,24 +95,6 @@ public class GrowPlantWaterPot : MonoBehaviour
         Vector3 targetPosition = pointerWorldPosition + _dragOffset;
         targetPosition.z = transform.position.z;
         transform.position = targetPosition;
-    }
-
-    private void TryWaterPlant()
-    {
-        bool wateredPlant = _wateringTarget != null && IsNear(_wateringTarget.position, transform.position, _wateringDistance);
-
-        if (_returnAfterWatering)
-        {
-            transform.position = _startPosition;
-        }
-
-        if (!wateredPlant)
-        {
-            return;
-        }
-
-        IsWatered = true;
-        _watered?.Invoke();
     }
 
     private void UpdatePourVisuals()
