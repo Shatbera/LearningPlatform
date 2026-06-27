@@ -1,24 +1,32 @@
 using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Popup : MonoBehaviour
 {
     [field: SerializeField] public PopupTag PopupTag;
     [field: SerializeField] public bool CloseWithTint;
-    [SerializeField] private bool showCloseBtn = true;
 
-    [SerializeField] private Animator animator;
-    [SerializeField] private Button closeBtn;
+    [SerializeField] private PopupVisibilityControllerBase visibilityController;
 
     public event Action Opened;
     public event Action Closed;
+
     private void Start()
     {
-        gameObject.SetActive(false);
-        closeBtn.gameObject.SetActive(false);
-        closeBtn.onClick.AddListener(Close);
+        if (visibilityController == null)
+        {
+            Debug.LogError($"Popup {name} has no visibility controller assigned.", this);
+            return;
+        }
+
+        visibilityController.Initialize(this);
     }
+
+    private void OnDestroy()
+    {
+        visibilityController?.Dispose(this);
+    }
+
     public void Open()
     {
         PopupsController.Instance.OpenPopup(this);
@@ -29,31 +37,29 @@ public class Popup : MonoBehaviour
         PopupsController.Instance.ClosePopup(this);
     }
 
-    public void SetVisible(PopupsController controller, bool visible)
+    public void SetVisible(bool visible)
     {
-        if (visible)
+        if (visibilityController == null)
         {
-            gameObject.SetActive(true);
+            Debug.LogError($"Popup {name} has no visibility controller assigned.", this);
+            return;
         }
-        animator.SetBool("Open", visible);
-        closeBtn.gameObject.SetActive(visible && showCloseBtn);
-        if (visible)
-        {
-            Opened?.Invoke();
-            if(AudioManagerGlobal.Instance != null) AudioManagerGlobal.Instance.PlayOneShot("openPaper");
-        }
-        else
-        {
-            Closed?.Invoke();
-        }
-    }
-    public void OnPopupOpenFinished()
-    {
-        closeBtn.gameObject.SetActive(showCloseBtn);
+
+        visibilityController.SetVisible(this, visible);
     }
 
-    public void OnPopupCloseFinished()
+
+    public void NotifyOpened()
     {
-        gameObject.SetActive(false);
+        Opened?.Invoke();
+        if (AudioManagerGlobal.Instance != null)
+        {
+            AudioManagerGlobal.Instance.PlayOneShot("openPaper");
+        }
+    }
+
+    public void NotifyClosed()
+    {
+        Closed?.Invoke();
     }
 }

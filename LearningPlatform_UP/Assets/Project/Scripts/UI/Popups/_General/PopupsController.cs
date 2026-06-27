@@ -36,7 +36,7 @@ public class PopupsController : Singleton<PopupsController>, IPopupsController
 
     public void OpenPopup(Popup popup, Action<Popup> onComplete = null)
     {
-        popup.SetVisible(this, true);
+        popup.SetVisible(true);
         onComplete?.Invoke(popup);
         openPopups.Push(popup);
         if(openPopups.Count == 1)
@@ -59,7 +59,7 @@ public class PopupsController : Singleton<PopupsController>, IPopupsController
         {
             return;
         }
-        popup.SetVisible(this, false);
+        popup.SetVisible(false);
         openPopups.Pop();
         if(openPopups.Count == 0)
         {

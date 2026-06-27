@@ -27,6 +27,10 @@ MonoBehaviour:
     m_Key: button.continue
     m_Metadata:
       m_Items: []
+  - m_Id: 137247997416128512
+    m_Key: button.play
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

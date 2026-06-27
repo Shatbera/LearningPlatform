@@ -59,7 +59,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 1.18, z: 1}
+  m_LocalScale: {x: 0.6, y: 1.22, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5110627214852797524}
@@ -254,6 +254,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 0}
   _aimDirectionTransform: {fileID: 5110627214852797524}
+  _progressBar: {fileID: 0}
   _pickRadius: 1.25
   _aimToleranceDegrees: 10
   _aimAxisOffsetDegrees: 0
+  _progressFillRate: 0.35

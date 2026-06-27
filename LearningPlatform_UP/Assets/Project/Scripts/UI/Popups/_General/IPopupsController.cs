@@ -6,6 +6,7 @@ public enum PopupTag
     ObjectInfo,
     Inventory,
     Language,
+    MiniGames,
 }
 public interface IPopupsController
 {

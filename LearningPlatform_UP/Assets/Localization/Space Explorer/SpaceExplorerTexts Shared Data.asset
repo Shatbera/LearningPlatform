@@ -659,6 +659,10 @@ MonoBehaviour:
     m_Key: mission.research-soil.start-dialogue
     m_Metadata:
       m_Items: []
+  - m_Id: 137706533300420608
+    m_Key: minigame.grow-plant.name
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
