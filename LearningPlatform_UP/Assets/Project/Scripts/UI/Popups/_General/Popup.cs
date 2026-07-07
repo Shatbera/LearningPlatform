@@ -20,6 +20,7 @@ public class Popup : MonoBehaviour
         }
 
         visibilityController.Initialize(this);
+        visibilityController.SetVisible(this, false);
     }
 
     private void OnDestroy()

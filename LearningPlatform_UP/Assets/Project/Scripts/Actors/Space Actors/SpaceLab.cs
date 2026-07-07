@@ -8,6 +8,6 @@ public class SpaceLab : WorldObject
     private const string SCENE_NAME = "LabScene";
     public override void OnInteract(IInteractor interactor)
     {
-        ExplorationAreaController.Instance.LoadArea(SCENE_NAME, true);
+        ExplorationAreaController.Instance.LoadArea(SCENE_NAME, true, SceneVisibilityMode.Lab);
     }
 }

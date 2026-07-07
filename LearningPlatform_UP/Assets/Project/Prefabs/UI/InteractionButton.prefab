@@ -131,6 +131,8 @@ GameObject:
   - component: {fileID: 6311342187592264031}
   - component: {fileID: 6764421382320589579}
   - component: {fileID: 6315150900804500}
+  - component: {fileID: 4562841604976494212}
+  - component: {fileID: 6802874367777830660}
   m_Layer: 5
   m_Name: InteractionButton
   m_TagString: Untagged
@@ -180,3 +182,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1002538993980602450}
   container: {fileID: 8931739177607576531}
+--- !u!225 &4562841604976494212
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8975488078592965325}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &6802874367777830660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8975488078592965325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f32c81bd4ed946779de9579e6c3bece4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneLoadingServiceRef: {fileID: 11400000, guid: 7f4a0b879e1d4b1fa3a77c2c92e5d061, type: 2}
+  _visibleInModes: 00000000

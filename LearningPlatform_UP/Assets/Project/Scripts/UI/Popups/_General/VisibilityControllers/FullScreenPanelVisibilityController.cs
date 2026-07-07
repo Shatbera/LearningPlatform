@@ -1,7 +1,10 @@
+using UnityEngine;
+
 public class FullScreenPanelVisibilityController : PopupVisibilityControllerBase
 {
+    [SerializeField] private GameObject _container;
     public override void SetVisible(Popup popup, bool visible)
     {
-        popup.gameObject.SetActive(visible);       
+        _container.SetActive(visible);
     }
 }

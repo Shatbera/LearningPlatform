@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
@@ -8,33 +9,67 @@ public class ExplorationAreaController : Singleton<ExplorationAreaController>
 {
     [SerializeField] private CinemachineCamera _objectCamera;
 
-    [SerializeField] private GameObject[] _mainSceneObjects;
     [SerializeField] private Button _exitButton;
 
     [SerializeField] private Camera _mainCamera;
 
     [SerializeField] private ScreenFade _screenFade;
-
+    [SerializeField] private SceneLoadingServiceRefSO _sceneLoadingServiceRef;
 
     private const float ZOOM_DURATION = 0.75f;
     private const float FADE_DURATION = 0.3f;
     private const float FADE_DELAY = 0.1f;
 
     private const string MENU_SCENE = "Menu";
+    private ISceneLoadingService _sceneLoadingService;
     private string _loadedAreaSceneName;
     private bool _explorationAreaLoaded = false;
+
     protected override void Awake()
     {
         base.Awake();
-        _exitButton.onClick.AddListener(Exit);
+        if (_exitButton != null)
+        {
+            _exitButton.onClick.AddListener(Exit);
+        }
     }
 
-    public void LoadArea(string sceneName, bool zoomCamera, System.Action onComplete = null)
+    private void Start()
     {
-        StartCoroutine(LoadAreaCoroutine(sceneName, zoomCamera, onComplete));
+        if (!TryGetSceneLoadingService(out _sceneLoadingService))
+        {
+            return;
+        }
+
+        _sceneLoadingService.VisibilityModeChanged += OnVisibilityModeChanged;
+        OnVisibilityModeChanged(_sceneLoadingService.CurrentVisibilityMode);
     }
 
-    private IEnumerator LoadAreaCoroutine(string sceneName, bool zoomCamera, System.Action onComlete)
+    private void OnDestroy()
+    {
+        if (_exitButton != null)
+        {
+            _exitButton.onClick.RemoveListener(Exit);
+        }
+
+        if (_sceneLoadingService != null)
+        {
+            _sceneLoadingService.VisibilityModeChanged -= OnVisibilityModeChanged;
+            _sceneLoadingService = null;
+        }
+    }
+
+    public void LoadArea(string sceneName, bool zoomCamera, Action onComplete = null)
+    {
+        LoadArea(sceneName, zoomCamera, SceneVisibilityMode.Planet, onComplete);
+    }
+
+    public void LoadArea(string sceneName, bool zoomCamera, SceneVisibilityMode visibilityMode, Action onComplete = null)
+    {
+        StartCoroutine(LoadAreaCoroutine(sceneName, zoomCamera, visibilityMode, onComplete));
+    }
+
+    private IEnumerator LoadAreaCoroutine(string sceneName, bool zoomCamera, SceneVisibilityMode visibilityMode, Action onComplete)
     {
         transform.position = new Vector2(Camera.main.transform.position.x, Camera.main.transform.position.y);
 
@@ -64,38 +99,74 @@ public class ExplorationAreaController : Singleton<ExplorationAreaController>
             yield return new WaitForSeconds(FADE_DURATION);
         }
 
-        SwitchScene(true, sceneName);
+        bool sceneLoaded = false;
+        if (!SwitchScene(true, sceneName, visibilityMode, () => sceneLoaded = true))
+        {
+            _screenFade.Fade(false, FADE_DURATION);
+            yield break;
+        }
+
         _explorationAreaLoaded = true;
+        yield return new WaitUntil(() => sceneLoaded);
 
         yield return new WaitForSeconds(FADE_DELAY);
         _screenFade.Fade(false, FADE_DURATION);
 
-        onComlete?.Invoke();
+        onComplete?.Invoke();
     }
 
-    public void SwitchScene(bool exploration, string sceneName = null)
+    public bool SwitchScene(bool exploration, string sceneName = null, SceneVisibilityMode visibilityMode = SceneVisibilityMode.Planet, Action onComplete = null)
     {
-        //_exitButton.gameObject.SetActive(exploration);
-        foreach(var obj in _mainSceneObjects)
+        if (_sceneLoadingService == null && !TryGetSceneLoadingService(out _sceneLoadingService))
         {
-            obj.SetActive(!exploration);
+            return false;
         }
+
+        bool operationStarted;
         if (exploration)
         {
-            SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
-            _loadedAreaSceneName = sceneName;
+            operationStarted = _sceneLoadingService.TryLoadAdditiveScene(sceneName, visibilityMode, () =>
+            {
+                _loadedAreaSceneName = sceneName;
+                onComplete?.Invoke();
+            });
         }
         else
         {
-            SceneManager.UnloadSceneAsync(_loadedAreaSceneName);
+            string areaSceneName = _loadedAreaSceneName;
+            if (string.IsNullOrWhiteSpace(areaSceneName))
+            {
+                Debug.LogWarning("No exploration area scene is loaded.", this);
+                return false;
+            }
+
+            operationStarted = _sceneLoadingService.TryUnloadScene(areaSceneName, () =>
+            {
+                if (_loadedAreaSceneName == areaSceneName)
+                {
+                    _loadedAreaSceneName = null;
+                }
+
+                onComplete?.Invoke();
+            });
         }
-        _mainCamera.enabled = !exploration;
+
+        if (operationStarted)
+        {
+            SetMainCameraEnabled(!exploration);
+        }
+
+        return operationStarted;
     }
+
     public void Exit()
     {
-        if(_explorationAreaLoaded){
+        if (_explorationAreaLoaded)
+        {
             StartCoroutine(ExitCoroutine());
-        }else{
+        }
+        else
+        {
             SceneManager.LoadScene(MENU_SCENE);
         }
     }
@@ -104,9 +175,59 @@ public class ExplorationAreaController : Singleton<ExplorationAreaController>
     {
         _screenFade.Fade(true, FADE_DURATION);
         yield return new WaitForSeconds(FADE_DURATION);
-        SwitchScene(false);
+        bool sceneUnloaded = false;
+        bool unloadStarted = SwitchScene(false, onComplete: () => sceneUnloaded = true);
+        if (unloadStarted)
+        {
+            yield return new WaitUntil(() => sceneUnloaded);
+        }
+        else
+        {
+            SetMainCameraEnabled(true);
+        }
+
         _explorationAreaLoaded = false;
         yield return new WaitForSeconds(FADE_DELAY);
         _screenFade.Fade(false, FADE_DURATION);
+    }
+
+    private void OnVisibilityModeChanged(SceneVisibilityMode visibilityMode)
+    {
+        SetMainCameraEnabled(visibilityMode == SceneVisibilityMode.Main);
+
+        if (visibilityMode == SceneVisibilityMode.Planet || visibilityMode == SceneVisibilityMode.Lab)
+        {
+            return;
+        }
+
+        _loadedAreaSceneName = null;
+        _explorationAreaLoaded = false;
+    }
+
+    private void SetMainCameraEnabled(bool enabled)
+    {
+        if (_mainCamera != null)
+        {
+            _mainCamera.enabled = enabled;
+        }
+    }
+
+    private bool TryGetSceneLoadingService(out ISceneLoadingService sceneLoadingService)
+    {
+        sceneLoadingService = null;
+        if (_sceneLoadingServiceRef == null)
+        {
+            Debug.LogError($"{nameof(ExplorationAreaController)} has no scene loading service ref assigned.", this);
+            return false;
+        }
+
+        sceneLoadingService = _sceneLoadingServiceRef.Service;
+        if (sceneLoadingService == null)
+        {
+            Debug.LogError("Scene loading service is not installed.", this);
+            return false;
+        }
+
+        return true;
     }
 }

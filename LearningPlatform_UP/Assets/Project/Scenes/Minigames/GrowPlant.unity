@@ -129,8 +129,9 @@ GameObject:
   m_Component:
   - component: {fileID: 191348399}
   - component: {fileID: 191348400}
+  - component: {fileID: 191348401}
   m_Layer: 6
-  m_Name: PlantContainer
+  m_Name: GameplayElements
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -174,6 +175,18 @@ MonoBehaviour:
   _completed:
     m_PersistentCalls:
       m_Calls: []
+--- !u!210 &191348401
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191348398}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &393261658
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,7 +688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 557258946080260034, guid: 5ce4b85c189e9644da406a77ed942912, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.031130234
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 557258946080260034, guid: 5ce4b85c189e9644da406a77ed942912, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1008,7 +1021,7 @@ GameObject:
   - component: {fileID: 5797397118694920520}
   - component: {fileID: 1437971455822589786}
   m_Layer: 6
-  m_Name: _ExplorationArea
+  m_Name: _Gameplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

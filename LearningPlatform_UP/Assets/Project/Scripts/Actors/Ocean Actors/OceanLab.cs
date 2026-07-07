@@ -8,6 +8,6 @@ public class OceanLab : WorldObject
     private const string SCENE_NAME = "OceanLabScene";
     public override void OnInteract(IInteractor interactor)
     {
-        ExplorationAreaController.Instance.LoadArea(SCENE_NAME, false);
+        ExplorationAreaController.Instance.LoadArea(SCENE_NAME, false, SceneVisibilityMode.Lab);
     }
 }

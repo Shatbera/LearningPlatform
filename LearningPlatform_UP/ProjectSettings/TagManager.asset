@@ -44,6 +44,12 @@ TagManager:
   - name: ExplorationArea
     uniqueID: 1743154615
     locked: 0
+  - name: Hud
+    uniqueID: 2978946661
+    locked: 0
+  - name: Popups
+    uniqueID: 3257472795
+    locked: 0
   m_RenderingLayers:
   - Default
   - Light Layer 1

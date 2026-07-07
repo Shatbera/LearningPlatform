@@ -56,7 +56,14 @@ public class PopupVisibilityController : PopupVisibilityControllerBase
 
     public void OnPopupCloseFinished(Popup popup)
     {
-        popup.gameObject.SetActive(false);
+        Popup targetPopup = popup != null ? popup : this.popup;
+        if (targetPopup == null)
+        {
+            Debug.LogWarning($"{nameof(PopupVisibilityController)} close animation finished without a popup.", this);
+            return;
+        }
+
+        targetPopup.gameObject.SetActive(false);
     }
 
     public override void Dispose(Popup popup)

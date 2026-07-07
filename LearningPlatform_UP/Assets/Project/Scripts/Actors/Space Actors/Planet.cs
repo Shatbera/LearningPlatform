@@ -56,7 +56,7 @@ public class Planet : WorldObject
         {
             p.GetComponent<ObjectInfoPopup>().Setup(planetData);
         });*/
-        ExplorationAreaController.Instance.LoadArea(planetData.SceneName, true, () =>
+        ExplorationAreaController.Instance.LoadArea(planetData.SceneName, true, SceneVisibilityMode.Planet, () =>
         {
             PlayerEntered?.Invoke();
             // PopupsController.Instance.OpenPopup(PopupTag.ObjectInfo, onComplete: window =>
